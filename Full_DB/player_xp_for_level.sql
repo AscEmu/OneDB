@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `player_xp_for_level` (
   PRIMARY KEY (`player_lvl`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DELETE FROM `player_xp_for_level`;
 /*!40000 ALTER TABLE `player_xp_for_level` DISABLE KEYS */;
-REPLACE INTO `player_xp_for_level` (`player_lvl`, `next_lvl_req_xp`) VALUES
+INSERT INTO `player_xp_for_level` (`player_lvl`, `next_lvl_req_xp`) VALUES
 	(1, 400),
 	(2, 900),
 	(3, 1400),

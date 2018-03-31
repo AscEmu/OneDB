@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `quest_poi` (
   PRIMARY KEY (`questId`,`poiId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DELETE FROM `quest_poi`;
 /*!40000 ALTER TABLE `quest_poi` DISABLE KEYS */;
-REPLACE INTO `quest_poi` (`questId`, `poiId`, `objIndex`, `mapId`, `mapAreaId`, `floorId`, `unk3`, `unk4`) VALUES
+INSERT INTO `quest_poi` (`questId`, `poiId`, `objIndex`, `mapId`, `mapAreaId`, `floorId`, `unk3`, `unk4`) VALUES
 	(1, 0, -1, 0, 23, 0, 0, 1),
 	(2, 0, 4, 1, 43, 0, 0, 1),
 	(2, 1, -1, 1, 43, 0, 0, 1),
@@ -13615,7 +13616,7 @@ REPLACE INTO `quest_poi` (`questId`, `poiId`, `objIndex`, `mapId`, `mapAreaId`, 
 	(11693, 1, 0, 571, 486, 0, 0, 1),
 	(11693, 2, -1, 571, 486, 0, 0, 1),
 	(11694, 0, -1, 571, 486, 0, 0, 1);
-REPLACE INTO `quest_poi` (`questId`, `poiId`, `objIndex`, `mapId`, `mapAreaId`, `floorId`, `unk3`, `unk4`) VALUES
+INSERT INTO `quest_poi` (`questId`, `poiId`, `objIndex`, `mapId`, `mapAreaId`, `floorId`, `unk3`, `unk4`) VALUES
 	(11694, 1, 0, 571, 486, 0, 0, 1),
 	(11694, 2, 0, 571, 486, 0, 0, 1),
 	(11695, 0, 4, 571, 486, 0, 2, 1),

@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `vendor_restrictions` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `vendor_restrictions`;
 /*!40000 ALTER TABLE `vendor_restrictions` DISABLE KEYS */;
-REPLACE INTO `vendor_restrictions` (`entry`, `racemask`, `classmask`, `reqrepfaction`, `reqrepfactionvalue`, `canbuyattextid`, `cannotbuyattextid`, `flags`) VALUES
+INSERT INTO `vendor_restrictions` (`entry`, `racemask`, `classmask`, `reqrepfaction`, `reqrepfactionvalue`, `canbuyattextid`, `cannotbuyattextid`, `flags`) VALUES
 	(384, 1, -1, 72, 42000, 0, 5855, 1),
 	(1261, 4, -1, 47, 42000, 0, 5856, 1),
 	(3362, 2, -1, 76, 42000, 0, 5841, 1),

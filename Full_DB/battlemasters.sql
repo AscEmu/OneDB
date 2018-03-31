@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `battlemasters` (
   PRIMARY KEY (`creature_entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `battlemasters`;
 /*!40000 ALTER TABLE `battlemasters` DISABLE KEYS */;
-REPLACE INTO `battlemasters` (`creature_entry`, `battleground_id`) VALUES
+INSERT INTO `battlemasters` (`creature_entry`, `battleground_id`) VALUES
 	(347, 1),
 	(857, 3),
 	(907, 3),

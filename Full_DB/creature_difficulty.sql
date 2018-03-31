@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `creature_difficulty` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Creature Difficulty System';
 
+DELETE FROM `creature_difficulty`;
 /*!40000 ALTER TABLE `creature_difficulty` DISABLE KEYS */;
-REPLACE INTO `creature_difficulty` (`entry`, `difficulty_1`, `difficulty_2`, `difficulty_3`) VALUES
+INSERT INTO `creature_difficulty` (`entry`, `difficulty_1`, `difficulty_2`, `difficulty_3`) VALUES
 	(603, 22555, 32000, 37319),
 	(2225, 22661, 32764, 37486),
 	(3343, 22650, 31999, 37318),

@@ -9,8 +9,9 @@ CREATE TABLE IF NOT EXISTS `world_db_version` (
   PRIMARY KEY (`LastUpdate`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+DELETE FROM `world_db_version`;
 /*!40000 ALTER TABLE `world_db_version` DISABLE KEYS */;
-REPLACE INTO `world_db_version` (`LastUpdate`) VALUES
+INSERT INTO `world_db_version` (`LastUpdate`) VALUES
 	('2018-01-01_01_gameobject_spawns');
 /*!40000 ALTER TABLE `world_db_version` ENABLE KEYS */;
 

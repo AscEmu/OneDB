@@ -14,8 +14,9 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_bars` (
   PRIMARY KEY (`race`,`class`,`button`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Player System';
 
+DELETE FROM `playercreateinfo_bars`;
 /*!40000 ALTER TABLE `playercreateinfo_bars` DISABLE KEYS */;
-REPLACE INTO `playercreateinfo_bars` (`race`, `class`, `button`, `action`, `type`, `misc`) VALUES
+INSERT INTO `playercreateinfo_bars` (`race`, `class`, `button`, `action`, `type`, `misc`) VALUES
 	(1, 1, 0, 6603, 0, 0),
 	(1, 1, 72, 6603, 0, 0),
 	(1, 1, 73, 78, 0, 0),

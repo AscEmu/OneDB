@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `gameobject_quest_pickup_binding` (
   PRIMARY KEY (`entry`,`quest`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Quest System';
 
+DELETE FROM `gameobject_quest_pickup_binding`;
 /*!40000 ALTER TABLE `gameobject_quest_pickup_binding` DISABLE KEYS */;
-REPLACE INTO `gameobject_quest_pickup_binding` (`entry`, `quest`, `required_count`) VALUES
+INSERT INTO `gameobject_quest_pickup_binding` (`entry`, `quest`, `required_count`) VALUES
 	(1721, 498, 1),
 	(1722, 498, 1),
 	(1761, 532, 1),

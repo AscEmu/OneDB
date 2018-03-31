@@ -19,8 +19,9 @@ CREATE TABLE IF NOT EXISTS `areatriggers` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
 
+DELETE FROM `areatriggers`;
 /*!40000 ALTER TABLE `areatriggers` DISABLE KEYS */;
-REPLACE INTO `areatriggers` (`entry`, `type`, `map`, `screen`, `name`, `position_x`, `position_y`, `position_z`, `orientation`, `required_honor_rank`, `required_level`) VALUES
+INSERT INTO `areatriggers` (`entry`, `type`, `map`, `screen`, `name`, `position_x`, `position_y`, `position_z`, `orientation`, `required_honor_rank`, `required_level`) VALUES
 	(45, 1, 189, 42, 'Scarlet Monastery - Graveyard (Entrance)', 1688.99, 1053.48, 18.6775, 0.00117, 0, 20),
 	(71, 3, 0, 0, 'Westfall - Sentinel Hill Inn', 0, 0, 0, 0, 0, 0),
 	(78, 1, 36, 36, 'DeadMines Entrance', -16.4, -383.07, 61.78, 1.86, 0, 10),

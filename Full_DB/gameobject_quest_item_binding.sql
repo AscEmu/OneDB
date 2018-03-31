@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `gameobject_quest_item_binding` (
   PRIMARY KEY (`entry`,`item`,`quest`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Quest System';
 
+DELETE FROM `gameobject_quest_item_binding`;
 /*!40000 ALTER TABLE `gameobject_quest_item_binding` DISABLE KEYS */;
-REPLACE INTO `gameobject_quest_item_binding` (`entry`, `quest`, `item`, `item_count`) VALUES
+INSERT INTO `gameobject_quest_item_binding` (`entry`, `quest`, `item`, `item_count`) VALUES
 	(144053, 10, 8593, 1),
 	(2039, 16, 159, 1),
 	(2843, 16, 159, 1),

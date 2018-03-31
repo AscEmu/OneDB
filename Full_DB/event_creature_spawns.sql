@@ -38,8 +38,9 @@ CREATE TABLE IF NOT EXISTS `event_creature_spawns` (
   KEY `entry` (`entry`)
 ) ENGINE=MyISAM AUTO_INCREMENT=157084 DEFAULT CHARSET=latin1 COMMENT='creature spawns for events';
 
+DELETE FROM `event_creature_spawns`;
 /*!40000 ALTER TABLE `event_creature_spawns` DISABLE KEYS */;
-REPLACE INTO `event_creature_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `movetype`, `displayid`, `faction`, `flags`, `bytes0`, `bytes1`, `bytes2`, `emote_state`, `npc_respawn_link`, `channel_spell`, `channel_target_sqlid`, `channel_target_sqlid_creature`, `standstate`, `death_state`, `mountdisplayid`, `slot1item`, `slot2item`, `slot3item`, `CanFly`, `phase`, `waypoint_group`) VALUES
+INSERT INTO `event_creature_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `movetype`, `displayid`, `faction`, `flags`, `bytes0`, `bytes1`, `bytes2`, `emote_state`, `npc_respawn_link`, `channel_spell`, `channel_target_sqlid`, `channel_target_sqlid_creature`, `standstate`, `death_state`, `mountdisplayid`, `slot1item`, `slot2item`, `slot3item`, `CanFly`, `phase`, `waypoint_group`) VALUES
 	(24, 150000, 19178, 0, 1573.04, 265.95, -43.1, 0.59, 0, 6232, 68, 0, 0, 0, 4097, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
 	(24, 150001, 19178, 0, 1574.55, 267.58, -43.02, 3.77, 0, 4069, 68, 0, 0, 0, 4097, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
 	(24, 150002, 19178, 0, 1627.8, 224.57, -43.1, 4.15, 0, 4069, 68, 0, 0, 0, 4097, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
@@ -3480,7 +3481,7 @@ REPLACE INTO `event_creature_spawns` (`event_entry`, `id`, `entry`, `map`, `posi
 	(26, 153437, 32820, 0, -9568, -1260, 47.98, 3.07, 0, 21774, 7, 0, 0, 0, 4097, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
 	(26, 153438, 32820, 0, -9568, -1142, 43.93, 5.75, 0, 21774, 7, 0, 0, 0, 4097, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
 	(26, 153439, 32820, 0, -9568, -1011, 47.38, 2.21, 0, 21774, 7, 0, 0, 0, 4097, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL);
-REPLACE INTO `event_creature_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `movetype`, `displayid`, `faction`, `flags`, `bytes0`, `bytes1`, `bytes2`, `emote_state`, `npc_respawn_link`, `channel_spell`, `channel_target_sqlid`, `channel_target_sqlid_creature`, `standstate`, `death_state`, `mountdisplayid`, `slot1item`, `slot2item`, `slot3item`, `CanFly`, `phase`, `waypoint_group`) VALUES
+INSERT INTO `event_creature_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `movetype`, `displayid`, `faction`, `flags`, `bytes0`, `bytes1`, `bytes2`, `emote_state`, `npc_respawn_link`, `channel_spell`, `channel_target_sqlid`, `channel_target_sqlid_creature`, `standstate`, `death_state`, `mountdisplayid`, `slot1item`, `slot2item`, `slot3item`, `CanFly`, `phase`, `waypoint_group`) VALUES
 	(26, 153440, 32820, 0, -9568, -439, 61.61, 0.36, 0, 21774, 7, 0, 0, 0, 4097, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
 	(26, 153441, 32820, 0, -9568, -222, 62.06, 6, 0, 21774, 7, 0, 0, 0, 4097, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
 	(26, 153442, 32820, 0, -9567, 81, 58.88, 0.35, 0, 21774, 7, 0, 0, 0, 4097, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
@@ -7041,7 +7042,7 @@ REPLACE INTO `event_creature_spawns` (`event_entry`, `id`, `entry`, `map`, `posi
 	(58, 157021, 33923, 571, 5751.73, 582.94, 615.05, 0, 0, 26465, 35, 512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
 	(58, 157022, 34087, 571, 5761.32, 578.75, 615.05, 2.09, 0, 29076, 35, 512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
 	(58, 157023, 34088, 1, -7126.8, -3761.97, 9.49, 0.82, 0, 29077, 35, 512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL);
-REPLACE INTO `event_creature_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `movetype`, `displayid`, `faction`, `flags`, `bytes0`, `bytes1`, `bytes2`, `emote_state`, `npc_respawn_link`, `channel_spell`, `channel_target_sqlid`, `channel_target_sqlid_creature`, `standstate`, `death_state`, `mountdisplayid`, `slot1item`, `slot2item`, `slot3item`, `CanFly`, `phase`, `waypoint_group`) VALUES
+INSERT INTO `event_creature_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `movetype`, `displayid`, `faction`, `flags`, `bytes0`, `bytes1`, `bytes2`, `emote_state`, `npc_respawn_link`, `channel_spell`, `channel_target_sqlid`, `channel_target_sqlid_creature`, `standstate`, `death_state`, `mountdisplayid`, `slot1item`, `slot2item`, `slot3item`, `CanFly`, `phase`, `waypoint_group`) VALUES
 	(58, 157024, 34089, 530, 3078.46, 3636.98, 145.38, 3.13, 0, 29078, 35, 512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
 	(57, 157025, 31863, 571, 5753.74, 585.41, 615.05, 0, 0, 26463, 35, 512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),
 	(57, 157026, 31864, 571, 5751.54, 584.66, 615.05, 0, 0, 26464, 35, 512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL),

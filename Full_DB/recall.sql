@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `recall` (
   UNIQUE KEY `UNIQUE` (`name`)
 ) ENGINE=MyISAM AUTO_INCREMENT=801 DEFAULT CHARSET=utf8 COMMENT='Tele Command';
 
+DELETE FROM `recall`;
 /*!40000 ALTER TABLE `recall` DISABLE KEYS */;
-REPLACE INTO `recall` (`id`, `name`, `MapId`, `positionX`, `positionY`, `positionZ`, `Orientation`) VALUES
+INSERT INTO `recall` (`id`, `name`, `MapId`, `positionX`, `positionY`, `positionZ`, `Orientation`) VALUES
 	(1, 'AbyssalSands', 1, -8109.34, -3067.48, 39.9773, 0),
 	(2, 'AddlesStead', 0, -10992.6, 268.794, 28.5101, 0),
 	(3, 'AeriePeak', 0, 327.814, -1959.99, 198.724, 0),

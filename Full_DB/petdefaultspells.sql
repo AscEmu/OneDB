@@ -9,8 +9,9 @@ CREATE TABLE IF NOT EXISTS `petdefaultspells` (
   `spell` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Pet System';
 
+DELETE FROM `petdefaultspells`;
 /*!40000 ALTER TABLE `petdefaultspells` DISABLE KEYS */;
-REPLACE INTO `petdefaultspells` (`entry`, `spell`) VALUES
+INSERT INTO `petdefaultspells` (`entry`, `spell`) VALUES
 	(30, 17253),
 	(113, 7371),
 	(118, 17255),

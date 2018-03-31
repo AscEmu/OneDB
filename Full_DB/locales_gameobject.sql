@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS `locales_gameobject` (
   PRIMARY KEY (`entry`,`language_code`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+DELETE FROM `locales_gameobject`;
 /*!40000 ALTER TABLE `locales_gameobject` DISABLE KEYS */;
 /*!40000 ALTER TABLE `locales_gameobject` ENABLE KEYS */;
 

@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `spelloverride` (
   PRIMARY KEY (`overrideId`,`spellId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Spell System';
 
+DELETE FROM `spelloverride`;
 /*!40000 ALTER TABLE `spelloverride` DISABLE KEYS */;
-REPLACE INTO `spelloverride` (`overrideId`, `spellId`) VALUES
+INSERT INTO `spelloverride` (`overrideId`, `spellId`) VALUES
 	(836, 10),
 	(836, 6141),
 	(836, 8427),

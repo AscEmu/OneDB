@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `item_randomsuffix_groups` (
   PRIMARY KEY (`entry_id`,`randomsuffix_entryid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Item System';
 
+DELETE FROM `item_randomsuffix_groups`;
 /*!40000 ALTER TABLE `item_randomsuffix_groups` DISABLE KEYS */;
-REPLACE INTO `item_randomsuffix_groups` (`entry_id`, `randomsuffix_entryid`, `chance`) VALUES
+INSERT INTO `item_randomsuffix_groups` (`entry_id`, `randomsuffix_entryid`, `chance`) VALUES
 	(61, 37, 10.77),
 	(61, 9, 8.02),
 	(61, 39, 17.48),

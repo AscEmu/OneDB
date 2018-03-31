@@ -17,8 +17,9 @@ CREATE TABLE IF NOT EXISTS `transport_creatures` (
   UNIQUE KEY `entry` (`transport_entry`,`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DELETE FROM `transport_creatures`;
 /*!40000 ALTER TABLE `transport_creatures` DISABLE KEYS */;
-REPLACE INTO `transport_creatures` (`guid`, `transport_entry`, `npc_entry`, `TransOffsetX`, `TransOffsetY`, `TransOffsetZ`, `TransOffsetO`, `emote`) VALUES
+INSERT INTO `transport_creatures` (`guid`, `transport_entry`, `npc_entry`, `TransOffsetX`, `TransOffsetY`, `TransOffsetZ`, `TransOffsetO`, `emote`) VALUES
 	(11, 164871, 25075, 4.22547, -13.2054, -23.6771, 1.54314, 0),
 	(17, 176310, 25012, 18.1475, -7.41572, 6.09809, 1.88535, 0),
 	(3, 192241, 30753, -26.8391, -10.402, 35.5991, 1.29366, 432),

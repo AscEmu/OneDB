@@ -27,8 +27,9 @@ CREATE TABLE IF NOT EXISTS `gameobject_staticspawns` (
   KEY `entry` (`entry`)
 ) ENGINE=MyISAM AUTO_INCREMENT=49858 DEFAULT CHARSET=utf8 COMMENT='Spawn System';
 
+DELETE FROM `gameobject_staticspawns`;
 /*!40000 ALTER TABLE `gameobject_staticspawns` DISABLE KEYS */;
-REPLACE INTO `gameobject_staticspawns` (`id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
+INSERT INTO `gameobject_staticspawns` (`id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
 	(49857, 194484, 603, -805.1, -78.23, 605.22, -2.65, 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 0);
 /*!40000 ALTER TABLE `gameobject_staticspawns` ENABLE KEYS */;
 

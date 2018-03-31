@@ -15,8 +15,9 @@ CREATE TABLE IF NOT EXISTS `reputation_instance_onkill` (
   PRIMARY KEY (`mapid`,`faction_change_alliance`,`faction_change_horde`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Creature System';
 
+DELETE FROM `reputation_instance_onkill`;
 /*!40000 ALTER TABLE `reputation_instance_onkill` DISABLE KEYS */;
-REPLACE INTO `reputation_instance_onkill` (`mapid`, `mob_rep_reward`, `mob_rep_limit`, `boss_rep_reward`, `boss_rep_limit`, `faction_change_alliance`, `faction_change_horde`) VALUES
+INSERT INTO `reputation_instance_onkill` (`mapid`, `mob_rep_reward`, `mob_rep_limit`, `boss_rep_reward`, `boss_rep_limit`, `faction_change_alliance`, `faction_change_horde`) VALUES
 	(269, 0, 42000, 120, 42000, 989, 989),
 	(269, 8, 21000, 80, 21000, 1779, 1779),
 	(289, 10, 42000, 100, 42000, 529, 529),

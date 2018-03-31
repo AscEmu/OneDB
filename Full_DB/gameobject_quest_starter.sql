@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `gameobject_quest_starter` (
   PRIMARY KEY (`id`,`quest`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Quest System';
 
+DELETE FROM `gameobject_quest_starter`;
 /*!40000 ALTER TABLE `gameobject_quest_starter` DISABLE KEYS */;
-REPLACE INTO `gameobject_quest_starter` (`id`, `quest`) VALUES
+INSERT INTO `gameobject_quest_starter` (`id`, `quest`) VALUES
 	(31, 248),
 	(31, 249),
 	(34, 140),

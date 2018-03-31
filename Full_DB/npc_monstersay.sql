@@ -19,8 +19,9 @@ CREATE TABLE IF NOT EXISTS `npc_monstersay` (
   PRIMARY KEY (`entry`,`event`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='NPC System';
 
+DELETE FROM `npc_monstersay`;
 /*!40000 ALTER TABLE `npc_monstersay` DISABLE KEYS */;
-REPLACE INTO `npc_monstersay` (`entry`, `event`, `chance`, `language`, `type`, `monstername`, `text0`, `text1`, `text2`, `text3`, `text4`) VALUES
+INSERT INTO `npc_monstersay` (`entry`, `event`, `chance`, `language`, `type`, `monstername`, `text0`, `text1`, `text2`, `text3`, `text4`) VALUES
 	(6, 0, 30, 0, 12, 'Kobold Vermin', 'You no take candle!', 'Yiieeeee! Me run!', NULL, NULL, NULL),
 	(38, 0, 30, 0, 12, 'Defias Thug', 'The Brotherhood will not tolerate your actions.', 'Ah, a chance to use this freshly sharpened blade.', 'Feel the power of the Brotherhood!', NULL, NULL),
 	(40, 0, 30, 0, 12, 'Kobold Miner', 'You no take candle!', 'Yiieeeee! Me run!', NULL, NULL, NULL),

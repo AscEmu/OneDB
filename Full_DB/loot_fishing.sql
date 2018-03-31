@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `loot_fishing` (
   UNIQUE KEY `UNIQUE` (`itemid`,`entryid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Loot System';
 
+DELETE FROM `loot_fishing`;
 /*!40000 ALTER TABLE `loot_fishing` DISABLE KEYS */;
-REPLACE INTO `loot_fishing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_fishing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(1, 6291, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(2, 3841, 8.61, 0.00, 0.00, 0.00, 1, 1),
 	(2, 6303, 20.56, 0.00, 0.00, 0.00, 1, 1),

@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `spellclickspells` (
   PRIMARY KEY (`CreatureID`,`SpellID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `spellclickspells`;
 /*!40000 ALTER TABLE `spellclickspells` DISABLE KEYS */;
-REPLACE INTO `spellclickspells` (`CreatureID`, `SpellID`) VALUES
+INSERT INTO `spellclickspells` (`CreatureID`, `SpellID`) VALUES
 	(24083, 55074),
 	(24418, 43768),
 	(24750, 46598),

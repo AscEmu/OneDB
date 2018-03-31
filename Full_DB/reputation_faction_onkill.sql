@@ -15,8 +15,9 @@ CREATE TABLE IF NOT EXISTS `reputation_faction_onkill` (
   PRIMARY KEY (`faction_id`,`change_factionid_alliance`,`change_factionid_horde`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Creature System';
 
+DELETE FROM `reputation_faction_onkill`;
 /*!40000 ALTER TABLE `reputation_faction_onkill` DISABLE KEYS */;
-REPLACE INTO `reputation_faction_onkill` (`faction_id`, `change_factionid_alliance`, `change_deltamin_alliance`, `change_deltamax_alliance`, `change_factionid_horde`, `change_deltamin_horde`, `change_deltamax_horde`) VALUES
+INSERT INTO `reputation_faction_onkill` (`faction_id`, `change_factionid_alliance`, `change_deltamin_alliance`, `change_deltamax_alliance`, `change_factionid_horde`, `change_deltamin_horde`, `change_deltamax_horde`) VALUES
 	(92, 133, 20, 42000, 133, 20, 42000),
 	(92, 132, -100, 42000, 132, -100, 42000),
 	(93, 132, 20, 42000, 132, 20, 42000),

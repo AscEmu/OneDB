@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `item_randomprop_groups` (
   PRIMARY KEY (`entry_id`,`randomprops_entryid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item System';
 
+DELETE FROM `item_randomprop_groups`;
 /*!40000 ALTER TABLE `item_randomprop_groups` DISABLE KEYS */;
-REPLACE INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance`) VALUES
+INSERT INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance`) VALUES
 	(454, 1799, 2.92),
 	(454, 1800, 2.92),
 	(454, 1951, 2.85),
@@ -22434,7 +22435,7 @@ REPLACE INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chanc
 	(5173, 24, 2.82),
 	(5173, 97, 2.82),
 	(5173, 1179, 2.51);
-REPLACE INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance`) VALUES
+INSERT INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance`) VALUES
 	(5173, 1180, 2.51),
 	(5173, 1181, 2.51),
 	(5173, 1182, 2.51),

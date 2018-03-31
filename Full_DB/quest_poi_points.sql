@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `quest_poi_points` (
   KEY `idx_poip` (`questId`,`poiId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DELETE FROM `quest_poi_points`;
 /*!40000 ALTER TABLE `quest_poi_points` DISABLE KEYS */;
-REPLACE INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
+INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(1, 0, 2148, -5252),
 	(2, 0, 2148, -2816),
 	(2, 1, 2311, -2555),
@@ -18102,7 +18103,7 @@ REPLACE INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(6241, 2, 6790, -2671),
 	(6241, 3, 6879, -5190),
 	(6241, 3, 6915, -5150);
-REPLACE INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
+INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(6241, 3, 6917, -5082),
 	(6241, 3, 6914, -5016),
 	(6241, 3, 6884, -4986),
@@ -35784,7 +35785,7 @@ REPLACE INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(10774, 3, -4510, 1317),
 	(10775, 0, -4456, 1225),
 	(10775, 0, -4111, 1287);
-REPLACE INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
+INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(10775, 0, -4108, 1289),
 	(10775, 0, -4096, 1318),
 	(10775, 0, -4091, 1402),
@@ -53163,7 +53164,7 @@ REPLACE INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(13292, 3, 6592, 991),
 	(13292, 3, 6821, 1007),
 	(13292, 3, 6796, 1255);
-REPLACE INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
+INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(13292, 3, 6742, 1278),
 	(13292, 3, 6670, 1264),
 	(13292, 3, 6537, 1234),

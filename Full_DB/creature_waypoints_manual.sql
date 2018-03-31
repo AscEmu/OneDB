@@ -21,8 +21,9 @@ CREATE TABLE IF NOT EXISTS `creature_waypoints_manual` (
   PRIMARY KEY (`group_id`,`waypoint_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Manual Waypoint Groups';
 
+DELETE FROM `creature_waypoints_manual`;
 /*!40000 ALTER TABLE `creature_waypoints_manual` DISABLE KEYS */;
-REPLACE INTO `creature_waypoints_manual` (`group_id`, `waypoint_id`, `position_x`, `position_y`, `position_z`, `wait_time`, `flags`, `forward_emote_oneshot`, `forward_emote_id`, `backward_emote_oneshot`, `backward_emote_id`, `forward_skin_id`, `backward_skin_id`) VALUES
+INSERT INTO `creature_waypoints_manual` (`group_id`, `waypoint_id`, `position_x`, `position_y`, `position_z`, `wait_time`, `flags`, `forward_emote_oneshot`, `forward_emote_id`, `backward_emote_oneshot`, `backward_emote_id`, `forward_skin_id`, `backward_skin_id`) VALUES
 	(11, 1, -1577.27, 128.14, -8.43, 0, 0, 0, 0, 0, 0, 14855, 14855),
 	(11, 2, -1585.87, 118.11, -11.14, 0, 0, 0, 0, 0, 0, 14855, 14855),
 	(11, 3, -1592.64, 118.37, -12.95, 0, 0, 0, 0, 0, 0, 14855, 14855),

@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_spells` (
   PRIMARY KEY (`indexid`,`spellid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Player System';
 
+DELETE FROM `playercreateinfo_spells`;
 /*!40000 ALTER TABLE `playercreateinfo_spells` DISABLE KEYS */;
-REPLACE INTO `playercreateinfo_spells` (`indexid`, `spellid`) VALUES
+INSERT INTO `playercreateinfo_spells` (`indexid`, `spellid`) VALUES
 	(1, 78),
 	(1, 81),
 	(1, 107),

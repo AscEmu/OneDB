@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS `locales_gossip_menu_option` (
   PRIMARY KEY (`entry`,`language_code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+DELETE FROM `locales_gossip_menu_option`;
 /*!40000 ALTER TABLE `locales_gossip_menu_option` DISABLE KEYS */;
 /*!40000 ALTER TABLE `locales_gossip_menu_option` ENABLE KEYS */;
 

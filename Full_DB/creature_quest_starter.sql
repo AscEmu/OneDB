@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `creature_quest_starter` (
   PRIMARY KEY (`id`,`quest`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 ROW_FORMAT=FIXED COMMENT='Creature System';
 
+DELETE FROM `creature_quest_starter`;
 /*!40000 ALTER TABLE `creature_quest_starter` DISABLE KEYS */;
-REPLACE INTO `creature_quest_starter` (`id`, `quest`) VALUES
+INSERT INTO `creature_quest_starter` (`id`, `quest`) VALUES
 	(196, 33),
 	(197, 7),
 	(197, 15),

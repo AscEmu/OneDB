@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS `wordfilter_character_names` (
   PRIMARY KEY (`regex_match`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `wordfilter_character_names`;
 /*!40000 ALTER TABLE `wordfilter_character_names` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wordfilter_character_names` ENABLE KEYS */;
 

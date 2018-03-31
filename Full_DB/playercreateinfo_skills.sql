@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_skills` (
   PRIMARY KEY (`indexid`,`skillid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Player System';
 
+DELETE FROM `playercreateinfo_skills`;
 /*!40000 ALTER TABLE `playercreateinfo_skills` DISABLE KEYS */;
-REPLACE INTO `playercreateinfo_skills` (`indexid`, `skillid`, `level`, `maxlevel`) VALUES
+INSERT INTO `playercreateinfo_skills` (`indexid`, `skillid`, `level`, `maxlevel`) VALUES
 	(1, 26, 1, 1),
 	(1, 43, 1, 5),
 	(1, 54, 1, 5),

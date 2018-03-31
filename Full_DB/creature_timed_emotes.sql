@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS `creature_timed_emotes` (
   PRIMARY KEY (`spawnid`,`rowid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `creature_timed_emotes`;
 /*!40000 ALTER TABLE `creature_timed_emotes` DISABLE KEYS */;
 /*!40000 ALTER TABLE `creature_timed_emotes` ENABLE KEYS */;
 

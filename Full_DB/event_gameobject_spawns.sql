@@ -28,8 +28,9 @@ CREATE TABLE IF NOT EXISTS `event_gameobject_spawns` (
   KEY `Entry` (`entry`)
 ) ENGINE=MyISAM AUTO_INCREMENT=220744 DEFAULT CHARSET=latin1 COMMENT='gameobject spawns for events';
 
+DELETE FROM `event_gameobject_spawns`;
 /*!40000 ALTER TABLE `event_gameobject_spawns` DISABLE KEYS */;
-REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
+INSERT INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
 	(1, 1, 187653, 1, -959.702, -3739.06, 5.66216, -2.63545, 0, 0, 0.968148, -0.25038, 1, 0, 114, 1, 0, 1, 0),
 	(1, 3, 187653, 1, -974.588, -3647.97, 17.4956, 1.44862, 0, 0, 0.66262, 0.748956, 1, 0, 114, 1, 0, 1, 0),
 	(7, 230, 180874, 1, 7531.66, -2851.23, 458.917, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0),
@@ -4149,7 +4150,7 @@ REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `po
 	(12, 36499, 180405, 1, -1609.78, 3160.18, 47.0972, 1.36136, 0, 0, 0.62932, 0.777146, 1, 0, 0, 1, 0, 1, 0),
 	(12, 36500, 180405, 1, -1603.47, 3126.34, 47.1902, -0.523599, 0, 0, 0.258819, -0.965926, 1, 0, 0, 1, 0, 1, 0),
 	(12, 36501, 180405, 1, -1021.66, 215.737, 109.19, -0.907571, 0, 0, 0.438371, -0.898794, 1, 0, 0, 1, 0, 1, 0);
-REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
+INSERT INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
 	(12, 36502, 180405, 530, -1250.16, 7148.23, 59.2098, 2.49582, 0, 0, 0.948324, 0.317305, 1, 0, 0, 1, 0, 1, 0),
 	(12, 36503, 180405, 530, -1256.33, 7186.51, 57.2847, -1.16937, 0, 0, 0.551937, -0.833886, 1, 0, 0, 1, 0, 1, 0),
 	(12, 36504, 180405, 530, -1200.14, 7169.19, 59.9556, -0.733038, 0, 0, 0.358368, -0.93358, 1, 0, 0, 1, 0, 1, 0),
@@ -8288,7 +8289,7 @@ REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `po
 	(2, 41575, 178430, 530, -1727.3, 5472.69, -12.4281, 1.20428, 0, 0, 0.566406, 0.824126, 1, 0, 0, 1, 0, 1, 0),
 	(2, 41576, 178430, 530, -1979.07, 5348.5, -12.4281, -0.017453, 0, 0, 0.008727, -0.999962, 1, 0, 0, 1, 0, 1, 0),
 	(2, 41577, 178429, 530, -1976.82, 5346.09, -12.4281, 0.349066, 0, 0, 0.173648, 0.984808, 1, 0, 0, 1, 0, 1, 0);
-REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
+INSERT INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
 	(2, 41578, 178429, 530, -1869.22, 5440.76, -10.4638, -1.25664, 0, 0, 0.587785, -0.809017, 1, 0, 0, 1, 0, 1, 0),
 	(2, 41579, 178430, 530, -1868.16, 5440.61, -10.4638, 0.785398, 0, 0, 0.382683, 0.92388, 1, 0, 0, 1, 0, 1, 0),
 	(2, 41580, 178429, 530, -3977.76, -11641.9, -138.963, -1.81514, 0, 0, 0.788011, -0.615661, 1, 0, 0, 1, 0, 1, 0),
@@ -12390,7 +12391,7 @@ REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `po
 	(1, 51869, 181355, 0, -465.215, -4540.75, 9.22225, -2.49582, 0, 0, 0.948324, -0.317305, 1, 0, 114, 1, 0, 1, 0),
 	(1, 51870, 181355, 1, 7915.28, -2562.39, 488.284, 3.10669, 0, 0, 0.999848, 0.017452, 1, 0, 114, 1, 0, 1, 0),
 	(1, 51871, 181355, 1, 7864, -2510.33, 489.275, 0.925024, 0, 0, 0.446198, 0.894934, 1, 0, 114, 1, 0, 1, 0);
-REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
+INSERT INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
 	(1, 51872, 181355, 1, 7911.11, -2575.12, 488.51, 1.97222, 0, 0, 0.833886, 0.551937, 1, 0, 114, 1, 0, 1, 0),
 	(1, 51873, 181355, 1, 7862.29, -2495.23, 489.276, -0.733038, 0, 0, 0.358368, -0.93358, 1, 0, 114, 1, 0, 1, 0),
 	(1, 51874, 181355, 0, -9423.64, -2244.61, 68.4526, 2.72271, 0, 0, 0.978148, 0.207912, 1, 0, 114, 1, 0, 1, 0),
@@ -16630,7 +16631,7 @@ REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `po
 	(26, 76089, 195199, 0, -9105.29, 367.059, 93.0555, 6.15472, 0, 0, 0.0641869, -0.997938, 1, 0, 0, 0.6, 0, 1, 0),
 	(26, 76090, 195199, 0, -9111.07, 351.772, 93.4565, 2.0039, 0, 0, 0.842522, 0.538662, 1, 0, 0, 0.6, 0, 1, 0),
 	(26, 76091, 195199, 0, -9118.75, 357.285, 93.2502, 1.69366, 0, 0, 0.749186, 0.66236, 1, 0, 0, 0.6, 0, 1, 0);
-REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
+INSERT INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
 	(26, 76092, 195212, 0, -9111.16, 360.718, 93.8337, 2.31413, 0, 0, 0.915627, 0.402029, 1, 0, 0, 1, 0, 1, 0),
 	(26, 76093, 195212, 0, -9111.21, 356.638, 93.3919, 2.32591, 0, 0, 0.917979, 0.396629, 1, 0, 0, 1, 0, 1, 0),
 	(26, 76094, 195212, 0, -9109.4, 358.181, 93.6363, 2.58509, 0, 0, 0.961537, 0.274674, 1, 0, 0, 1, 0, 1, 0),
@@ -21225,7 +21226,7 @@ REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `po
 	(24, 81014, 195273, 571, 6113.52, -1046.3, 406.589, 0.052359, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0),
 	(24, 81015, 195273, 571, 5668.45, 683.905, 655.485, -0.401425, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0),
 	(24, 81016, 195273, 571, 5815.43, 553.263, 653.106, 0.174532, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0);
-REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
+INSERT INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
 	(24, 81017, 195273, 571, 5944.85, 630.399, 654.037, 2.79252, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0),
 	(24, 81018, 195273, 571, 5828.07, 508.053, 659.316, 0.226892, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0),
 	(24, 81019, 195273, 571, 5861.55, 637.797, 649.449, -0.523598, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0),
@@ -25921,7 +25922,7 @@ REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `po
 	(1, 88747, 181401, 530, 3018.14, 3748.76, 151.278, 1.29154, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0),
 	(1, 88748, 181401, 530, 3116.46, 3688.84, 150.604, 0.558504, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0),
 	(1, 88749, 181401, 530, 4118.57, 2954.05, 360.364, 1.6057, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0);
-REPLACE INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
+INSERT INTO `event_gameobject_spawns` (`event_entry`, `id`, `entry`, `map`, `position_x`, `position_y`, `position_z`, `facing`, `orientation1`, `orientation2`, `orientation3`, `orientation4`, `state`, `flags`, `faction`, `scale`, `respawnNpcLink`, `phase`, `overrides`) VALUES
 	(1, 88750, 181401, 530, 4116.87, 3058.36, 349.975, 5.13127, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0),
 	(1, 88751, 181401, 530, 4184.25, 3009.56, 349.845, 3.12412, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0),
 	(1, 88752, 181401, 530, 2969.4, 1791.45, 145.635, 3.76991, 0, 0, 0, 1, 1, 0, 114, 1, 0, 1, 0),

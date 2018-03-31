@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS `locales_creature` (
   PRIMARY KEY (`id`,`language_code`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+DELETE FROM `locales_creature`;
 /*!40000 ALTER TABLE `locales_creature` DISABLE KEYS */;
 /*!40000 ALTER TABLE `locales_creature` ENABLE KEYS */;
 

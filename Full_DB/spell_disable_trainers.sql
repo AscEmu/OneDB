@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS `spell_disable_trainers` (
   `replacement_spellid` int(30) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Trainer System';
 
+DELETE FROM `spell_disable_trainers`;
 /*!40000 ALTER TABLE `spell_disable_trainers` DISABLE KEYS */;
 /*!40000 ALTER TABLE `spell_disable_trainers` ENABLE KEYS */;
 

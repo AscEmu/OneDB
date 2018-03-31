@@ -20,8 +20,9 @@ CREATE TABLE IF NOT EXISTS `spell_effects_override` (
   PRIMARY KEY (`spellId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `spell_effects_override`;
 /*!40000 ALTER TABLE `spell_effects_override` DISABLE KEYS */;
-REPLACE INTO `spell_effects_override` (`spellId`, `EffectID`, `Disable`, `Effect`, `BasePoints`, `ApplyAuraName`, `SpellGroupRelation`, `MiscValue`, `TriggerSpell`, `ImplicitTargetA`, `ImplicitTargetB`, `EffectCustomFlag`) VALUES
+INSERT INTO `spell_effects_override` (`spellId`, `EffectID`, `Disable`, `Effect`, `BasePoints`, `ApplyAuraName`, `SpellGroupRelation`, `MiscValue`, `TriggerSpell`, `ImplicitTargetA`, `ImplicitTargetB`, `EffectCustomFlag`) VALUES
 	(31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2),
 	(33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2),
 	(34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2),

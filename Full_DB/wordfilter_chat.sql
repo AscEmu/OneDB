@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS `wordfilter_chat` (
   PRIMARY KEY (`regex_match`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `wordfilter_chat`;
 /*!40000 ALTER TABLE `wordfilter_chat` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wordfilter_chat` ENABLE KEYS */;
 

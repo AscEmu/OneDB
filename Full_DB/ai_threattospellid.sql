@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `ai_threattospellid` (
   PRIMARY KEY (`spell`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='AI System';
 
+DELETE FROM `ai_threattospellid`;
 /*!40000 ALTER TABLE `ai_threattospellid` DISABLE KEYS */;
-REPLACE INTO `ai_threattospellid` (`spell`, `mod`, `modcoef`) VALUES
+INSERT INTO `ai_threattospellid` (`spell`, `mod`, `modcoef`) VALUES
 	(72, 293, 1),
 	(78, 20, 1),
 	(99, 15, 1),

@@ -17,8 +17,9 @@ CREATE TABLE IF NOT EXISTS `spell_area` (
   PRIMARY KEY (`spell`,`area`,`quest_start`,`quest_start_active`,`aura_spell`,`racemask`,`gender`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DELETE FROM `spell_area`;
 /*!40000 ALTER TABLE `spell_area` DISABLE KEYS */;
-REPLACE INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, `quest_end`, `aura_spell`, `racemask`, `gender`, `autocast`) VALUES
+INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, `quest_end`, `aura_spell`, `racemask`, `gender`, `autocast`) VALUES
 	(53405, 4298, 12779, 0, 0, 0, 0, 2, 1),
 	(51915, 4298, 0, 0, 0, 0, 0, 2, 1),
 	(54119, 4028, 0, 0, 0, 0, 0, 2, 1),

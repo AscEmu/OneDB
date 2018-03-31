@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `spelltargetconstraints` (
   PRIMARY KEY (`SpellID`,`TargetType`,`TargetID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `spelltargetconstraints`;
 /*!40000 ALTER TABLE `spelltargetconstraints` DISABLE KEYS */;
-REPLACE INTO `spelltargetconstraints` (`SpellID`, `TargetType`, `TargetID`) VALUES
+INSERT INTO `spelltargetconstraints` (`SpellID`, `TargetType`, `TargetID`) VALUES
 	(2699, 0, 5307),
 	(3607, 0, 2530),
 	(3730, 0, 15263),

@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS `locales_npc_script_text` (
   PRIMARY KEY (`entry`,`language_code`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='NPC System localized';
 
+DELETE FROM `locales_npc_script_text`;
 /*!40000 ALTER TABLE `locales_npc_script_text` DISABLE KEYS */;
 /*!40000 ALTER TABLE `locales_npc_script_text` ENABLE KEYS */;
 

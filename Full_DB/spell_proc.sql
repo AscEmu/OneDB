@@ -19,8 +19,9 @@ CREATE TABLE IF NOT EXISTS `spell_proc` (
   PRIMARY KEY (`spell_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `spell_proc`;
 /*!40000 ALTER TABLE `spell_proc` DISABLE KEYS */;
-REPLACE INTO `spell_proc` (`spell_id`, `proc_on_name_hash`, `proc_flags`, `target_self`, `proc_chance`, `proc_charges`, `proc_interval`, `effect_trigger_spell_0`, `effect_trigger_spell_1`, `effect_trigger_spell_2`, `description`) VALUES
+INSERT INTO `spell_proc` (`spell_id`, `proc_on_name_hash`, `proc_flags`, `target_self`, `proc_chance`, `proc_charges`, `proc_interval`, `effect_trigger_spell_0`, `effect_trigger_spell_1`, `effect_trigger_spell_2`, `description`) VALUES
 	(324, 0, 666152, 0, 100, 3, 3000, 26364, -1, -1, 'Lightning Shield Rank 1'),
 	(325, 0, 666152, 0, 100, 3, 3000, 26365, -1, -1, 'Lightning Shield Rank 2'),
 	(905, 0, 666152, 0, 100, 3, 3000, 26366, -1, -1, 'Lightning Shield Rank 3'),

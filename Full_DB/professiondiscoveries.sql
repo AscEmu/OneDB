@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `professiondiscoveries` (
   PRIMARY KEY (`SpellId`,`SpellToDiscover`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DELETE FROM `professiondiscoveries`;
 /*!40000 ALTER TABLE `professiondiscoveries` DISABLE KEYS */;
-REPLACE INTO `professiondiscoveries` (`SpellId`, `SpellToDiscover`, `SkillValue`, `Chance`) VALUES
+INSERT INTO `professiondiscoveries` (`SpellId`, `SpellToDiscover`, `SkillValue`, `Chance`) VALUES
 	(17632, 28580, 300, 1),
 	(17632, 28581, 300, 1),
 	(17632, 28582, 300, 1),

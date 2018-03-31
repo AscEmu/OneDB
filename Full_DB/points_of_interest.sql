@@ -15,8 +15,9 @@ CREATE TABLE IF NOT EXISTS `points_of_interest` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Points of interest';
 
+DELETE FROM `points_of_interest`;
 /*!40000 ALTER TABLE `points_of_interest` DISABLE KEYS */;
-REPLACE INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `icon_name`) VALUES
+INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `icon_name`) VALUES
 	(1, -8811.46, 667.46, 7, 6, 0, 'Stormwind Auction House'),
 	(2, -8916.87, 622.87, 7, 6, 0, 'Stormwind Bank'),
 	(3, -8634.77, 949.64, 7, 6, 0, 'Stormwind Harbor'),

@@ -15,8 +15,9 @@ CREATE TABLE IF NOT EXISTS `spell_teleport_coords` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='World System';
 
+DELETE FROM `spell_teleport_coords`;
 /*!40000 ALTER TABLE `spell_teleport_coords` DISABLE KEYS */;
-REPLACE INTO `spell_teleport_coords` (`id`, `name`, `mapId`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES
+INSERT INTO `spell_teleport_coords` (`id`, `name`, `mapId`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES
 	(31, 'Teleport: Goldshire', 0, -9464, 62, 56, 0),
 	(33, 'Teleport: Westfall', 0, -10643, 1052, 34, 0),
 	(34, 'Teleport: Duskwood', 0, -10368, -422, 66, 0),

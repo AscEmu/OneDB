@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `loot_gameobjects` (
   PRIMARY KEY (`entryid`,`itemid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Loot System';
 
+DELETE FROM `loot_gameobjects`;
 /*!40000 ALTER TABLE `loot_gameobjects` DISABLE KEYS */;
-REPLACE INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(797, 2676, 100.00, 100.00, 100.00, 100.00, 1, 1),
 	(938, 737, 100.00, 100.00, 100.00, 100.00, 1, 1),
 	(1409, 3340, 100.00, 100.00, 100.00, 100.00, 1, 2),
@@ -9554,7 +9555,7 @@ REPLACE INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `
 	(9933, 13816, 19.00, 19.00, 19.00, 19.00, 1, 1),
 	(9933, 13817, 19.00, 19.00, 19.00, 19.00, 1, 1),
 	(9933, 13818, 15.00, 15.00, 15.00, 15.00, 1, 1);
-REPLACE INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(9933, 13819, 14.00, 14.00, 14.00, 14.00, 1, 1),
 	(9933, 13820, 19.00, 19.00, 19.00, 19.00, 1, 1),
 	(9933, 13821, 14.00, 14.00, 14.00, 14.00, 1, 1),
@@ -19148,7 +19149,7 @@ REPLACE INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `
 	(194957, 45990, 15.00, 0.00, 0.00, 0.00, 1, 1),
 	(194957, 45993, 15.00, 0.00, 0.00, 0.00, 1, 1),
 	(195665, 47506, 0.00, 0.00, 0.00, 15.00, 1, 1);
-REPLACE INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(195665, 47513, 0.00, 0.00, 0.00, 15.00, 1, 1),
 	(195665, 47515, 0.00, 0.00, 0.00, 5.47, 1, 1),
 	(195665, 47516, 0.00, 0.00, 0.00, 3.76, 1, 1),

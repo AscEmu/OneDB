@@ -14,8 +14,9 @@ CREATE TABLE IF NOT EXISTS `vendors` (
   UNIQUE KEY `entry` (`entry`,`item`,`extended_cost`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='NPC System';
 
+DELETE FROM `vendors`;
 /*!40000 ALTER TABLE `vendors` DISABLE KEYS */;
-REPLACE INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
+INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
 	(54, 2492, 1, 0, 0, 0),
 	(54, 2488, 1, 0, 0, 0),
 	(54, 2491, 1, 0, 0, 0),
@@ -15706,7 +15707,7 @@ REPLACE INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `ext
 	(18019, 17028, 1, 0, 0, 0),
 	(18019, 17037, 1, 0, 0, 0),
 	(18019, 5565, 1, 0, 0, 0);
-REPLACE INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
+INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
 	(18019, 8927, 1, 0, 0, 0),
 	(18019, 8928, 1, 0, 0, 0),
 	(18019, 21927, 1, 0, 0, 0),
@@ -30464,9 +30465,9 @@ REPLACE INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `ext
 	(34075, 41837, 1, 0, 0, 2966),
 	(34075, 40984, 1, 0, 0, 2967),
 	(34075, 40890, 1, 0, 0, 2967),
-	(34075, 42078, 1, 0, 0, 2968);
-REPLACE INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
-	(34075, 42080, 1, 0, 0, 2968),
+	(34075, 42078, 1, 0, 0, 2968),
+	(34075, 42080, 1, 0, 0, 2968);
+INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
 	(34075, 42076, 1, 0, 0, 2968),
 	(34075, 42079, 1, 0, 0, 2968),
 	(34075, 42077, 1, 0, 0, 2968),

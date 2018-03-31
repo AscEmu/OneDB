@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `spell_coef_override` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `spell_coef_override`;
 /*!40000 ALTER TABLE `spell_coef_override` DISABLE KEYS */;
-REPLACE INTO `spell_coef_override` (`id`, `name`, `Dspell_coef_override`, `OTspell_coef_override`) VALUES
+INSERT INTO `spell_coef_override` (`id`, `name`, `Dspell_coef_override`, `OTspell_coef_override`) VALUES
 	(17, 'Power Word: Shield Rank 1', 0.3, -1),
 	(116, 'Mage - Frost Bolt', 0.8143, 0),
 	(133, 'Mage - Fire Ball', 1, 0),

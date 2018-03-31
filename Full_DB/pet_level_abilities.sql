@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `pet_level_abilities` (
   PRIMARY KEY (`level`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+DELETE FROM `pet_level_abilities`;
 /*!40000 ALTER TABLE `pet_level_abilities` DISABLE KEYS */;
-REPLACE INTO `pet_level_abilities` (`level`, `health`, `armor`, `strength`, `agility`, `stamina`, `intellect`, `spirit`) VALUES
+INSERT INTO `pet_level_abilities` (`level`, `health`, `armor`, `strength`, `agility`, `stamina`, `intellect`, `spirit`) VALUES
 	(1, 220, 15, 22, 15, 22, 20, 20),
 	(2, 240, 16, 23, 16, 24, 20, 20),
 	(3, 250, 41, 24, 16, 25, 20, 21),

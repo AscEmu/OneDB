@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS `locales_npc_monstersay` (
   PRIMARY KEY (`entry`,`type`,`language_code`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='NPC System localized';
 
+DELETE FROM `locales_npc_monstersay`;
 /*!40000 ALTER TABLE `locales_npc_monstersay` DISABLE KEYS */;
 /*!40000 ALTER TABLE `locales_npc_monstersay` ENABLE KEYS */;
 

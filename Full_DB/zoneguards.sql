@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `zoneguards` (
   PRIMARY KEY (`zone`,`horde_entry`,`alliance_entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='World System';
 
+DELETE FROM `zoneguards`;
 /*!40000 ALTER TABLE `zoneguards` DISABLE KEYS */;
-REPLACE INTO `zoneguards` (`zone`, `horde_entry`, `alliance_entry`) VALUES
+INSERT INTO `zoneguards` (`zone`, `horde_entry`, `alliance_entry`) VALUES
 	(1, 0, 13076),
 	(3, 8155, 0),
 	(4, 0, 7851),

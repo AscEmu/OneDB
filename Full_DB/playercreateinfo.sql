@@ -34,8 +34,9 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo` (
   PRIMARY KEY (`Index`)
 ) ENGINE=MyISAM AUTO_INCREMENT=66 DEFAULT CHARSET=latin1 COMMENT='Player System';
 
+DELETE FROM `playercreateinfo`;
 /*!40000 ALTER TABLE `playercreateinfo` DISABLE KEYS */;
-REPLACE INTO `playercreateinfo` (`Index`, `race`, `factiontemplate`, `class`, `mapID`, `zoneID`, `positionX`, `positionY`, `positionZ`, `orientation`, `displayID`, `BaseStrength`, `BaseAgility`, `BaseStamina`, `BaseIntellect`, `BaseSpirit`, `BaseHealth`, `BaseMana`, `BaseRage`, `BaseFocus`, `BaseEnergy`, `attackpower`, `mindmg`, `maxdmg`, `introid`, `taximask`) VALUES
+INSERT INTO `playercreateinfo` (`Index`, `race`, `factiontemplate`, `class`, `mapID`, `zoneID`, `positionX`, `positionY`, `positionZ`, `orientation`, `displayID`, `BaseStrength`, `BaseAgility`, `BaseStamina`, `BaseIntellect`, `BaseSpirit`, `BaseHealth`, `BaseMana`, `BaseRage`, `BaseFocus`, `BaseEnergy`, `attackpower`, `mindmg`, `maxdmg`, `introid`, `taximask`) VALUES
 	(1, 1, 1, 1, 0, 12, -8946.42, -131.35, 83.63, 0, 49, 23, 20, 22, 20, 20, 60, 0, 1000, 0, 0, 29, 5, 6, 81, '2'),
 	(2, 2, 2, 1, 1, 14, -618.51, -4251.66, 38.71, 0, 51, 26, 17, 23, 17, 22, 70, 0, 1000, 0, 0, 35, 6, 7, 21, '4194304'),
 	(3, 3, 3, 1, 0, 1, -6240.31, 331.03, 382.75, 6.17716, 53, 28, 16, 23, 19, 19, 70, 0, 1000, 0, 0, 39, 6, 7, 41, '32'),

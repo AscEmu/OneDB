@@ -19,8 +19,9 @@ CREATE TABLE IF NOT EXISTS `npc_script_text` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8947 DEFAULT CHARSET=utf8;
 
+DELETE FROM `npc_script_text`;
 /*!40000 ALTER TABLE `npc_script_text` DISABLE KEYS */;
-REPLACE INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
+INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
 	(1, 'You are dismissed, $n.', 197, 0, 12, 0, 100, 113, 0, 0, 1242),
 	(2, 'This shouldn\'t take long...', 253, 0, 12, 0, 100, 432, 0, 0, 1851),
 	(3, 'The invisibility liquor is ready for you, $n.', 253, 0, 12, 0, 100, 0, 0, 0, 1853),
@@ -3889,7 +3890,7 @@ REPLACE INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`,
 	(3866, 'Prepare for the return of the ancient ones!', 15263, 0, 14, 0, 100, 0, 0, 8618, 0),
 	(3867, 'You only delay the inevitable!', 15263, 0, 14, 0, 100, 0, 0, 8622, 11447),
 	(3868, 'Here they come! Defend yourselves!', 10638, 0, 12, 0, 100, 0, 0, 0, 6149);
-REPLACE INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
+INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
 	(3869, 'Be on guard... Arnak has some strange power over the Grimtotem... they will not be happy to see me escape.', 10646, 0, 12, 0, 100, 0, 0, 0, 5926),
 	(3870, 'Look out, the Grimtotem are upon us!', 10646, 0, 12, 0, 100, 0, 0, 0, 5927),
 	(3871, 'Here they come.', 10646, 0, 12, 0, 100, 0, 0, 0, 5928),
@@ -8348,7 +8349,7 @@ REPLACE INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`,
 	(8324, '$G King : Queen; $n, me die now.', 19997, 5, 12, 0, 100, 0, 0, 0, 21035),
 	(8325, '%s goes into a frenzy!', 19997, 0, 16, 0, 100, 0, 0, 0, 38630),
 	(8326, 'Stupid puny thing.  Me smash!', 20756, 0, 12, 0, 100, 0, 0, 0, 19892);
-REPLACE INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
+INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
 	(8327, 'Me mad. You get smash in face!', 20756, 1, 12, 0, 100, 0, 0, 0, 19893),
 	(8328, 'Raaar!!! Me smash $r!', 20756, 2, 12, 0, 100, 0, 0, 0, 1927),
 	(8329, 'Puny $r... you were a... horrible $g king : queen;.', 20756, 0, 12, 0, 100, 0, 0, 0, 21050),

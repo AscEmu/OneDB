@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `creature_initial_equip` (
   PRIMARY KEY (`creature_entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DELETE FROM `creature_initial_equip`;
 /*!40000 ALTER TABLE `creature_initial_equip` DISABLE KEYS */;
-REPLACE INTO `creature_initial_equip` (`creature_entry`, `itemslot_1`, `itemslot_2`, `itemslot_3`) VALUES
+INSERT INTO `creature_initial_equip` (`creature_entry`, `itemslot_1`, `itemslot_2`, `itemslot_3`) VALUES
 	(6, 5276, 0, 0),
 	(38, 1896, 0, 0),
 	(40, 1910, 0, 0),

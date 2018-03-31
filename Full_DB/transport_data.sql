@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `transport_data` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Transports';
 
+DELETE FROM `transport_data`;
 /*!40000 ALTER TABLE `transport_data` DISABLE KEYS */;
-REPLACE INTO `transport_data` (`entry`, `name`, `period`) VALUES
+INSERT INTO `transport_data` (`entry`, `name`, `period`) VALUES
 	(20808, 'Ratchet and Booty Bay', 231236),
 	(164871, 'Orgrimmar and Undercity', 239334),
 	(175080, 'Grom\'Gol Base Camp and Orgrimmar', 248990),

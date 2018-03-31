@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `fishing` (
   PRIMARY KEY (`zone`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Fishing System';
 
+DELETE FROM `fishing`;
 /*!40000 ALTER TABLE `fishing` DISABLE KEYS */;
-REPLACE INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
+INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(1, 1, 25),
 	(2, 1, 75),
 	(8, 130, 225),

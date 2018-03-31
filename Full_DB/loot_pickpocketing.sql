@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `loot_pickpocketing` (
   UNIQUE KEY `UNIQUE` (`entryid`,`itemid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Loot System';
 
+DELETE FROM `loot_pickpocketing`;
 /*!40000 ALTER TABLE `loot_pickpocketing` DISABLE KEYS */;
-REPLACE INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(6, 117, 21.17, 0.00, 0.00, 0.00, 1, 1),
 	(6, 118, 5.63, 0.00, 0.00, 0.00, 1, 1),
 	(6, 755, 0.19, 0.00, 0.00, 0.00, 1, 1),
@@ -9928,7 +9929,7 @@ REPLACE INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`,
 	(16593, 29570, 19.72, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 22829, 3.51, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 27854, 10.27, 0.00, 0.00, 0.00, 1, 1);
-REPLACE INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(16594, 27855, 5.54, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 29569, 18.51, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 29570, 23.51, 0.00, 0.00, 0.00, 1, 1),

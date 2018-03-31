@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `vehicle_accessories` (
   PRIMARY KEY (`creature_entry`,`seat`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `vehicle_accessories`;
 /*!40000 ALTER TABLE `vehicle_accessories` DISABLE KEYS */;
-REPLACE INTO `vehicle_accessories` (`creature_entry`, `accessory_entry`, `seat`) VALUES
+INSERT INTO `vehicle_accessories` (`creature_entry`, `accessory_entry`, `seat`) VALUES
 	(28782, 28768, 0),
 	(28312, 28319, 7),
 	(32627, 32629, 7),

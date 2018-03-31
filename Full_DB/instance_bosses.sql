@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `instance_bosses` (
   PRIMARY KEY (`mapid`,`creatureid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Instance Boss Definitions';
 
+DELETE FROM `instance_bosses`;
 /*!40000 ALTER TABLE `instance_bosses` DISABLE KEYS */;
-REPLACE INTO `instance_bosses` (`mapid`, `creatureid`, `trash`, `trash_respawn_override`) VALUES
+INSERT INTO `instance_bosses` (`mapid`, `creatureid`, `trash`, `trash_respawn_override`) VALUES
 	(469, 12435, '', 0),
 	(469, 13020, '', 0),
 	(469, 12017, '', 0),

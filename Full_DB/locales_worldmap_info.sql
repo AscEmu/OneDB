@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS `locales_worldmap_info` (
   PRIMARY KEY (`entry`,`language_code`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `locales_worldmap_info`;
 /*!40000 ALTER TABLE `locales_worldmap_info` DISABLE KEYS */;
 /*!40000 ALTER TABLE `locales_worldmap_info` ENABLE KEYS */;
 

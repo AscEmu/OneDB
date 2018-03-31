@@ -29,8 +29,9 @@ CREATE TABLE IF NOT EXISTS `worldmap_info` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='World System';
 
+DELETE FROM `worldmap_info`;
 /*!40000 ALTER TABLE `worldmap_info` DISABLE KEYS */;
-REPLACE INTO `worldmap_info` (`entry`, `screenid`, `type`, `maxplayers`, `minlevel`, `minlevel_heroic`, `repopx`, `repopy`, `repopz`, `repopentry`, `area_name`, `flags`, `cooldown`, `lvl_mod_a`, `required_quest_A`, `required_quest_H`, `required_item`, `heroic_keyid_1`, `heroic_keyid_2`, `viewingDistance`, `required_checkpoint`) VALUES
+INSERT INTO `worldmap_info` (`entry`, `screenid`, `type`, `maxplayers`, `minlevel`, `minlevel_heroic`, `repopx`, `repopy`, `repopz`, `repopentry`, `area_name`, `flags`, `cooldown`, `lvl_mod_a`, `required_quest_A`, `required_quest_H`, `required_item`, `heroic_keyid_1`, `heroic_keyid_2`, `viewingDistance`, `required_checkpoint`) VALUES
 	(0, 4, 0, 0, 1, 0, 0, 0, 0, 0, 'Eastern Kingdoms', 1, 0, 0, 0, 0, 0, 0, 0, 500, 0),
 	(1, 3, 0, 0, 1, 0, 0, 0, 0, 0, 'Kalimdor', 1, 0, 0, 0, 0, 0, 0, 0, 500, 0),
 	(13, 0, 0, 0, 1, 0, 0, 0, 0, 0, 'Testing', 0, 0, 0, 0, 0, 0, 0, 0, 500, 0),

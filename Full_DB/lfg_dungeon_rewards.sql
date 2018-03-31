@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `lfg_dungeon_rewards` (
   PRIMARY KEY (`dungeon_id`,`max_level`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DELETE FROM `lfg_dungeon_rewards`;
 /*!40000 ALTER TABLE `lfg_dungeon_rewards` DISABLE KEYS */;
-REPLACE INTO `lfg_dungeon_rewards` (`dungeon_id`, `max_level`, `quest_id_1`, `money_var_1`, `xp_var_1`, `quest_id_2`, `money_var_2`, `xp_var_2`) VALUES
+INSERT INTO `lfg_dungeon_rewards` (`dungeon_id`, `max_level`, `quest_id_1`, `money_var_1`, `xp_var_1`, `quest_id_2`, `money_var_2`, `xp_var_2`) VALUES
 	(258, 15, 24881, 0, 0, 24889, 0, 0),
 	(258, 25, 24882, 0, 0, 24890, 0, 0),
 	(258, 34, 24883, 0, 0, 24891, 0, 0),

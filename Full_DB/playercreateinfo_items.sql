@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_items` (
   PRIMARY KEY (`indexid`,`protoid`,`slotid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Player System';
 
+DELETE FROM `playercreateinfo_items`;
 /*!40000 ALTER TABLE `playercreateinfo_items` DISABLE KEYS */;
-REPLACE INTO `playercreateinfo_items` (`indexid`, `protoid`, `slotid`, `amount`) VALUES
+INSERT INTO `playercreateinfo_items` (`indexid`, `protoid`, `slotid`, `amount`) VALUES
 	(1, 38, 3, 1),
 	(1, 39, 6, 1),
 	(1, 40, 7, 1),

@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `auctionhouse` (
   PRIMARY KEY (`creature_entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Auction House';
 
+DELETE FROM `auctionhouse`;
 /*!40000 ALTER TABLE `auctionhouse` DISABLE KEYS */;
-REPLACE INTO `auctionhouse` (`creature_entry`, `ahgroup`) VALUES
+INSERT INTO `auctionhouse` (`creature_entry`, `ahgroup`) VALUES
 	(8661, 7),
 	(8669, 1),
 	(8670, 1),

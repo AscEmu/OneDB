@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `totemdisplayids` (
   PRIMARY KEY (`displayid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `totemdisplayids`;
 /*!40000 ALTER TABLE `totemdisplayids` DISABLE KEYS */;
-REPLACE INTO `totemdisplayids` (`displayid`, `draeneiid`, `trollid`, `orcid`) VALUES
+INSERT INTO `totemdisplayids` (`displayid`, `draeneiid`, `trollid`, `orcid`) VALUES
 	(4587, 19075, 30763, 30759),
 	(4588, 19073, 30761, 30757),
 	(4589, 19074, 30762, 30758),

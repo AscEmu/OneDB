@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `gossip_menu_option` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB AUTO_INCREMENT=607 DEFAULT CHARSET=latin1;
 
+DELETE FROM `gossip_menu_option`;
 /*!40000 ALTER TABLE `gossip_menu_option` DISABLE KEYS */;
-REPLACE INTO `gossip_menu_option` (`entry`, `option_text`) VALUES
+INSERT INTO `gossip_menu_option` (`entry`, `option_text`) VALUES
 	(1, 'I would like to browse your goods.'),
 	(2, 'I seek '),
 	(3, 'mage'),

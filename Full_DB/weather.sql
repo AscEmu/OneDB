@@ -15,8 +15,9 @@ CREATE TABLE IF NOT EXISTS `weather` (
   PRIMARY KEY (`zoneId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Weather System';
 
+DELETE FROM `weather`;
 /*!40000 ALTER TABLE `weather` DISABLE KEYS */;
-REPLACE INTO `weather` (`zoneId`, `high_chance`, `high_type`, `med_chance`, `med_type`, `low_chance`, `low_type`) VALUES
+INSERT INTO `weather` (`zoneId`, `high_chance`, `high_type`, `med_chance`, `med_type`, `low_chance`, `low_type`) VALUES
 	(1, 80, 8, 5, 1, 1, 2),
 	(3, 20, 16, 2, 2, 0, 0),
 	(4, 10, 1, 0, 0, 0, 0),

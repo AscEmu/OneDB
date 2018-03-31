@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `loot_items` (
   UNIQUE KEY `UNIQUE` (`entryid`,`itemid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Loot System';
 
+DELETE FROM `loot_items`;
 /*!40000 ALTER TABLE `loot_items` DISABLE KEYS */;
-REPLACE INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(647, 20725, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(720, 11084, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(727, 10938, 77.61, 0.00, 0.00, 0.00, 1, 2),
@@ -9708,7 +9709,7 @@ REPLACE INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal
 	(10720, 11137, 76.92, 0.00, 0.00, 0.00, 2, 5),
 	(10720, 11174, 23.16, 0.00, 0.00, 0.00, 1, 2),
 	(10720, 11177, 7.69, 0.00, 0.00, 0.00, 1, 1);
-REPLACE INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(10721, 11137, 71.43, 0.00, 0.00, 0.00, 2, 5),
 	(10721, 11174, 15.84, 0.00, 0.00, 0.00, 1, 2),
 	(10721, 11177, 6.62, 0.00, 0.00, 0.00, 1, 1),
@@ -19194,7 +19195,7 @@ REPLACE INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal
 	(21180, 20725, 100.00, 0.00, 0.00, 0.00, 1, 2),
 	(21181, 20725, 1.91, 0.00, 0.00, 0.00, 1, 1),
 	(21181, 22448, 83.33, 0.00, 0.00, 0.00, 1, 1);
-REPLACE INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(21182, 20725, 1.16, 0.00, 0.00, 0.00, 1, 1),
 	(21182, 22448, 60.00, 0.00, 0.00, 0.00, 1, 1),
 	(21183, 20725, 1.16, 0.00, 0.00, 0.00, 1, 1),
@@ -28642,7 +28643,7 @@ REPLACE INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal
 	(31727, 22448, 99.00, 0.00, 0.00, 0.00, 1, 1),
 	(31728, 22445, 70.29, 0.00, 0.00, 0.00, 2, 3),
 	(31728, 22447, 20.42, 0.00, 0.00, 0.00, 2, 3);
-REPLACE INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(31728, 22448, 3.00, 0.00, 0.00, 0.00, 1, 1),
 	(31729, 22445, 60.06, 0.00, 0.00, 0.00, 2, 3),
 	(31729, 22447, 23.30, 0.00, 0.00, 0.00, 2, 3),
@@ -38053,7 +38054,7 @@ REPLACE INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal
 	(43769, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(43770, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(43771, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1);
-REPLACE INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(43772, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(43773, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(43774, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),

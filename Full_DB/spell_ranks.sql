@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `spell_ranks` (
   PRIMARY KEY (`spell_id`,`rank`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell Rank Data';
 
+DELETE FROM `spell_ranks`;
 /*!40000 ALTER TABLE `spell_ranks` DISABLE KEYS */;
-REPLACE INTO `spell_ranks` (`spell_id`, `rank`, `name`) VALUES
+INSERT INTO `spell_ranks` (`spell_id`, `rank`, `name`) VALUES
 	(10, 1, 'Blizzard'),
 	(17, 1, 'Power Word: Shield'),
 	(53, 1, 'Backstab'),

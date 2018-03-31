@@ -17,8 +17,9 @@ CREATE TABLE IF NOT EXISTS `trainer_spells` (
   PRIMARY KEY (`entry`,`cast_spell`,`learn_spell`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Trainer System';
 
+DELETE FROM `trainer_spells`;
 /*!40000 ALTER TABLE `trainer_spells` DISABLE KEYS */;
-REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
+INSERT INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
 	(198, 0, 1459, 10, 0, 0, 0, 1, 0),
 	(198, 0, 587, 100, 0, 0, 0, 6, 0),
 	(198, 0, 5504, 100, 0, 0, 0, 4, 0),
@@ -10206,7 +10207,7 @@ REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`
 	(3043, 0, 2048, 71000, 25289, 0, 0, 69, 25289),
 	(3043, 0, 47436, 260000, 2048, 0, 0, 78, 2048),
 	(3043, 0, 18499, 14000, 0, 0, 0, 32, 0);
-REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
+INSERT INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
 	(3043, 0, 2687, 600, 0, 0, 0, 10, 0),
 	(3043, 0, 1161, 10000, 0, 0, 0, 26, 0),
 	(3043, 0, 100, 100, 0, 0, 0, 4, 0),
@@ -20332,7 +20333,7 @@ REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`
 	(4092, 0, 10963, 26000, 2060, 0, 0, 46, 0),
 	(4092, 0, 10964, 38000, 10963, 0, 0, 52, 0),
 	(4092, 0, 10965, 44000, 10964, 0, 0, 58, 0);
-REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
+INSERT INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
 	(4092, 0, 25314, 65000, 10965, 0, 0, 60, 0),
 	(4092, 0, 25210, 65000, 25314, 0, 0, 63, 0),
 	(4092, 0, 25213, 110000, 25210, 0, 0, 68, 0),
@@ -30416,7 +30417,7 @@ REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`
 	(5173, 0, 18869, 550, 18868, 0, 0, 40, 0),
 	(5173, 0, 18870, 700, 18869, 0, 0, 48, 0),
 	(5173, 0, 18871, 1100, 18870, 0, 0, 56, 0);
-REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
+INSERT INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
 	(5173, 0, 27263, 1300, 18871, 0, 0, 63, 0),
 	(5173, 0, 30546, 3900, 27263, 0, 0, 70, 0),
 	(5173, 0, 47826, 8000, 30546, 0, 0, 75, 0),
@@ -40498,7 +40499,7 @@ REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`
 	(11397, 0, 8102, 1600, 8092, 0, 0, 16, 0),
 	(11397, 0, 8103, 4000, 8102, 0, 0, 22, 0),
 	(11397, 0, 8104, 8000, 8103, 0, 0, 28, 0);
-REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
+INSERT INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
 	(11397, 0, 8105, 12000, 8104, 0, 0, 34, 0),
 	(11397, 0, 8106, 18000, 8105, 0, 0, 40, 0),
 	(11397, 0, 10945, 26000, 8106, 0, 0, 46, 0),
@@ -50431,7 +50432,7 @@ REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`
 	(17105, 0, 58659, 150000, 43987, 0, 0, 80, 0),
 	(17105, 0, 2948, 3000, 0, 0, 0, 22, 0),
 	(17105, 0, 8444, 7000, 2948, 0, 0, 28, 0);
-REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
+INSERT INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
 	(17105, 0, 8445, 12000, 8444, 0, 0, 34, 0),
 	(17105, 0, 8446, 15000, 8445, 0, 0, 40, 0),
 	(17105, 0, 10205, 26000, 8446, 0, 0, 46, 0),
@@ -60349,7 +60350,7 @@ REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`
 	(26915, 0, 56202, 150000, 0, 755, 400, 0, 0),
 	(26915, 0, 26903, 10000, 0, 755, 275, 0, 0),
 	(26915, 0, 64728, 100000, 0, 755, 420, 0, 0);
-REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
+INSERT INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
 	(26915, 0, 64726, 100000, 0, 755, 420, 0, 0),
 	(26915, 0, 53953, 100000, 0, 755, 390, 0, 0),
 	(26915, 0, 55394, 120000, 0, 755, 420, 0, 0),
@@ -70224,7 +70225,7 @@ REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`
 	(33609, 0, 29557, 18000, 0, 164, 310, 0, 0),
 	(33609, 0, 29547, 15000, 0, 164, 305, 0, 0),
 	(33609, 0, 29548, 20000, 0, 164, 315, 0, 0);
-REPLACE INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
+INSERT INTO `trainer_spells` (`entry`, `cast_spell`, `learn_spell`, `spellcost`, `reqspell`, `reqskill`, `reqskillvalue`, `reqlevel`, `deletespell`) VALUES
 	(33609, 0, 29545, 15000, 0, 164, 300, 0, 0),
 	(33609, 0, 29549, 20000, 0, 164, 315, 0, 0),
 	(33609, 0, 15972, 7500, 0, 164, 180, 0, 0),

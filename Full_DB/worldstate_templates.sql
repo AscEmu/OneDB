@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `worldstate_templates` (
   PRIMARY KEY (`map`,`zone`,`field`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+DELETE FROM `worldstate_templates`;
 /*!40000 ALTER TABLE `worldstate_templates` DISABLE KEYS */;
-REPLACE INTO `worldstate_templates` (`map`, `zone`, `field`, `value`) VALUES
+INSERT INTO `worldstate_templates` (`map`, `zone`, `field`, `value`) VALUES
 	(530, 3483, 2476, 0),
 	(530, 3483, 2478, 0),
 	(530, 3483, 2490, 1),

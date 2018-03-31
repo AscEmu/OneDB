@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `itemset_linked_itemsetbonus` (
   PRIMARY KEY (`itemset`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DELETE FROM `itemset_linked_itemsetbonus`;
 /*!40000 ALTER TABLE `itemset_linked_itemsetbonus` DISABLE KEYS */;
-REPLACE INTO `itemset_linked_itemsetbonus` (`itemset`, `itemset_bonus`) VALUES
+INSERT INTO `itemset_linked_itemsetbonus` (`itemset`, `itemset_bonus`) VALUES
 	(-857, 901),
 	(-856, 900),
 	(-855, 899),

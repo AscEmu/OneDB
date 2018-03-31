@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `display_bounding_boxes` (
   PRIMARY KEY (`displayid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+DELETE FROM `display_bounding_boxes`;
 /*!40000 ALTER TABLE `display_bounding_boxes` DISABLE KEYS */;
-REPLACE INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
+INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
 	(13, -0.295697, -0.313755, 0, 0.214035, 0.313755, 2.03127, 1.09312),
 	(14, -0.295697, -0.313755, 0, 0.214035, 0.313755, 2.03127, 1.09312),
 	(15, -0.295697, -0.313755, 0, 0.214035, 0.313755, 2.03127, 1.09312),
@@ -6352,7 +6353,7 @@ REPLACE INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `hig
 	(9594, -2.08333, -2.08333, 0, 2.08333, 2.08333, 12.5, 6.90964),
 	(9595, -1.5625, -1.5625, 0, 1.5625, 1.5625, 9.375, 5.18223),
 	(9596, -0.366667, -0.366667, 0, 0.366667, 0.366667, 2.43753, 1.32449);
-REPLACE INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
+INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
 	(9599, -0.366667, -0.366667, 0, 0.366667, 0.366667, 2.43753, 1.32449),
 	(9602, -0.366667, -0.366667, 0, 0.366667, 0.366667, 2.43753, 1.32449),
 	(9603, -0.366667, -0.366667, 0, 0.366667, 0.366667, 2.43753, 1.32449),
@@ -12588,7 +12589,7 @@ REPLACE INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `hig
 	(18287, -0.55, -0.55, 0, 0.55, 0.55, 3.6563, 1.98674),
 	(18288, -0.458333, -0.458333, 0, 0.458333, 0.458333, 3.04692, 1.65562),
 	(18289, -0.488889, -0.488889, 0, 0.488889, 0.488889, 3.25005, 1.76599);
-REPLACE INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
+INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
 	(18290, -0.407608, -0.333496, 0.020995, 0.259059, 0.33317, 1.68766, 0.957427),
 	(18291, -1.22222, -1.22222, 0, 1.22222, 1.22222, 8.12511, 4.41498),
 	(18292, -9.16667, -9.16667, 0, 9.16667, 9.16667, 60.9383, 33.1123),
@@ -18832,7 +18833,7 @@ REPLACE INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `hig
 	(24661, -0.305556, -0.305556, 0, 0.305556, 0.305556, 2.03127, 1.10374),
 	(24662, -0.305556, -0.305556, 0, 0.305556, 0.305556, 2.03127, 1.10374),
 	(24663, -0.305556, -0.305556, 0, 0.305556, 0.305556, 1.6066, 0.91215);
-REPLACE INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
+INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
 	(24664, -0.208333, -0.208333, 0, 0.208333, 0.208333, 1.91346, 1.00107),
 	(24665, -0.305556, -0.305556, 0, 0.305556, 0.305556, 2.03128, 1.10374),
 	(24666, -0.347222, -0.347222, 0, 0.347222, 0.347222, 1.05556, 0.720886),

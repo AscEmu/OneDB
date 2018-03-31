@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `creature_formations` (
   PRIMARY KEY (`spawn_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Creature System';
 
+DELETE FROM `creature_formations`;
 /*!40000 ALTER TABLE `creature_formations` DISABLE KEYS */;
-REPLACE INTO `creature_formations` (`spawn_id`, `target_spawn_id`, `follow_angle`, `follow_dist`) VALUES
+INSERT INTO `creature_formations` (`spawn_id`, `target_spawn_id`, `follow_angle`, `follow_dist`) VALUES
 	(79948, 79949, 5, 8.7),
 	(79950, 79949, 4, 11.2),
 	(79951, 79949, 3.2, 13.6),

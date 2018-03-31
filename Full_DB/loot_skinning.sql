@@ -16,8 +16,9 @@ CREATE TABLE IF NOT EXISTS `loot_skinning` (
   UNIQUE KEY `UNIQUE` (`entryid`,`itemid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Loot System';
 
+DELETE FROM `loot_skinning`;
 /*!40000 ALTER TABLE `loot_skinning` DISABLE KEYS */;
-REPLACE INTO `loot_skinning` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+INSERT INTO `loot_skinning` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(113, 2318, 39.82, 0.00, 0.00, 0.00, 1, 1),
 	(113, 2934, 60.17, 0.00, 0.00, 0.00, 1, 1),
 	(118, 2318, 39.93, 0.00, 0.00, 0.00, 1, 1),

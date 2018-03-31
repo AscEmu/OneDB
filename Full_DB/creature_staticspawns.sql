@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS `creature_staticspawns` (
   KEY `entry` (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Spawn System';
 
+DELETE FROM `creature_staticspawns`;
 /*!40000 ALTER TABLE `creature_staticspawns` DISABLE KEYS */;
 /*!40000 ALTER TABLE `creature_staticspawns` ENABLE KEYS */;
 

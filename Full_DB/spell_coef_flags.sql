@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS `spell_coef_flags` (
   PRIMARY KEY (`spell_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+DELETE FROM `spell_coef_flags`;
 /*!40000 ALTER TABLE `spell_coef_flags` DISABLE KEYS */;
-REPLACE INTO `spell_coef_flags` (`spell_id`, `spell_coef_flags`, `name`, `rank`) VALUES
+INSERT INTO `spell_coef_flags` (`spell_id`, `spell_coef_flags`, `name`, `rank`) VALUES
 	(1, 8, 'Word of Recall (OLD)', 0),
 	(3, 12, 'Word of Mass Recall (OLD)', 0),
 	(4, 8, 'Word of Recall Other', 0),
@@ -12710,7 +12711,7 @@ REPLACE INTO `spell_coef_flags` (`spell_id`, `spell_coef_flags`, `name`, `rank`)
 	(27044, 8, 'Aspect of the Hawk', 8),
 	(27045, 8, 'Aspect of the Wild', 3),
 	(27046, 1, 'Mend Pet', 8);
-REPLACE INTO `spell_coef_flags` (`spell_id`, `spell_coef_flags`, `name`, `rank`) VALUES
+INSERT INTO `spell_coef_flags` (`spell_id`, `spell_coef_flags`, `name`, `rank`) VALUES
 	(27047, 8, 'Growl', 8),
 	(27048, 8, 'Cower', 7),
 	(27049, 2, 'Claw', 9),

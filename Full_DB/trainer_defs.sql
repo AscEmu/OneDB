@@ -19,8 +19,9 @@ CREATE TABLE IF NOT EXISTS `trainer_defs` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Trainer System';
 
+DELETE FROM `trainer_defs`;
 /*!40000 ALTER TABLE `trainer_defs` DISABLE KEYS */;
-REPLACE INTO `trainer_defs` (`entry`, `required_skill`, `required_skillvalue`, `req_class`, `RequiredRace`, `RequiredReputation`, `RequiredReputationValue`, `trainer_type`, `trainer_ui_window_message`, `can_train_gossip_textid`, `cannot_train_gossip_textid`) VALUES
+INSERT INTO `trainer_defs` (`entry`, `required_skill`, `required_skillvalue`, `req_class`, `RequiredRace`, `RequiredReputation`, `RequiredReputationValue`, `trainer_type`, `trainer_ui_window_message`, `can_train_gossip_textid`, `cannot_train_gossip_textid`) VALUES
 	(198, 0, 0, 8, 0, 0, 0, 0, 'Hello, $c! Ready for some training?', 538, 539),
 	(328, 0, 0, 8, 0, 0, 0, 0, 'Hello, $c! Ready for some training?', 538, 539),
 	(331, 0, 0, 8, 0, 0, 0, 0, 'Hello, $c! Ready for some training?', 538, 539),

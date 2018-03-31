@@ -14,8 +14,9 @@ CREATE TABLE IF NOT EXISTS `spell_custom_assign` (
   PRIMARY KEY (`spell_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Spell System';
 
+DELETE FROM `spell_custom_assign`;
 /*!40000 ALTER TABLE `spell_custom_assign` DISABLE KEYS */;
-REPLACE INTO `spell_custom_assign` (`spell_id`, `on_target_flag`, `from_caster_on_self_flag`, `self_cast_only`, `c_is_flag`, `Description`) VALUES
+INSERT INTO `spell_custom_assign` (`spell_id`, `on_target_flag`, `from_caster_on_self_flag`, `self_cast_only`, `c_is_flag`, `Description`) VALUES
 	(168, 32, 0, 0, 0, ''),
 	(172, 16777216, 0, 0, 0, ''),
 	(324, 16384, 0, 0, 0, ''),

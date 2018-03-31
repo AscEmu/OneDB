@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `item_quest_association` (
   PRIMARY KEY (`item`,`quest`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Quest System';
 
+DELETE FROM `item_quest_association`;
 /*!40000 ALTER TABLE `item_quest_association` DISABLE KEYS */;
-REPLACE INTO `item_quest_association` (`item`, `quest`, `item_count`) VALUES
+INSERT INTO `item_quest_association` (`item`, `quest`, `item_count`) VALUES
 	(3467, 498, 1),
 	(3499, 498, 1),
 	(4481, 1712, 10),

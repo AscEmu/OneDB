@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS `locales_worldbroadcast` (
   PRIMARY KEY (`entry`,`language_code`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+DELETE FROM `locales_worldbroadcast`;
 /*!40000 ALTER TABLE `locales_worldbroadcast` DISABLE KEYS */;
 /*!40000 ALTER TABLE `locales_worldbroadcast` ENABLE KEYS */;
 

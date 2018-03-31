@@ -22,8 +22,9 @@ CREATE TABLE IF NOT EXISTS `event_scripts` (
   PRIMARY KEY (`event_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+DELETE FROM `event_scripts`;
 /*!40000 ALTER TABLE `event_scripts` DISABLE KEYS */;
-REPLACE INTO `event_scripts` (`event_id`, `function`, `script_type`, `data_1`, `data_2`, `data_3`, `data_4`, `data_5`, `x`, `y`, `z`, `o`, `delay`, `next_event`) VALUES
+INSERT INTO `event_scripts` (`event_id`, `function`, `script_type`, `data_1`, `data_2`, `data_3`, `data_4`, `data_5`, `x`, `y`, `z`, `o`, `delay`, `next_event`) VALUES
 	(1, 8, 1, 46574, 11913, 1, 0, 0, 0, 0, 0, 0, 1000, 2),
 	(2, 9, 5, 300184, 30000, 0, 0, 0, 0, 0, 0, 0, 0, 3),
 	(3, 9, 5, 188112, 30000, 0, 0, 0, 0, 0, 0, 0, 0, 0),

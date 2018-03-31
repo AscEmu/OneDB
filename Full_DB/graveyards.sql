@@ -18,8 +18,9 @@ CREATE TABLE IF NOT EXISTS `graveyards` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2001 DEFAULT CHARSET=latin1 COMMENT='Graveyard System';
 
+DELETE FROM `graveyards`;
 /*!40000 ALTER TABLE `graveyards` DISABLE KEYS */;
-REPLACE INTO `graveyards` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `zoneid`, `adjacentzoneid`, `mapid`, `faction`, `name`) VALUES
+INSERT INTO `graveyards` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `zoneid`, `adjacentzoneid`, `mapid`, `faction`, `name`) VALUES
 	(1, -9115, 423, 96, 0, 0, 0, 0, '0', 'Stormwind'),
 	(2, -9194.31, -2313.26, 88.8265, 0, 0, 0, 0, '3', 'Redridge Mountains'),
 	(3, -10774.3, -1189.67, 33.1494, 0, 0, 0, 0, '0', 'Duskwood, Darkshire'),

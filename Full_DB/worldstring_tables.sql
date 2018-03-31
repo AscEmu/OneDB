@@ -10,8 +10,9 @@ CREATE TABLE IF NOT EXISTS `worldstring_tables` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+DELETE FROM `worldstring_tables`;
 /*!40000 ALTER TABLE `worldstring_tables` DISABLE KEYS */;
-REPLACE INTO `worldstring_tables` (`entry`, `text`) VALUES
+INSERT INTO `worldstring_tables` (`entry`, `text`) VALUES
 	(26, 'This instance is unavailable.'),
 	(27, 'You must have The Burning Crusade Expansion to access this content.'),
 	(28, 'Heroic mode unavailable for this instance.'),

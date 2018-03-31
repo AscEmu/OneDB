@@ -21,8 +21,9 @@ CREATE TABLE IF NOT EXISTS `ai_agents` (
   UNIQUE KEY `entry` (`entry`,`instance_mode`,`type`,`spell`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='AI System';
 
+DELETE FROM `ai_agents`;
 /*!40000 ALTER TABLE `ai_agents` DISABLE KEYS */;
-REPLACE INTO `ai_agents` (`entry`, `instance_mode`, `type`, `event`, `chance`, `maxcount`, `spell`, `spelltype`, `targettype_overwrite`, `cooldown_overwrite`, `floatMisc1`, `Misc2`, `comments`) VALUES
+INSERT INTO `ai_agents` (`entry`, `instance_mode`, `type`, `event`, `chance`, `maxcount`, `spell`, `spelltype`, `targettype_overwrite`, `cooldown_overwrite`, `floatMisc1`, `Misc2`, `comments`) VALUES
 	(3, 4, 4, 0, 0, 0, 3436, 10, 1, 420000, 0, 0, ''),
 	(3, 4, 4, 0, 0, 0, 3609, 3, 1, 0, 0, 0, ''),
 	(30, 4, 4, 2, 13, 0, 6751, 8, 1, 3000, 0, 0, ''),
