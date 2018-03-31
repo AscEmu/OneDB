@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `world_db_version` (
 DELETE FROM `world_db_version`;
 /*!40000 ALTER TABLE `world_db_version` DISABLE KEYS */;
 INSERT INTO `world_db_version` (`LastUpdate`) VALUES
-	('2018-01-01_01_gameobject_spawns');
+	('1.3.18_build_creature_properties');
 /*!40000 ALTER TABLE `world_db_version` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

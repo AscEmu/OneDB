@@ -15,8 +15,9 @@ CREATE TABLE IF NOT EXISTS `gossip_menu_items` (
   PRIMARY KEY (`id`,`item_order`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+DELETE FROM `gossip_menu_items`;
 /*!40000 ALTER TABLE `gossip_menu_items` DISABLE KEYS */;
-REPLACE INTO `gossip_menu_items` (`id`, `item_order`, `menu_option`, `icon`, `point_of_interest`, `next_gossip_menu`, `next_gossip_text`) VALUES
+INSERT INTO `gossip_menu_items` (`id`, `item_order`, `menu_option`, `icon`, `point_of_interest`, `next_gossip_menu`, `next_gossip_text`) VALUES
 	(114, 1, 164, 0, 1, 0, 3834),
 	(114, 2, 227, 0, 2, 0, 764),
 	(114, 3, 228, 0, 3, 0, 13439),

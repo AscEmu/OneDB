@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `gossip_menu` (
   PRIMARY KEY (`gossip_menu`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+DELETE FROM `gossip_menu`;
 /*!40000 ALTER TABLE `gossip_menu` DISABLE KEYS */;
-REPLACE INTO `gossip_menu` (`gossip_menu`, `text_id`, `Comment`) VALUES
+INSERT INTO `gossip_menu` (`gossip_menu`, `text_id`, `Comment`) VALUES
 	(114, 933, 'StormwindGuard'),
 	(122, 3016, 'DarnassusGuard'),
 	(132, 4259, 'GoldshireGuard'),
