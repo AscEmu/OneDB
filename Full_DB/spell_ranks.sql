@@ -6,9 +6,9 @@
 
 CREATE TABLE IF NOT EXISTS `spell_ranks` (
   `spell_id` int(10) unsigned NOT NULL DEFAULT '0',
-  `rank` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `rank` tinyint(3) unsigned DEFAULT '0',
   `name` varchar(300) DEFAULT NULL,
-  PRIMARY KEY (`spell_id`,`rank`)
+  PRIMARY KEY (`spell_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell Rank Data';
 
 DELETE FROM `spell_ranks`;
