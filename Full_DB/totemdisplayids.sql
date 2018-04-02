@@ -5,21 +5,48 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 CREATE TABLE IF NOT EXISTS `totemdisplayids` (
-  `displayid` int(10) unsigned NOT NULL DEFAULT '0',
-  `draeneiid` int(10) unsigned NOT NULL DEFAULT '0',
-  `trollid` int(10) unsigned NOT NULL DEFAULT '0',
-  `orcid` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`displayid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `race` smallint(2) NOT NULL,
+  `build` smallint(8) NOT NULL DEFAULT '12340',
+  `totem` int(8) NOT NULL,
+  `displayid` int(8) DEFAULT NULL,
+  PRIMARY KEY (`race`,`build`,`totem`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DELETE FROM `totemdisplayids`;
 /*!40000 ALTER TABLE `totemdisplayids` DISABLE KEYS */;
-INSERT INTO `totemdisplayids` (`displayid`, `draeneiid`, `trollid`, `orcid`) VALUES
-	(4587, 19075, 30763, 30759),
-	(4588, 19073, 30761, 30757),
-	(4589, 19074, 30762, 30758),
-	(4590, 19071, 30760, 30756),
-	(4683, 19075, 30763, 30759);
+INSERT INTO `totemdisplayids` (`race`, `build`, `totem`, `displayid`) VALUES
+	(2, 4044, 4587, 4587),
+	(2, 4044, 4588, 4588),
+	(2, 4044, 4589, 4589),
+	(2, 4044, 4590, 4590),
+	(2, 10958, 4587, 30759),
+	(2, 10958, 4588, 30757),
+	(2, 10958, 4589, 30758),
+	(2, 10958, 4590, 30756),
+	(3, 13164, 4587, 30755),
+	(3, 13164, 4588, 30753),
+	(3, 13164, 4589, 30754),
+	(3, 13164, 4590, 30736),
+	(6, 4044, 4587, 4587),
+	(6, 4044, 4588, 4588),
+	(6, 4044, 4589, 4589),
+	(6, 4044, 4590, 4590),
+	(8, 4044, 4587, 4587),
+	(8, 4044, 4588, 4588),
+	(8, 4044, 4589, 4589),
+	(8, 4044, 4590, 4590),
+	(8, 10958, 4587, 30763),
+	(8, 10958, 4588, 30761),
+	(8, 10958, 4589, 30762),
+	(8, 10958, 4590, 30760),
+	(9, 13164, 4587, 30784),
+	(9, 13164, 4588, 30782),
+	(9, 13164, 4589, 30783),
+	(9, 13164, 4590, 30781),
+	(11, 6080, 4587, 19075),
+	(11, 6080, 4588, 19073),
+	(11, 6080, 4589, 19074),
+	(11, 6080, 4590, 19071);
 /*!40000 ALTER TABLE `totemdisplayids` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
