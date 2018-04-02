@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `world_db_version` (
   `id` smallint(6) NOT NULL AUTO_INCREMENT,
   `LastUpdate` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 DELETE FROM `world_db_version`;
 /*!40000 ALTER TABLE `world_db_version` DISABLE KEYS */;
@@ -20,7 +20,8 @@ INSERT INTO `world_db_version` (`id`, `LastUpdate`) VALUES
 	(5, '1.3.22_build_gameobject_properties'),
 	(6, '1.3.23_build_item_properties'),
 	(7, '1.3.24_build_quest_properties'),
-	(8, '1.3.25_build_map_info');
+	(8, '1.3.25_build_map_info'),
+	(9, '1.3.26_build_playercreateinfo');
 /*!40000 ALTER TABLE `world_db_version` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
