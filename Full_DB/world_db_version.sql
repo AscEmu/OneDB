@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `world_db_version` (
   `id` smallint(6) NOT NULL AUTO_INCREMENT,
   `LastUpdate` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
 
 DELETE FROM `world_db_version`;
 /*!40000 ALTER TABLE `world_db_version` DISABLE KEYS */;
@@ -30,7 +30,8 @@ INSERT INTO `world_db_version` (`id`, `LastUpdate`) VALUES
 	(15, '1.3.32_playercreateinfo'),
 	(16, '1.3.33_playercreateinfo_misc'),
 	(17, '1.3.34_playercreateinfo_introid'),
-	(18, '1.3.35_playercreateinfo_faction');
+	(18, '1.3.35_playercreateinfo_faction'),
+	(19, '1.3.36_playercreateinfo_displayid');
 /*!40000 ALTER TABLE `world_db_version` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
