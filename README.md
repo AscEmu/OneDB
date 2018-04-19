@@ -32,7 +32,7 @@ The build number from the patch the data was originally changed.
 
 
 ### Columns "min_build" & "max_build"
-The build numbers the data is valid.
+The build numbers (from min_build to max_build) the data is valid.
 
 
 ## What does this mean for me?
@@ -50,6 +50,3 @@ We can not change structures for the tables. So if you ever tried to switch to a
 
 ### Database development with a history
 The build is key... I mean history is key. We link data to a build number and with that, we know exactly when the data changed. We will be able to compare old and new data which will help us when we work with it.
-
-
-This database can be used with https://github.com/AscEmu/AscEmu/commits/onedb
