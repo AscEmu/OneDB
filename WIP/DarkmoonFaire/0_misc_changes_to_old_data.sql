@@ -1,9 +1,7 @@
 --
 -- Revamp with 4.3.0
 --
-INSERT INTO `recall` VALUES (803, 'DarkmoonFaire', 974, -4202.26, 6346.8, 9.7129, 3.25583);
-
-INSERT INTO `worldmap_info` VALUES (974, 13202, 0, 0, 0, 1, 0, 0, 0, 0, 0, 'Darkmoon Faire', 0, 0, 0, 0, 0, 0, 0, 0, 80, 0);
+REPLACE INTO `recall` VALUES (803, 'DarkmoonFaire', 974, -4202.26, 6346.8, 9.7129, 3.25583);
 
 --
 -- Darkmoon Faire introduced in 1.6.0 and revamped in 4.3.0 (spawns are valid for 4.2.2 build: 14545)
