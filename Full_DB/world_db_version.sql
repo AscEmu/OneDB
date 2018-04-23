@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `world_db_version` (
   `id` smallint(6) NOT NULL AUTO_INCREMENT,
   `LastUpdate` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 
 DELETE FROM `world_db_version`;
 /*!40000 ALTER TABLE `world_db_version` DISABLE KEYS */;
@@ -35,7 +35,9 @@ INSERT INTO `world_db_version` (`id`, `LastUpdate`) VALUES
 	(20, '1.3.37_worgen_goblin_language'),
 	(21, '1.3.38_recall'),
 	(22, '1.3.39_event_properties'),
-	(23, '1.3.40_quest_properties');
+	(23, '1.3.40_quest_properties'),
+	(24, '1.3.41_kezan_initiale_data'),
+	(25, '1.3.42_missing_properties');
 /*!40000 ALTER TABLE `world_db_version` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
