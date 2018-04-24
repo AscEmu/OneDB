@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `world_db_version` (
   `id` smallint(6) NOT NULL AUTO_INCREMENT,
   `LastUpdate` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
 
 DELETE FROM `world_db_version`;
 /*!40000 ALTER TABLE `world_db_version` DISABLE KEYS */;
@@ -38,7 +38,8 @@ INSERT INTO `world_db_version` (`id`, `LastUpdate`) VALUES
 	(23, '1.3.40_quest_properties'),
 	(24, '1.3.41_kezan_initiale_data'),
 	(25, '1.3.42_missing_properties'),
-	(26, '1.3.43_build_transports');
+	(26, '1.3.43_build_transports'),
+	(27, '1.3.44_quest_text_fix');
 /*!40000 ALTER TABLE `world_db_version` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
