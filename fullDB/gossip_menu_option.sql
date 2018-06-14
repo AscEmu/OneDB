@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `gossip_menu_option` (
   `entry` int(10) NOT NULL AUTO_INCREMENT,
   `option_text` text NOT NULL,
   PRIMARY KEY (`entry`)
-) ENGINE=InnoDB AUTO_INCREMENT=607 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=607 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DELETE FROM `gossip_menu_option`;
 /*!40000 ALTER TABLE `gossip_menu_option` DISABLE KEYS */;

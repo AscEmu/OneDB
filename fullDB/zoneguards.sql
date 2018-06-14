@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `zoneguards` (
   `horde_entry` int(10) unsigned NOT NULL DEFAULT '0',
   `alliance_entry` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`zone`,`horde_entry`,`alliance_entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='World System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='World System';
 
 DELETE FROM `zoneguards`;
 /*!40000 ALTER TABLE `zoneguards` DISABLE KEYS */;

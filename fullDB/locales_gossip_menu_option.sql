@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `locales_gossip_menu_option` (
   `language_code` varchar(5) NOT NULL,
   `option_text` text NOT NULL,
   PRIMARY KEY (`entry`,`language_code`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DELETE FROM `locales_gossip_menu_option`;
 /*!40000 ALTER TABLE `locales_gossip_menu_option` DISABLE KEYS */;

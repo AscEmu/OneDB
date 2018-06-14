@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `loot_fishing` (
   `mincount` tinyint(3) unsigned NOT NULL DEFAULT '1',
   `maxcount` tinyint(3) unsigned NOT NULL DEFAULT '1',
   UNIQUE KEY `UNIQUE` (`itemid`,`entryid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Loot System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Loot System';
 
 DELETE FROM `loot_fishing`;
 /*!40000 ALTER TABLE `loot_fishing` DISABLE KEYS */;

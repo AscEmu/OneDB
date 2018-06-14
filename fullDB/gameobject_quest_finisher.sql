@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `gameobject_quest_finisher` (
   `id` int(11) unsigned NOT NULL DEFAULT '0',
   `quest` int(11) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`,`quest`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Quest System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Quest System';
 
 DELETE FROM `gameobject_quest_finisher`;
 /*!40000 ALTER TABLE `gameobject_quest_finisher` DISABLE KEYS */;

@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_skills` (
   `maxlevel` smallint(5) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`indexid`,`skillid`,`build`),
   UNIQUE KEY `unique_index` (`indexid`,`skillid`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Player System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Player System';
 
 DELETE FROM `playercreateinfo_skills`;
 /*!40000 ALTER TABLE `playercreateinfo_skills` DISABLE KEYS */;

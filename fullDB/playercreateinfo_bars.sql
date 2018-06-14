@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_bars` (
   `misc` tinyint(3) unsigned DEFAULT NULL,
   PRIMARY KEY (`race`,`class`,`button`,`build`),
   UNIQUE KEY `unique_index` (`race`,`class`,`button`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Player System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Player System';
 
 DELETE FROM `playercreateinfo_bars`;
 /*!40000 ALTER TABLE `playercreateinfo_bars` DISABLE KEYS */;

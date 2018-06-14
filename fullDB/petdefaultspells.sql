@@ -7,7 +7,7 @@
 CREATE TABLE IF NOT EXISTS `petdefaultspells` (
   `entry` int(11) NOT NULL DEFAULT '0',
   `spell` int(11) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Pet System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Pet System';
 
 DELETE FROM `petdefaultspells`;
 /*!40000 ALTER TABLE `petdefaultspells` DISABLE KEYS */;
