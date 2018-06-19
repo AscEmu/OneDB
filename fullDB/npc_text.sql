@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `npc_text` (
   `EmoteDelay7_2` int(10) unsigned NOT NULL DEFAULT '0',
   `Emote7_2` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='NPC System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='NPC System';
 
 DELETE FROM `npc_text`;
 /*!40000 ALTER TABLE `npc_text` DISABLE KEYS */;

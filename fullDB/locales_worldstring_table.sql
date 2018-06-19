@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `locales_worldstring_table` (
   `language_code` varchar(5) NOT NULL,
   `text` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`entry`,`language_code`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DELETE FROM `locales_worldstring_table`;
 /*!40000 ALTER TABLE `locales_worldstring_table` DISABLE KEYS */;

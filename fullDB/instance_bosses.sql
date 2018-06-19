@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `instance_bosses` (
   `trash` text NOT NULL,
   `trash_respawn_override` int(11) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`mapid`,`creatureid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Instance Boss Definitions';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Instance Boss Definitions';
 
 DELETE FROM `instance_bosses`;
 /*!40000 ALTER TABLE `instance_bosses` DISABLE KEYS */;

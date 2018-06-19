@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `spell_disable` (
   `spellid` mediumint(10) unsigned NOT NULL,
   `replacement_spellid` mediumint(10) unsigned NOT NULL,
   PRIMARY KEY (`spellid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Spell System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Spell System';
 
 DELETE FROM `spell_disable`;
 /*!40000 ALTER TABLE `spell_disable` DISABLE KEYS */;

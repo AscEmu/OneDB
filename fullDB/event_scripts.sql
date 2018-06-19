@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `event_scripts` (
   `delay` int(11) DEFAULT NULL,
   `next_event` tinyint(11) DEFAULT NULL,
   PRIMARY KEY (`event_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DELETE FROM `event_scripts`;
 /*!40000 ALTER TABLE `event_scripts` DISABLE KEYS */;

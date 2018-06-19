@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `battlemasters` (
   `creature_entry` smallint(5) unsigned NOT NULL,
   `battleground_id` tinyint(2) unsigned NOT NULL,
   PRIMARY KEY (`creature_entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DELETE FROM `battlemasters`;
 /*!40000 ALTER TABLE `battlemasters` DISABLE KEYS */;

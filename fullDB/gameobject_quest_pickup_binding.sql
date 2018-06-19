@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `gameobject_quest_pickup_binding` (
   `quest` int(11) NOT NULL DEFAULT '0',
   `required_count` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`quest`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Quest System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Quest System';
 
 DELETE FROM `gameobject_quest_pickup_binding`;
 /*!40000 ALTER TABLE `gameobject_quest_pickup_binding` DISABLE KEYS */;

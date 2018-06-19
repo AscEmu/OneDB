@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `display_bounding_boxes` (
   `highz` float NOT NULL,
   `boundradius` float NOT NULL,
   PRIMARY KEY (`displayid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DELETE FROM `display_bounding_boxes`;
 /*!40000 ALTER TABLE `display_bounding_boxes` DISABLE KEYS */;

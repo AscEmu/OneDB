@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `spelloverride` (
   `overrideId` int(10) unsigned NOT NULL DEFAULT '0',
   `spellId` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`overrideId`,`spellId`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Spell System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Spell System';
 
 DELETE FROM `spelloverride`;
 /*!40000 ALTER TABLE `spelloverride` DISABLE KEYS */;
