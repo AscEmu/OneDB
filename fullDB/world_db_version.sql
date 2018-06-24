@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `world_db_version` (
   `id` smallint(6) NOT NULL AUTO_INCREMENT,
   `LastUpdate` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DELETE FROM `world_db_version`;
 /*!40000 ALTER TABLE `world_db_version` DISABLE KEYS */;
@@ -43,7 +43,9 @@ INSERT INTO `world_db_version` (`id`, `LastUpdate`) VALUES
 	(28, '20180427-00_world_db_version'),
 	(29, '20180501-00_build_creature_properties'),
 	(30, '20180501-01_creature_spawns'),
-	(31, '20180501-02_gameobject_spawns');
+	(31, '20180501-02_gameobject_spawns'),
+	(32, '20180619-01_misc_tbc');
+	(33, '20180624-00_update_utf8');
 /*!40000 ALTER TABLE `world_db_version` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

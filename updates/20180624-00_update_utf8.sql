@@ -71,4 +71,4 @@ ALTER TABLE `worldstate_templates` CHARSET=utf8 COLLATE utf8_unicode_ci;
 ALTER TABLE `zoneguards` CHARSET=utf8 COLLATE utf8_unicode_ci;
 ALTER TABLE `world_db_version` CHARSET=utf8 COLLATE utf8_unicode_ci;
 
-UPDATE `character_db_version` SET LastUpdate = '20180619-00_update_utf8';
+UPDATE `world_db_version` SET LastUpdate = '20180624-00_update_utf8';
