@@ -44,7 +44,7 @@ INSERT INTO `world_db_version` (`id`, `LastUpdate`) VALUES
 	(29, '20180501-00_build_creature_properties'),
 	(30, '20180501-01_creature_spawns'),
 	(31, '20180501-02_gameobject_spawns'),
-	(32, '20180619-01_misc_tbc');
+	(32, '20180619-01_misc_tbc'),
 	(33, '20180624-00_update_utf8');
 /*!40000 ALTER TABLE `world_db_version` ENABLE KEYS */;
 
