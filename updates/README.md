@@ -1,3 +1,3 @@
 # Updates
 
-If you are using the latest Full_DB you will have all updates.
+If you are using the latest 'fullDB' you will have all updates.
