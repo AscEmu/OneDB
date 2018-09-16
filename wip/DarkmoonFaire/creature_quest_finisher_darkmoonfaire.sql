@@ -23,7 +23,7 @@ CREATE TABLE `creature_quest_finisher_darkmoonfaire` (
   `id` int(11) unsigned NOT NULL DEFAULT '0',
   `quest` int(11) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`,`quest`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 ROW_FORMAT=FIXED COMMENT='Creature System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Creature System';
 
 -- ----------------------------
 -- Records of creature_quest_finisher_darkmoonfaire

@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `locales_worldmap_info` (
   `language_code` varchar(5) NOT NULL,
   `text` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`entry`,`language_code`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Locales System';
 
 DELETE FROM `locales_worldmap_info`;
 /*!40000 ALTER TABLE `locales_worldmap_info` DISABLE KEYS */;

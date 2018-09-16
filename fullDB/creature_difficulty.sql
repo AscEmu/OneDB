@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `creature_difficulty` (
   `difficulty_2` int(30) unsigned NOT NULL DEFAULT '0' COMMENT 'Raid heroic 10 man',
   `difficulty_3` int(30) unsigned NOT NULL DEFAULT '0' COMMENT 'Raid heroic 25 man',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Creature Difficulty System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Creature System';
 
 DELETE FROM `creature_difficulty`;
 /*!40000 ALTER TABLE `creature_difficulty` DISABLE KEYS */;

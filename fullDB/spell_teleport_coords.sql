@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `spell_teleport_coords` (
   `position_z` float NOT NULL DEFAULT '0' COMMENT 'Destination z coord',
   `orientation` float NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='World System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='World System';
 
 DELETE FROM `spell_teleport_coords`;
 /*!40000 ALTER TABLE `spell_teleport_coords` DISABLE KEYS */;

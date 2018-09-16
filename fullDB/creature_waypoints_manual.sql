@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `creature_waypoints_manual` (
   `forward_skin_id` int(10) unsigned NOT NULL DEFAULT '0',
   `backward_skin_id` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`group_id`,`waypoint_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Manual Waypoint Groups';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Creature System';
 
 DELETE FROM `creature_waypoints_manual`;
 /*!40000 ALTER TABLE `creature_waypoints_manual` DISABLE KEYS */;

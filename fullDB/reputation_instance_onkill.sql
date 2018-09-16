@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `reputation_instance_onkill` (
   `faction_change_alliance` smallint(5) unsigned NOT NULL,
   `faction_change_horde` smallint(5) unsigned NOT NULL,
   PRIMARY KEY (`mapid`,`faction_change_alliance`,`faction_change_horde`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Creature System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Creature System';
 
 DELETE FROM `reputation_instance_onkill`;
 /*!40000 ALTER TABLE `reputation_instance_onkill` DISABLE KEYS */;

@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `auctionhouse` (
   `creature_entry` smallint(5) unsigned NOT NULL,
   `ahgroup` tinyint(1) unsigned NOT NULL,
   PRIMARY KEY (`creature_entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Auction House';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Auction House';
 
 DELETE FROM `auctionhouse`;
 /*!40000 ALTER TABLE `auctionhouse` DISABLE KEYS */;

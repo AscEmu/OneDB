@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `gameobject_teleports` (
   `required_class` tinyint(2) NOT NULL DEFAULT '0',
   `required_achievement` int(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM AUTO_INCREMENT=700001 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC COMMENT='Optional table to create custom portals';
+) ENGINE=MyISAM AUTO_INCREMENT=700001 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Optional table to create custom portals';
 
 DELETE FROM `gameobject_teleports`;
 /*!40000 ALTER TABLE `gameobject_teleports` DISABLE KEYS */;

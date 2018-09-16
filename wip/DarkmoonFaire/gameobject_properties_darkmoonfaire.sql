@@ -61,7 +61,7 @@ CREATE TABLE `gameobject_properties_darkmoonfaire` (
   `QuestItem6` int(11) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`build`),
   UNIQUE KEY `unique_index` (`entry`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Gameobject System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Gameobject System';
 
 -- ----------------------------
 -- Records of gameobject_properties_darkmoonfaire

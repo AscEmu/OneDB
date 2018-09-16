@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `loot_gameobjects` (
   `mincount` int(30) unsigned NOT NULL DEFAULT '1',
   `maxcount` int(30) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`entryid`,`itemid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Loot System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Loot System';
 
 DELETE FROM `loot_gameobjects`;
 /*!40000 ALTER TABLE `loot_gameobjects` DISABLE KEYS */;

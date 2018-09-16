@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `vehicle_accessories` (
   `accessory_entry` int(10) unsigned NOT NULL DEFAULT '0',
   `seat` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`creature_entry`,`seat`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Vehicle System';
 
 DELETE FROM `vehicle_accessories`;
 /*!40000 ALTER TABLE `vehicle_accessories` DISABLE KEYS */;
