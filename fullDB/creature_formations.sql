@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `creature_formations` (
   `follow_angle` float NOT NULL DEFAULT '0',
   `follow_dist` float NOT NULL DEFAULT '0',
   PRIMARY KEY (`spawn_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Creature System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Creature System';
 
 DELETE FROM `creature_formations`;
 /*!40000 ALTER TABLE `creature_formations` DISABLE KEYS */;

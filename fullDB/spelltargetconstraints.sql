@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `spelltargetconstraints` (
   `TargetType` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Type of the target ( 0 = Creature, 1 = Gameobject )',
   `TargetID` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier of the target',
   PRIMARY KEY (`SpellID`,`TargetType`,`TargetID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Spell System';
 
 DELETE FROM `spelltargetconstraints`;
 /*!40000 ALTER TABLE `spelltargetconstraints` DISABLE KEYS */;

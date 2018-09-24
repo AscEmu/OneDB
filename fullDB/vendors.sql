@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `vendors` (
   `inctime` bigint(20) NOT NULL DEFAULT '0',
   `extended_cost` int(11) NOT NULL DEFAULT '0',
   UNIQUE KEY `entry` (`entry`,`item`,`extended_cost`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='NPC System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='NPC System';
 
 DELETE FROM `vendors`;
 /*!40000 ALTER TABLE `vendors` DISABLE KEYS */;

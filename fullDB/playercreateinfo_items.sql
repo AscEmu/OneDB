@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_items` (
   `amount` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`indexid`,`protoid`,`slotid`,`build`),
   UNIQUE KEY `unique_index` (`indexid`,`protoid`,`slotid`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Player System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Player System';
 
 DELETE FROM `playercreateinfo_items`;
 /*!40000 ALTER TABLE `playercreateinfo_items` DISABLE KEYS */;

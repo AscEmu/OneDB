@@ -98,7 +98,7 @@ CREATE TABLE `creature_properties_gilneas` (
   `waypointid` int(10) DEFAULT '0',
   PRIMARY KEY (`entry`,`build`),
   UNIQUE KEY `unique_index` (`entry`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Creature System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Creature System';
 
 -- ----------------------------
 -- Records of creature_properties_gilneas

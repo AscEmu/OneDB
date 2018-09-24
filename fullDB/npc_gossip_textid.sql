@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `npc_gossip_textid` (
   `creatureid` int(10) unsigned NOT NULL DEFAULT '0',
   `textid` int(10) unsigned NOT NULL DEFAULT '0',
   UNIQUE KEY `UNIQUE` (`creatureid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='NPC System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='NPC System';
 
 DELETE FROM `npc_gossip_textid`;
 /*!40000 ALTER TABLE `npc_gossip_textid` DISABLE KEYS */;

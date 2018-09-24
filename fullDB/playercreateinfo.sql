@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo` (
   `taximask` tinytext,
   PRIMARY KEY (`Index`,`build`),
   UNIQUE KEY `unique_index` (`Index`,`build`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=95 DEFAULT CHARSET=latin1 COMMENT='Player System';
+) ENGINE=MyISAM AUTO_INCREMENT=95 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Player System';
 
 DELETE FROM `playercreateinfo`;
 /*!40000 ALTER TABLE `playercreateinfo` DISABLE KEYS */;

@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `item_pages` (
   `text` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `next_page` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Item System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Item System';
 
 DELETE FROM `item_pages`;
 /*!40000 ALTER TABLE `item_pages` DISABLE KEYS */;

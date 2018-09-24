@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `item_randomsuffix_groups` (
   `randomsuffix_entryid` tinyint(2) unsigned NOT NULL,
   `chance` float NOT NULL,
   PRIMARY KEY (`entry_id`,`randomsuffix_entryid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Item System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Item System';
 
 DELETE FROM `item_randomsuffix_groups`;
 /*!40000 ALTER TABLE `item_randomsuffix_groups` DISABLE KEYS */;

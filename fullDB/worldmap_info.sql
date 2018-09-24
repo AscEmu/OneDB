@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `worldmap_info` (
   `required_checkpoint` int(30) NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`build`),
   UNIQUE KEY `unique_index` (`entry`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='World System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='World System';
 
 DELETE FROM `worldmap_info`;
 /*!40000 ALTER TABLE `worldmap_info` DISABLE KEYS */;

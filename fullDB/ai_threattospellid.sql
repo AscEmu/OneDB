@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `ai_threattospellid` (
   `mod` int(11) NOT NULL DEFAULT '0',
   `modcoef` float NOT NULL DEFAULT '1',
   PRIMARY KEY (`spell`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='AI System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='AI System';
 
 DELETE FROM `ai_threattospellid`;
 /*!40000 ALTER TABLE `ai_threattospellid` DISABLE KEYS */;
