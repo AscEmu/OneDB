@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `fishing` (
   `MinSkill` smallint(5) unsigned NOT NULL DEFAULT '0',
   `MaxSkill` smallint(5) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`zone`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Fishing System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Fishing System';
 
 DELETE FROM `fishing`;
 /*!40000 ALTER TABLE `fishing` DISABLE KEYS */;

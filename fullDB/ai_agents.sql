@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `ai_agents` (
   `Misc2` mediumint(10) unsigned NOT NULL DEFAULT '0',
   `comments` text NOT NULL,
   UNIQUE KEY `entry` (`entry`,`instance_mode`,`type`,`spell`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='AI System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='AI System';
 
 DELETE FROM `ai_agents`;
 /*!40000 ALTER TABLE `ai_agents` DISABLE KEYS */;

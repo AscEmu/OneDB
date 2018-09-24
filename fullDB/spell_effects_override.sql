@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `spell_effects_override` (
   `ImplicitTargetB` smallint(5) unsigned NOT NULL DEFAULT '0',
   `EffectCustomFlag` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`spellId`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Spell System';
 
 DELETE FROM `spell_effects_override`;
 /*!40000 ALTER TABLE `spell_effects_override` DISABLE KEYS */;

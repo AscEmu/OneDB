@@ -54,7 +54,7 @@ CREATE TABLE `creature_spawns_darkmoonfaire` (
   PRIMARY KEY (`id`,`min_build`),
   UNIQUE KEY `unique_index` (`id`,`min_build`) USING BTREE,
   KEY `entry` (`entry`)
-) ENGINE=MyISAM AUTO_INCREMENT=204033 DEFAULT CHARSET=latin1 COMMENT='Spawn System';
+) ENGINE=MyISAM AUTO_INCREMENT=204033 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Spawn System';
 
 -- ----------------------------
 -- Records of creature_spawns_darkmoonfaire

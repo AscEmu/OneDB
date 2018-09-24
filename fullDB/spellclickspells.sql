@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `spellclickspells` (
   `CreatureID` int(10) unsigned NOT NULL,
   `SpellID` int(10) unsigned NOT NULL,
   PRIMARY KEY (`CreatureID`,`SpellID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Spell System';
 
 DELETE FROM `spellclickspells`;
 /*!40000 ALTER TABLE `spellclickspells` DISABLE KEYS */;

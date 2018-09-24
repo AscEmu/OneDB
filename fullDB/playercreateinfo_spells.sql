@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_spells` (
   `build` smallint(6) NOT NULL DEFAULT '12340',
   PRIMARY KEY (`indexid`,`spellid`,`build`),
   UNIQUE KEY `unique_index` (`indexid`,`spellid`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Player System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Player System';
 
 DELETE FROM `playercreateinfo_spells`;
 /*!40000 ALTER TABLE `playercreateinfo_spells` DISABLE KEYS */;

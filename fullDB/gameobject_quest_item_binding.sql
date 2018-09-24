@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `gameobject_quest_item_binding` (
   `item` int(11) NOT NULL DEFAULT '0',
   `item_count` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`item`,`quest`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Quest System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Quest System';
 
 DELETE FROM `gameobject_quest_item_binding`;
 /*!40000 ALTER TABLE `gameobject_quest_item_binding` DISABLE KEYS */;

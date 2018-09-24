@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `creature_quest_starter` (
   `id` int(11) unsigned NOT NULL DEFAULT '0',
   `quest` int(11) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`,`quest`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 ROW_FORMAT=FIXED COMMENT='Creature System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Creature System';
 
 DELETE FROM `creature_quest_starter`;
 /*!40000 ALTER TABLE `creature_quest_starter` DISABLE KEYS */;

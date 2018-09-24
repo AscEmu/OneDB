@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `graveyards` (
   `faction` enum('0','1','3') NOT NULL,
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2001 DEFAULT CHARSET=latin1 COMMENT='Graveyard System';
+) ENGINE=MyISAM AUTO_INCREMENT=2001 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Graveyard System';
 
 DELETE FROM `graveyards`;
 /*!40000 ALTER TABLE `graveyards` DISABLE KEYS */;
