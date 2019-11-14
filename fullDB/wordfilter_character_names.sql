@@ -5,8 +5,8 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 CREATE TABLE IF NOT EXISTS `wordfilter_character_names` (
-  `regex_match` varchar(500) NOT NULL,
-  `regex_ignore_if_matched` varchar(500) NOT NULL DEFAULT '',
+  `regex_match` varchar(300) NOT NULL,
+  `regex_ignore_if_matched` varchar(300) NOT NULL DEFAULT '',
   PRIMARY KEY (`regex_match`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Wordfilter System';
 
