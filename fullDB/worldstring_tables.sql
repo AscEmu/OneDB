@@ -3,12 +3,13 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `worldstring_tables` (
-  `entry` int(11) NOT NULL,
-  `text` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `entry` int NOT NULL,
+  `text` varchar(300) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 DELETE FROM `worldstring_tables`;
 /*!40000 ALTER TABLE `worldstring_tables` DISABLE KEYS */;
@@ -73,7 +74,7 @@ INSERT INTO `worldstring_tables` (`entry`, `text`) VALUES
 	(88, 'Purchase a Dual Talent Specialization.'),
 	(89, 'You do not have enough gold to purchase a dual spec.'),
 	(397, 'You need to be Revered with the faction Keepers of Time!'),
-	(501, 'This character is not allowed to play.");'),
+	(501, 'This character is not allowed to play.'),
 	(502, 'You have been banned for: %s'),
 	(503, 'You were removed from the queue for the battleground for not joining after 1 minute 20 seconds.'),
 	(1, 'I wish to learn Dual Specialization.'),
@@ -82,5 +83,6 @@ INSERT INTO `worldstring_tables` (`entry`, `text`) VALUES
 /*!40000 ALTER TABLE `worldstring_tables` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

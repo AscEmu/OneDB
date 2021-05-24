@@ -3,14 +3,15 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `quest_poi_points` (
-  `questId` smallint(5) unsigned NOT NULL,
-  `poiId` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `x` int(11) NOT NULL DEFAULT '0',
-  `y` int(11) NOT NULL DEFAULT '0',
+  `questId` smallint unsigned NOT NULL,
+  `poiId` tinyint unsigned NOT NULL DEFAULT '0',
+  `x` int NOT NULL DEFAULT '0',
+  `y` int NOT NULL DEFAULT '0',
   KEY `idx_poip` (`questId`,`poiId`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 DELETE FROM `quest_poi_points`;
 /*!40000 ALTER TABLE `quest_poi_points` DISABLE KEYS */;
@@ -10014,7 +10015,8 @@ INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(1221, 0, -929, -3692),
 	(1221, 0, -930, -3691),
 	(1221, 1, -929, -3697),
-	(1222, 1, -3625, -4458),
+	(1222, 1, -3625, -4458);
+INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(1222, 2, -2908, -3575),
 	(1238, 0, -3106, -2824),
 	(1239, 0, -3106, -2824),
@@ -18102,8 +18104,7 @@ INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(6241, 2, 6750, -2616),
 	(6241, 2, 6790, -2671),
 	(6241, 3, 6879, -5190),
-	(6241, 3, 6915, -5150);
-INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
+	(6241, 3, 6915, -5150),
 	(6241, 3, 6917, -5082),
 	(6241, 3, 6914, -5016),
 	(6241, 3, 6884, -4986),
@@ -20015,7 +20016,8 @@ INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(7893, 0, -9558, 130),
 	(7893, 1, -1637, 102),
 	(7893, 2, -2265, 5202),
-	(7894, 0, -9576, 88),
+	(7894, 0, -9576, 88);
+INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(7894, 1, -1551, 141),
 	(7894, 2, -2253, 5245),
 	(7895, 0, -9576, 88),
@@ -30015,7 +30017,8 @@ INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(9924, 2, -1260, 8032),
 	(9924, 2, -1251, 8018),
 	(9924, 3, -2489, 7231),
-	(9925, 0, -2551, 7899),
+	(9925, 0, -2551, 7899);
+INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(9925, 0, -2286, 7986),
 	(9925, 0, -2248, 8021),
 	(9925, 0, -2249, 8149),
@@ -35784,8 +35787,7 @@ INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(10774, 2, -4497, 1307),
 	(10774, 3, -4510, 1317),
 	(10775, 0, -4456, 1225),
-	(10775, 0, -4111, 1287);
-INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
+	(10775, 0, -4111, 1287),
 	(10775, 0, -4108, 1289),
 	(10775, 0, -4096, 1318),
 	(10775, 0, -4091, 1402),
@@ -40016,7 +40018,8 @@ INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(11470, 1, 310, -6000),
 	(11470, 1, 316, -6069),
 	(11470, 1, 357, -6111),
-	(11471, 0, -50, -3394),
+	(11471, 0, -50, -3394);
+INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(11471, 1, -84, -3544),
 	(11472, 2, -70, -3245),
 	(11472, 2, 133, -3233),
@@ -50016,7 +50019,8 @@ INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(12962, 1, 4917, -2849),
 	(12962, 2, 5021, -1422),
 	(12962, 2, 5047, -1378),
-	(12962, 2, 5021, -1283),
+	(12962, 2, 5021, -1283);
+INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(12962, 2, 4981, -1320),
 	(12962, 4, 5148, -1448),
 	(12962, 4, 5248, -1422),
@@ -53163,8 +53167,7 @@ INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 	(13292, 2, 6580, 1001),
 	(13292, 3, 6592, 991),
 	(13292, 3, 6821, 1007),
-	(13292, 3, 6796, 1255);
-INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
+	(13292, 3, 6796, 1255),
 	(13292, 3, 6742, 1278),
 	(13292, 3, 6670, 1264),
 	(13292, 3, 6537, 1234),
@@ -57345,5 +57348,6 @@ INSERT INTO `quest_poi_points` (`questId`, `poiId`, `x`, `y`) VALUES
 /*!40000 ALTER TABLE `quest_poi_points` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

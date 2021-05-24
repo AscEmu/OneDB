@@ -3,21 +3,22 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `trainer_defs` (
-  `entry` int(11) unsigned NOT NULL DEFAULT '0',
-  `required_skill` int(11) unsigned NOT NULL DEFAULT '0',
-  `required_skillvalue` int(11) unsigned DEFAULT '0',
-  `req_class` int(11) unsigned NOT NULL DEFAULT '0',
-  `RequiredRace` int(11) NOT NULL DEFAULT '0',
-  `RequiredReputation` int(11) NOT NULL DEFAULT '0',
-  `RequiredReputationValue` int(11) NOT NULL DEFAULT '0',
-  `trainer_type` int(11) unsigned NOT NULL DEFAULT '0',
-  `trainer_ui_window_message` text,
-  `can_train_gossip_textid` int(11) NOT NULL,
-  `cannot_train_gossip_textid` int(11) NOT NULL,
+  `entry` int unsigned NOT NULL DEFAULT '0',
+  `required_skill` int unsigned NOT NULL DEFAULT '0',
+  `required_skillvalue` int unsigned DEFAULT '0',
+  `req_class` int unsigned NOT NULL DEFAULT '0',
+  `RequiredRace` int NOT NULL DEFAULT '0',
+  `RequiredReputation` int NOT NULL DEFAULT '0',
+  `RequiredReputationValue` int NOT NULL DEFAULT '0',
+  `trainer_type` int unsigned NOT NULL DEFAULT '0',
+  `trainer_ui_window_message` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `can_train_gossip_textid` int NOT NULL,
+  `cannot_train_gossip_textid` int NOT NULL,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Trainer System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Trainer System';
 
 DELETE FROM `trainer_defs`;
 /*!40000 ALTER TABLE `trainer_defs` DISABLE KEYS */;
@@ -805,5 +806,6 @@ INSERT INTO `trainer_defs` (`entry`, `required_skill`, `required_skillvalue`, `r
 /*!40000 ALTER TABLE `trainer_defs` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

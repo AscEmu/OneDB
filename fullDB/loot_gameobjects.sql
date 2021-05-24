@@ -3,18 +3,19 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `loot_gameobjects` (
-  `entryid` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Loot Identifier',
-  `itemid` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Item Identifier',
+  `entryid` int unsigned NOT NULL DEFAULT '0' COMMENT 'Loot Identifier',
+  `itemid` int unsigned NOT NULL DEFAULT '0' COMMENT 'Item Identifier',
   `normal10percentchance` float(5,2) NOT NULL DEFAULT '0.00',
   `normal25percentchance` float(5,2) NOT NULL DEFAULT '0.00',
   `heroic10percentchance` float(5,2) NOT NULL DEFAULT '0.00',
   `heroic25percentchance` float(5,2) NOT NULL DEFAULT '0.00',
-  `mincount` int(30) unsigned NOT NULL DEFAULT '1',
-  `maxcount` int(30) unsigned NOT NULL DEFAULT '1',
+  `mincount` int unsigned NOT NULL DEFAULT '1',
+  `maxcount` int unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`entryid`,`itemid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Loot System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Loot System';
 
 DELETE FROM `loot_gameobjects`;
 /*!40000 ALTER TABLE `loot_gameobjects` DISABLE KEYS */;
@@ -9554,8 +9555,7 @@ INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `n
 	(9933, 13518, 0.50, 0.50, 0.50, 0.50, 1, 1),
 	(9933, 13816, 19.00, 19.00, 19.00, 19.00, 1, 1),
 	(9933, 13817, 19.00, 19.00, 19.00, 19.00, 1, 1),
-	(9933, 13818, 15.00, 15.00, 15.00, 15.00, 1, 1);
-INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+	(9933, 13818, 15.00, 15.00, 15.00, 15.00, 1, 1),
 	(9933, 13819, 14.00, 14.00, 14.00, 14.00, 1, 1),
 	(9933, 13820, 19.00, 19.00, 19.00, 19.00, 1, 1),
 	(9933, 13821, 14.00, 14.00, 14.00, 14.00, 1, 1),
@@ -10019,7 +10019,8 @@ INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `n
 	(9934, 4346, 0.10, 0.10, 0.10, 0.10, 1, 1),
 	(9934, 4347, 0.10, 0.10, 0.10, 0.10, 1, 1),
 	(9934, 4348, 0.10, 0.10, 0.10, 0.10, 1, 1),
-	(9934, 4349, 0.10, 0.10, 0.10, 0.10, 1, 1),
+	(9934, 4349, 0.10, 0.10, 0.10, 0.10, 1, 1);
+INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(9934, 4350, 0.10, 0.10, 0.10, 0.10, 1, 1),
 	(9934, 4351, 0.10, 0.10, 0.10, 0.10, 1, 1),
 	(9934, 4352, 0.17, 0.17, 0.17, 0.17, 1, 1),
@@ -19148,8 +19149,7 @@ INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `n
 	(194957, 45989, 15.00, 0.00, 0.00, 0.00, 1, 1),
 	(194957, 45990, 15.00, 0.00, 0.00, 0.00, 1, 1),
 	(194957, 45993, 15.00, 0.00, 0.00, 0.00, 1, 1),
-	(195665, 47506, 0.00, 0.00, 0.00, 15.00, 1, 1);
-INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+	(195665, 47506, 0.00, 0.00, 0.00, 15.00, 1, 1),
 	(195665, 47513, 0.00, 0.00, 0.00, 15.00, 1, 1),
 	(195665, 47515, 0.00, 0.00, 0.00, 5.47, 1, 1),
 	(195665, 47516, 0.00, 0.00, 0.00, 3.76, 1, 1),
@@ -20020,7 +20020,8 @@ INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `n
 	(27503, 47940, 0.00, 0.00, 5.87, 0.00, 1, 1),
 	(27503, 47651, 0.00, 1.95, 1.11, 0.85, 1, 1),
 	(27503, 47944, 0.00, 0.00, 5.51, 0.00, 1, 1),
-	(27503, 47631, 0.00, 0.93, 0.74, 4.62, 1, 1),
+	(27503, 47631, 0.00, 0.93, 0.74, 4.62, 1, 1);
+INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(27503, 47076, 0.00, 0.00, 0.00, 9.45, 1, 1),
 	(27503, 47638, 0.00, 1.08, 2.47, 0.69, 1, 1),
 	(27503, 47449, 0.00, 0.00, 0.00, 9.35, 1, 1),
@@ -20581,5 +20582,6 @@ INSERT INTO `loot_gameobjects` (`entryid`, `itemid`, `normal10percentchance`, `n
 /*!40000 ALTER TABLE `loot_gameobjects` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

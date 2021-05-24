@@ -3,18 +3,19 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `loot_pickpocketing` (
-  `entryid` int(10) unsigned NOT NULL DEFAULT '0',
-  `itemid` int(10) unsigned NOT NULL DEFAULT '0',
+  `entryid` int unsigned NOT NULL DEFAULT '0',
+  `itemid` int unsigned NOT NULL DEFAULT '0',
   `normal10percentchance` float(5,2) NOT NULL DEFAULT '0.00',
   `normal25percentchance` float(5,2) NOT NULL DEFAULT '0.00',
   `heroic10percentchance` float(5,2) NOT NULL DEFAULT '0.00',
   `heroic25percentchance` float(5,2) NOT NULL DEFAULT '0.00',
-  `mincount` int(10) unsigned NOT NULL DEFAULT '1',
-  `maxcount` int(10) unsigned NOT NULL DEFAULT '1',
+  `mincount` int unsigned NOT NULL DEFAULT '1',
+  `maxcount` int unsigned NOT NULL DEFAULT '1',
   UNIQUE KEY `UNIQUE` (`entryid`,`itemid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Loot System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Loot System';
 
 DELETE FROM `loot_pickpocketing`;
 /*!40000 ALTER TABLE `loot_pickpocketing` DISABLE KEYS */;
@@ -9928,8 +9929,7 @@ INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, 
 	(16593, 29569, 20.50, 0.00, 0.00, 0.00, 1, 1),
 	(16593, 29570, 19.72, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 22829, 3.51, 0.00, 0.00, 0.00, 1, 1),
-	(16594, 27854, 10.27, 0.00, 0.00, 0.00, 1, 1);
-INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+	(16594, 27854, 10.27, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 27855, 5.54, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 29569, 18.51, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 29570, 23.51, 0.00, 0.00, 0.00, 1, 1),
@@ -10019,7 +10019,8 @@ INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, 
 	(16873, 27854, 3.72, 0.00, 0.00, 0.00, 1, 1),
 	(16873, 27855, 6.16, 0.00, 0.00, 0.00, 1, 1),
 	(16873, 29569, 17.04, 0.00, 0.00, 0.00, 1, 1),
-	(16873, 29570, 14.60, 0.00, 0.00, 0.00, 1, 1),
+	(16873, 29570, 14.60, 0.00, 0.00, 0.00, 1, 1);
+INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(16876, 3928, 2.70, 0.00, 0.00, 0.00, 1, 1),
 	(16876, 5428, 16.00, 0.00, 0.00, 0.00, 1, 1),
 	(16876, 7910, 0.35, 0.00, 0.00, 0.00, 1, 1),
@@ -16248,5 +16249,6 @@ INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, 
 /*!40000 ALTER TABLE `loot_pickpocketing` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

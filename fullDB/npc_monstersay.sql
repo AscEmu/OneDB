@@ -3,21 +3,22 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `npc_monstersay` (
-  `entry` int(10) unsigned NOT NULL DEFAULT '0',
-  `event` int(10) unsigned NOT NULL DEFAULT '0',
+  `entry` int unsigned NOT NULL DEFAULT '0',
+  `event` int unsigned NOT NULL DEFAULT '0',
   `chance` float NOT NULL DEFAULT '0',
-  `language` int(10) unsigned NOT NULL DEFAULT '0',
-  `type` int(10) unsigned NOT NULL DEFAULT '0',
-  `monstername` longtext COLLATE utf8_unicode_ci,
-  `text0` longtext COLLATE utf8_unicode_ci,
-  `text1` longtext COLLATE utf8_unicode_ci,
-  `text2` longtext COLLATE utf8_unicode_ci,
-  `text3` longtext COLLATE utf8_unicode_ci,
-  `text4` longtext COLLATE utf8_unicode_ci,
+  `language` int unsigned NOT NULL DEFAULT '0',
+  `type` int unsigned NOT NULL DEFAULT '0',
+  `monstername` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `text0` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `text1` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `text2` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `text3` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `text4` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`entry`,`event`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='NPC System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='NPC System';
 
 DELETE FROM `npc_monstersay`;
 /*!40000 ALTER TABLE `npc_monstersay` DISABLE KEYS */;
@@ -1330,5 +1331,6 @@ INSERT INTO `npc_monstersay` (`entry`, `event`, `chance`, `language`, `type`, `m
 /*!40000 ALTER TABLE `npc_monstersay` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

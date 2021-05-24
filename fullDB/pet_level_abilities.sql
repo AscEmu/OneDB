@@ -3,18 +3,19 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `pet_level_abilities` (
-  `level` int(3) unsigned NOT NULL DEFAULT '0',
-  `health` int(5) unsigned NOT NULL DEFAULT '0',
-  `armor` int(5) unsigned NOT NULL DEFAULT '0',
-  `strength` int(5) unsigned NOT NULL DEFAULT '0',
-  `agility` int(5) unsigned NOT NULL DEFAULT '0',
-  `stamina` int(5) unsigned NOT NULL DEFAULT '0',
-  `intellect` int(5) unsigned NOT NULL DEFAULT '0',
-  `spirit` int(5) unsigned NOT NULL DEFAULT '0',
+  `level` int unsigned NOT NULL DEFAULT '0',
+  `health` int unsigned NOT NULL DEFAULT '0',
+  `armor` int unsigned NOT NULL DEFAULT '0',
+  `strength` int unsigned NOT NULL DEFAULT '0',
+  `agility` int unsigned NOT NULL DEFAULT '0',
+  `stamina` int unsigned NOT NULL DEFAULT '0',
+  `intellect` int unsigned NOT NULL DEFAULT '0',
+  `spirit` int unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`level`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 DELETE FROM `pet_level_abilities`;
 /*!40000 ALTER TABLE `pet_level_abilities` DISABLE KEYS */;
@@ -102,5 +103,6 @@ INSERT INTO `pet_level_abilities` (`level`, `health`, `armor`, `strength`, `agil
 /*!40000 ALTER TABLE `pet_level_abilities` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

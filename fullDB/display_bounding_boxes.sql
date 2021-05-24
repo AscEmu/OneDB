@@ -3,9 +3,10 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `display_bounding_boxes` (
-  `displayid` smallint(5) unsigned NOT NULL,
+  `displayid` smallint unsigned NOT NULL,
   `lowx` float NOT NULL,
   `lowy` float NOT NULL,
   `lowz` float NOT NULL,
@@ -14,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `display_bounding_boxes` (
   `highz` float NOT NULL,
   `boundradius` float NOT NULL,
   PRIMARY KEY (`displayid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Display bounding boxes';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Display bounding boxes';
 
 DELETE FROM `display_bounding_boxes`;
 /*!40000 ALTER TABLE `display_bounding_boxes` DISABLE KEYS */;
@@ -6352,8 +6353,7 @@ INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `high
 	(9593, -0.458333, -0.458333, 0, 0.458333, 0.458333, 3.04692, 1.65562),
 	(9594, -2.08333, -2.08333, 0, 2.08333, 2.08333, 12.5, 6.90964),
 	(9595, -1.5625, -1.5625, 0, 1.5625, 1.5625, 9.375, 5.18223),
-	(9596, -0.366667, -0.366667, 0, 0.366667, 0.366667, 2.43753, 1.32449);
-INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
+	(9596, -0.366667, -0.366667, 0, 0.366667, 0.366667, 2.43753, 1.32449),
 	(9599, -0.366667, -0.366667, 0, 0.366667, 0.366667, 2.43753, 1.32449),
 	(9602, -0.366667, -0.366667, 0, 0.366667, 0.366667, 2.43753, 1.32449),
 	(9603, -0.366667, -0.366667, 0, 0.366667, 0.366667, 2.43753, 1.32449),
@@ -10019,7 +10019,8 @@ INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `high
 	(15625, -0.366667, -0.366667, 0, 0.366667, 0.366667, 1.92792, 1.09458),
 	(15626, -0.366667, -0.366667, 0, 0.366667, 0.366667, 1.92792, 1.09458),
 	(15627, -0.354167, -0.354167, 0, 0.354167, 0.354167, 1.98333, 1.11098),
-	(15628, -0.4, -0.4, 0, 0.4, 0.4, 2.53333, 1.38724),
+	(15628, -0.4, -0.4, 0, 0.4, 0.4, 2.53333, 1.38724);
+INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
 	(15629, -0.333333, -0.333333, 0, 0.333333, 0.333333, 2.7, 1.42994),
 	(15630, -0.366667, -0.366667, 0, 0.366667, 0.366667, 1.92792, 1.09458),
 	(15631, -0.4, -0.4, 0, 0.4, 0.4, 2.53333, 1.38724),
@@ -12588,8 +12589,7 @@ INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `high
 	(18286, -0.305556, -0.305556, 0, 0.305556, 0.305556, 2.03128, 1.10374),
 	(18287, -0.55, -0.55, 0, 0.55, 0.55, 3.6563, 1.98674),
 	(18288, -0.458333, -0.458333, 0, 0.458333, 0.458333, 3.04692, 1.65562),
-	(18289, -0.488889, -0.488889, 0, 0.488889, 0.488889, 3.25005, 1.76599);
-INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
+	(18289, -0.488889, -0.488889, 0, 0.488889, 0.488889, 3.25005, 1.76599),
 	(18290, -0.407608, -0.333496, 0.020995, 0.259059, 0.33317, 1.68766, 0.957427),
 	(18291, -1.22222, -1.22222, 0, 1.22222, 1.22222, 8.12511, 4.41498),
 	(18292, -9.16667, -9.16667, 0, 9.16667, 9.16667, 60.9383, 33.1123),
@@ -18832,8 +18832,7 @@ INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `high
 	(24660, -0.305556, -0.305556, 0, 0.305556, 0.305556, 1.6066, 0.91215),
 	(24661, -0.305556, -0.305556, 0, 0.305556, 0.305556, 2.03127, 1.10374),
 	(24662, -0.305556, -0.305556, 0, 0.305556, 0.305556, 2.03127, 1.10374),
-	(24663, -0.305556, -0.305556, 0, 0.305556, 0.305556, 1.6066, 0.91215);
-INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
+	(24663, -0.305556, -0.305556, 0, 0.305556, 0.305556, 1.6066, 0.91215),
 	(24664, -0.208333, -0.208333, 0, 0.208333, 0.208333, 1.91346, 1.00107),
 	(24665, -0.305556, -0.305556, 0, 0.305556, 0.305556, 2.03128, 1.10374),
 	(24666, -0.347222, -0.347222, 0, 0.347222, 0.347222, 1.05556, 0.720886),
@@ -20021,7 +20020,8 @@ INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `high
 	(25859, -0.106944, -0.106944, 0, 0.106944, 0.106944, 0.710947, 0.38631),
 	(25860, -0.198611, -0.198611, 0, 0.198611, 0.198611, 1.32033, 0.717434),
 	(25861, -0.106944, -0.106944, 0, 0.106944, 0.106944, 0.710947, 0.38631),
-	(25862, -0.229167, -0.229167, 0, 0.229167, 0.229167, 1.52346, 0.827808),
+	(25862, -0.229167, -0.229167, 0, 0.229167, 0.229167, 1.52346, 0.827808);
+INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `highx`, `highy`, `highz`, `boundradius`) VALUES
 	(25863, -0.295139, -0.295139, 0, 0.295139, 0.295139, 1.65278, 0.925814),
 	(25864, -0.458333, -0.458333, 0, 0.458333, 0.458333, 3.04692, 1.65562),
 	(25865, -0.305556, -0.305556, 0, 0.305556, 0.305556, 2.03128, 1.10374),
@@ -24279,5 +24279,6 @@ INSERT INTO `display_bounding_boxes` (`displayid`, `lowx`, `lowy`, `lowz`, `high
 /*!40000 ALTER TABLE `display_bounding_boxes` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

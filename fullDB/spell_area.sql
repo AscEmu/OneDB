@@ -3,19 +3,20 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `spell_area` (
-  `spell` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `area` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `quest_start` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `quest_start_active` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `quest_end` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `aura_spell` mediumint(8) NOT NULL DEFAULT '0',
-  `racemask` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `gender` tinyint(1) unsigned NOT NULL DEFAULT '2',
-  `autocast` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `spell` mediumint unsigned NOT NULL DEFAULT '0',
+  `area` mediumint unsigned NOT NULL DEFAULT '0',
+  `quest_start` mediumint unsigned NOT NULL DEFAULT '0',
+  `quest_start_active` tinyint unsigned NOT NULL DEFAULT '0',
+  `quest_end` mediumint unsigned NOT NULL DEFAULT '0',
+  `aura_spell` mediumint NOT NULL DEFAULT '0',
+  `racemask` mediumint unsigned NOT NULL DEFAULT '0',
+  `gender` tinyint unsigned NOT NULL DEFAULT '2',
+  `autocast` tinyint unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`spell`,`area`,`quest_start`,`quest_start_active`,`aura_spell`,`racemask`,`gender`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 DELETE FROM `spell_area`;
 /*!40000 ALTER TABLE `spell_area` DISABLE KEYS */;
@@ -370,5 +371,6 @@ INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, 
 /*!40000 ALTER TABLE `spell_area` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

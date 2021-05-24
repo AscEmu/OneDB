@@ -3,13 +3,14 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `gossip_menu` (
-  `gossip_menu` int(10) NOT NULL COMMENT 'initial gossip menu text',
-  `text_id` int(10) DEFAULT '0',
-  `Comment` varchar(200) DEFAULT NULL,
+  `gossip_menu` int NOT NULL COMMENT 'initial gossip menu text',
+  `text_id` int DEFAULT '0',
+  `Comment` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`gossip_menu`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 DELETE FROM `gossip_menu`;
 /*!40000 ALTER TABLE `gossip_menu` DISABLE KEYS */;
@@ -23,6 +24,21 @@ INSERT INTO `gossip_menu` (`gossip_menu`, `text_id`, `Comment`) VALUES
 	(172, 4316, 'TeldrassilGuard'),
 	(180, 9316, 'SilvermoonGuard'),
 	(191, 9551, 'ExodarGuard'),
+	(200, 522, 'SkornWhitecloud'),
+	(201, 1519, 'CurgleCranklehop'),
+	(202, 1758, 'TrentonLighthammer'),
+	(203, 2153, 'ErelasAmbersky'),
+	(204, 12227, 'ExarchNasuun'),
+	(205, 13022, 'Tiare'),
+	(206, 12714, 'Torastrasza'),
+	(207, 12887, 'LordAfrasastrasz'),
+	(208, 12713, 'Tariolstrasz'),
+	(209, 1, 'Zephyr'),
+	(210, 13454, 'ThargoldIronwing'),
+	(211, 11469, 'ArchmageMalin'),
+	(212, 11224, 'CassaCrimsonwing'),
+	(213, 1, 'CaptainGarranVimes'),
+	(214, 14736, 'XPToggle'),
 	(724, 2593, 'OrgrimmarGuard'),
 	(751, 3543, 'BloodhoofGuard'),
 	(989, 4037, 'RazorHillGuard'),
@@ -36,5 +52,6 @@ INSERT INTO `gossip_menu` (`gossip_menu`, `text_id`, `Comment`) VALUES
 /*!40000 ALTER TABLE `gossip_menu` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

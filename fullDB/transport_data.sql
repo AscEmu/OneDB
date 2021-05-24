@@ -3,41 +3,43 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `transport_data` (
-  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `build` smallint(6) NOT NULL DEFAULT '12340',
-  `name` text,
-  `period` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`entry`,`build`),
-  UNIQUE KEY `unique_index` (`entry`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Transports';
+  `entry` mediumint unsigned NOT NULL DEFAULT '0',
+  `min_build` smallint NOT NULL DEFAULT '12340',
+  `max_build` smallint NOT NULL DEFAULT '12340',
+  `name` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`entry`,`min_build`),
+  UNIQUE KEY `unique_index` (`entry`,`min_build`) USING BTREE
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=FIXED COMMENT='Transports';
 
 DELETE FROM `transport_data`;
 /*!40000 ALTER TABLE `transport_data` DISABLE KEYS */;
-INSERT INTO `transport_data` (`entry`, `build`, `name`, `period`) VALUES
-	(20808, 12340, 'Ratchet and Booty Bay', 231236),
-	(164871, 12340, 'Orgrimmar and Undercity', 239334),
-	(175080, 12340, 'Grom\'Gol Base Camp and Orgrimmar', 248990),
-	(176231, 12340, 'Menethil Harbor and Theramore Isle', 230162),
-	(176244, 12340, 'Teldrassil and Auberdine', 312734),
-	(176310, 12340, 'Stormwind and Auberdine', 234510),
-	(176495, 12340, 'Grom\'Gol Base Camp and Undercity', 315032),
-	(177233, 12340, 'Forgotton Coast and Feathermoon Stronghold', 259751),
-	(181646, 12340, 'Azuremyst and Auberdine', 238707),
-	(181688, 12340, 'Valgarde and Menethil', 445534),
-	(181689, 12340, 'Undercity and Vengeance Landing', 214579),
-	(186238, 12340, 'Orgrimmar and Warsong Hold', 302705),
-	(186371, 12340, 'Stolen Zeppelin', 484211),
-	(187038, 12340, 'Pirate boat', 307953),
-	(187568, 12340, 'Moa\'ki Harbor Turtle Boat', 445220),
-	(188511, 12340, 'Unu\'pe Turtle Boat', 502354),
-	(190536, 12340, 'Valiance Keep and Stormwind', 271979),
-	(190549, 12340, 'Orgrimmar to Thunderbluff', 533835),
-	(192241, 12340, 'Orgrims Hammer', 1424158),
-	(192242, 12340, 'Fizzcrank Airstrip', 1051387);
+INSERT INTO `transport_data` (`entry`, `min_build`, `max_build`, `name`) VALUES
+	(176310, 12340, 18414, 'Stormwind Harbor and Auberdine, Darkshore ("Ship (The Bravery)")'),
+	(176244, 5875, 12340, 'Rut\'theran Village, Teldrassil and Auberdine, Darkshore ("The Moonspray")'),
+	(176231, 5875, 18414, 'Menethil Harbor, Wetlands and Theramore Isle, Dustwallow Marsh ("The Lady Mehley")'),
+	(175080, 5875, 18414, 'Orgrimmar, Durotar and Grom\'gol Base Camp, Stranglethorn Vale ("The Iron Eagle")'),
+	(164871, 5875, 18414, 'Orgrimmar, Durotar and Undercity, Tirisfal Glades ("The Thundercaller")'),
+	(20808, 5875, 18414, 'Steamwheedle Cartel ports, Ratchet and Booty Bay ("The Maiden\'s Fancy")'),
+	(190536, 12340, 18414, 'Stormwing Harbor and Valiance Keep, Borean Tundra ("The Kraken")'),
+	(176495, 5875, 18414, 'Undercity, Tirisfal Glades and Grom\'gol Base Camp, Stranglethorn Vale ("The Purple Princess")'),
+	(177233, 5875, 12340, 'The Forgotten Coast, Feralas and Feathermoon Stronghold, Sardor Isle, Feralas ("Feathermoon Ferry")'),
+	(181646, 8606, 18414, 'Valaar\'s Berth, Azuremyst Isle and Auberdine, Darkshore ("Elune\'s Blessing")'),
+	(181688, 12340, 18414, 'Menethil Harbor, Wetlands and Valgarde, Howling Fjord ("Northspear")'),
+	(181689, 12340, 18414, 'Undercity, Tirisfal Glades and Vengeance Landing, Howling Fjord ("Zeppelin, Horde (Cloudkisser)")'),
+	(186238, 12340, 18414, 'Orgrimmar, Durotar and Warsong Hold, Borean Tundra ("Zeppelin, Horde (The Mighty Wind)")'),
+	(186371, 12340, 18414, 'Westguard Keep in Howling Fjord to bombard pirate ("Zeppelin")'),
+	(187038, 12340, 18414, 'Not Boardable - Cyrcling in Howling Fjord ("Sister Mercy")'),
+	(187568, 12340, 18414, 'Unu\'pe, Borean Tundra and Moa\'ki Harbor, Dragonblight ("Turtle (Walker of Waves)")'),
+	(188511, 12340, 18414, 'Moa\'ki Harbor and Kamagua ("Turtle (Green Island)")'),
+	(192241, 12340, 18414, 'Horde gunship patrolling above Icecrown ("Orgrim\'s Hammer")'),
+	(192242, 12340, 18414, 'Alliance gunship patrolling above Icecrown ("The Skybreaker")'),
+	(190549, 12340, 18414, 'Orgrimmar and Thunder Bluff ("The Zephyr")');
 /*!40000 ALTER TABLE `transport_data` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

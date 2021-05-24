@@ -3,13 +3,14 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `item_randomprop_groups` (
-  `entry_id` smallint(4) unsigned NOT NULL,
-  `randomprops_entryid` smallint(4) unsigned NOT NULL,
+  `entry_id` smallint unsigned NOT NULL,
+  `randomprops_entryid` smallint unsigned NOT NULL,
   `chance` float NOT NULL,
   PRIMARY KEY (`entry_id`,`randomprops_entryid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=FIXED COMMENT='Item System';
 
 DELETE FROM `item_randomprop_groups`;
 /*!40000 ALTER TABLE `item_randomprop_groups` DISABLE KEYS */;
@@ -10013,7 +10014,8 @@ INSERT INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance
 	(819, 770, 3.98),
 	(819, 771, 3.98),
 	(819, 772, 3.98),
-	(819, 1024, 3),
+	(819, 1024, 3);
+INSERT INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance`) VALUES
 	(819, 1025, 3),
 	(819, 1026, 3),
 	(819, 1027, 3),
@@ -20013,7 +20015,8 @@ INSERT INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance
 	(2086, 779, 4.81),
 	(2086, 780, 4.81),
 	(2086, 781, 4.81),
-	(2086, 1033, 2.73),
+	(2086, 1033, 2.73);
+INSERT INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance`) VALUES
 	(2086, 1034, 2.73),
 	(2086, 1035, 2.73),
 	(2086, 1036, 2.73),
@@ -22434,8 +22437,7 @@ INSERT INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance
 	(5173, 96, 2.93),
 	(5173, 24, 2.82),
 	(5173, 97, 2.82),
-	(5173, 1179, 2.51);
-INSERT INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance`) VALUES
+	(5173, 1179, 2.51),
 	(5173, 1180, 2.51),
 	(5173, 1181, 2.51),
 	(5173, 1182, 2.51),
@@ -27966,5 +27968,6 @@ INSERT INTO `item_randomprop_groups` (`entry_id`, `randomprops_entryid`, `chance
 /*!40000 ALTER TABLE `item_randomprop_groups` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

@@ -3,18 +3,19 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `loot_skinning` (
-  `entryid` int(10) unsigned NOT NULL DEFAULT '0',
-  `itemid` int(10) unsigned NOT NULL DEFAULT '0',
+  `entryid` int unsigned NOT NULL DEFAULT '0',
+  `itemid` int unsigned NOT NULL DEFAULT '0',
   `normal10percentchance` float(5,2) NOT NULL DEFAULT '0.00',
   `normal25percentchance` float(5,2) NOT NULL DEFAULT '0.00',
   `heroic10percentchance` float(5,2) NOT NULL DEFAULT '0.00',
   `heroic25percentchance` float(5,2) NOT NULL DEFAULT '0.00',
-  `mincount` int(30) unsigned NOT NULL DEFAULT '1',
-  `maxcount` int(30) unsigned NOT NULL DEFAULT '1',
+  `mincount` int unsigned NOT NULL DEFAULT '1',
+  `maxcount` int unsigned NOT NULL DEFAULT '1',
   UNIQUE KEY `UNIQUE` (`entryid`,`itemid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Loot System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Loot System';
 
 DELETE FROM `loot_skinning`;
 /*!40000 ALTER TABLE `loot_skinning` DISABLE KEYS */;
@@ -5419,5 +5420,6 @@ INSERT INTO `loot_skinning` (`entryid`, `itemid`, `normal10percentchance`, `norm
 /*!40000 ALTER TABLE `loot_skinning` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

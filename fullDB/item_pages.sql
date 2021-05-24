@@ -3,13 +3,14 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `item_pages` (
-  `entry` int(10) unsigned NOT NULL DEFAULT '0',
-  `text` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `next_page` int(10) unsigned NOT NULL DEFAULT '0',
+  `entry` int unsigned NOT NULL DEFAULT '0',
+  `text` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `next_page` int unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Item System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Item System';
 
 DELETE FROM `item_pages`;
 /*!40000 ALTER TABLE `item_pages` DISABLE KEYS */;
@@ -1224,8 +1225,7 @@ INSERT INTO `item_pages` (`entry`, `text`, `next_page`) VALUES
 	(2945, '<HTML>\n<BODY>\n<BR/>\n<BR/>\n<H1 align="center">THE GREEN HILLS OF STRANGLETHORN</H1>\n<BR/>\n<H3 align="center">by Hemet Nesingwary</H3>\n</BODY>\n</HTML>', 2946),
 	(2946, 'Our first day went as well as one can expect first days to go. Most of our time was preoccupied with making the necessary arrangements to establish a base camp. I located an ideal setting by a freshwater river inlet. Judging by the old, abandoned docks nearby, this site was inhabited sometime ago. As for the original inhabitants, only time can tell that tale.', 2947),
 	(2947, 'For this expedition I have assembled Ajeck Rouack and Sir S. J Erlgadin, along with my trusted servant, Barnil Stonepot. I fought alongside Ajeck\'s father\'s side in many battles in defense of the Alliance. Seeing her grown is quite special. Her father schooled her well in the ways of weaponry. Her skills with a bow make me wonder if there is elven blood running through those veins.', 2948),
-	(2948, 'Sir S. J. Erlgadin comes from human aristocracy. His father, Count Erlgadin, was renowned for his generosity. It was the Count who lobbied for improved working conditions for the Stonemasons\' Guild during the restoration of Stormwind after the Second Great War.', 2949);
-INSERT INTO `item_pages` (`entry`, `text`, `next_page`) VALUES
+	(2948, 'Sir S. J. Erlgadin comes from human aristocracy. His father, Count Erlgadin, was renowned for his generosity. It was the Count who lobbied for improved working conditions for the Stonemasons\' Guild during the restoration of Stormwind after the Second Great War.', 2949),
 	(2949, 'In the years that followed, after Stormwind betrayed the Stonemasons\' Guild, Sir Erlgadin grew bitter about the role of the nobles within the Kingdom. He no longer wished to uphold the position that his father\'s bloodline had earned for him in the House of Nobles.\n\nBut I digress. The purpose of this story is not to act as a political treatise or a biography. This is the account of my experiences hunting big game in the green hills of Stranglethorn....', 2950),
 	(2950, 'We rose with the sun. Barnil began to prepare the morning meal. I noticed Ajeck\'s attention was somewhat distracted. The day\'s trek would be long and our hunt would bring us close to danger. A lack of focus could easily lead to an errant mishap. Yet Ajeck seemed unable to divert her gaze from Barnil who stood by the edge of the river rinsing out his mess kit.', 2951),
 	(2951, 'Just as I was about to question Ajeck\'s lack of interest in the day\'s hunting strategy, she reached for her quiver, drew an arrow and unleashed a shot right towards poor Barnil. But it was not Barnil that Ajeck was shooting at. For when Barnil stepped aside, mouth agape, a large river crocilisk floated to the surface with Ajeck\'s arrow perfectly placed between his two large eyes.', 2952),
@@ -1665,5 +1665,6 @@ INSERT INTO `item_pages` (`entry`, `text`, `next_page`) VALUES
 /*!40000 ALTER TABLE `item_pages` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

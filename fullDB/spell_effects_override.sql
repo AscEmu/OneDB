@@ -3,22 +3,23 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `spell_effects_override` (
-  `spellId` int(30) unsigned NOT NULL DEFAULT '0',
-  `EffectID` int(30) unsigned NOT NULL DEFAULT '0',
-  `Disable` int(30) unsigned NOT NULL DEFAULT '0',
-  `Effect` int(30) unsigned NOT NULL DEFAULT '0',
-  `BasePoints` mediumint(10) unsigned NOT NULL DEFAULT '0',
-  `ApplyAuraName` int(30) unsigned NOT NULL DEFAULT '0',
-  `SpellGroupRelation` mediumint(10) unsigned NOT NULL DEFAULT '0',
-  `MiscValue` mediumint(10) unsigned NOT NULL DEFAULT '0',
-  `TriggerSpell` int(30) unsigned NOT NULL DEFAULT '0',
-  `ImplicitTargetA` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `ImplicitTargetB` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `EffectCustomFlag` int(10) unsigned NOT NULL DEFAULT '0',
+  `spellId` int unsigned NOT NULL DEFAULT '0',
+  `EffectID` int unsigned NOT NULL DEFAULT '0',
+  `Disable` int unsigned NOT NULL DEFAULT '0',
+  `Effect` int unsigned NOT NULL DEFAULT '0',
+  `BasePoints` mediumint unsigned NOT NULL DEFAULT '0',
+  `ApplyAuraName` int unsigned NOT NULL DEFAULT '0',
+  `SpellGroupRelation` mediumint unsigned NOT NULL DEFAULT '0',
+  `MiscValue` mediumint unsigned NOT NULL DEFAULT '0',
+  `TriggerSpell` int unsigned NOT NULL DEFAULT '0',
+  `ImplicitTargetA` smallint unsigned NOT NULL DEFAULT '0',
+  `ImplicitTargetB` smallint unsigned NOT NULL DEFAULT '0',
+  `EffectCustomFlag` int unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`spellId`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Spell System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Spell System';
 
 DELETE FROM `spell_effects_override`;
 /*!40000 ALTER TABLE `spell_effects_override` DISABLE KEYS */;
@@ -583,5 +584,6 @@ INSERT INTO `spell_effects_override` (`spellId`, `EffectID`, `Disable`, `Effect`
 /*!40000 ALTER TABLE `spell_effects_override` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

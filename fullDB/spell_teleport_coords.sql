@@ -3,17 +3,18 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `spell_teleport_coords` (
-  `id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Teleport Spell ID',
-  `name` char(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `mapId` int(10) unsigned NOT NULL DEFAULT '0',
+  `id` int unsigned NOT NULL DEFAULT '0' COMMENT 'Teleport Spell ID',
+  `name` char(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `mapId` int unsigned NOT NULL DEFAULT '0',
   `position_x` float NOT NULL DEFAULT '0' COMMENT 'Destination x coord',
   `position_y` float NOT NULL DEFAULT '0' COMMENT 'Destination y coord',
   `position_z` float NOT NULL DEFAULT '0' COMMENT 'Destination z coord',
   `orientation` float NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='World System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='World System';
 
 DELETE FROM `spell_teleport_coords`;
 /*!40000 ALTER TABLE `spell_teleport_coords` DISABLE KEYS */;
@@ -316,5 +317,6 @@ INSERT INTO `spell_teleport_coords` (`id`, `name`, `mapId`, `position_x`, `posit
 /*!40000 ALTER TABLE `spell_teleport_coords` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
