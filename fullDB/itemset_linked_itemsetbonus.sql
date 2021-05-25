@@ -3,12 +3,13 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `itemset_linked_itemsetbonus` (
-  `itemset` int(5) NOT NULL,
-  `itemset_bonus` int(5) NOT NULL COMMENT 'linked itemset for itemset bonus',
+  `itemset` int NOT NULL,
+  `itemset_bonus` int NOT NULL COMMENT 'linked itemset for itemset bonus',
   PRIMARY KEY (`itemset`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 DELETE FROM `itemset_linked_itemsetbonus`;
 /*!40000 ALTER TABLE `itemset_linked_itemsetbonus` DISABLE KEYS */;
@@ -375,5 +376,6 @@ INSERT INTO `itemset_linked_itemsetbonus` (`itemset`, `itemset_bonus`) VALUES
 /*!40000 ALTER TABLE `itemset_linked_itemsetbonus` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

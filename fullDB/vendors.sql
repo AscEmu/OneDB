@@ -3,16 +3,17 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `vendors` (
-  `entry` int(10) unsigned NOT NULL DEFAULT '0',
-  `item` int(10) unsigned NOT NULL DEFAULT '0',
-  `amount` int(11) NOT NULL DEFAULT '0',
-  `max_amount` int(11) NOT NULL DEFAULT '0',
-  `inctime` bigint(20) NOT NULL DEFAULT '0',
-  `extended_cost` int(11) NOT NULL DEFAULT '0',
+  `entry` int unsigned NOT NULL DEFAULT '0',
+  `item` int unsigned NOT NULL DEFAULT '0',
+  `amount` int NOT NULL DEFAULT '0',
+  `max_amount` int NOT NULL DEFAULT '0',
+  `inctime` bigint NOT NULL DEFAULT '0',
+  `extended_cost` int NOT NULL DEFAULT '0',
   UNIQUE KEY `entry` (`entry`,`item`,`extended_cost`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='NPC System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='NPC System';
 
 DELETE FROM `vendors`;
 /*!40000 ALTER TABLE `vendors` DISABLE KEYS */;
@@ -10016,7 +10017,8 @@ INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `exte
 	(8157, 3928, 1, 1, 86400000, 0),
 	(8158, 8925, 5, 0, 0, 0),
 	(8158, 3371, 5, 0, 0, 0),
-	(8158, 40411, 5, 0, 0, 0),
+	(8158, 40411, 5, 0, 0, 0);
+INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
 	(8158, 6149, 1, 2, 86400000, 0),
 	(8158, 18256, 5, 0, 0, 0),
 	(8158, 3372, 5, 0, 0, 0),
@@ -15706,8 +15708,7 @@ INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `exte
 	(18019, 22147, 1, 0, 0, 0),
 	(18019, 17028, 1, 0, 0, 0),
 	(18019, 17037, 1, 0, 0, 0),
-	(18019, 5565, 1, 0, 0, 0);
-INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
+	(18019, 5565, 1, 0, 0, 0),
 	(18019, 8927, 1, 0, 0, 0),
 	(18019, 8928, 1, 0, 0, 0),
 	(18019, 21927, 1, 0, 0, 0),
@@ -20017,7 +20018,8 @@ INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `exte
 	(23748, 8957, 5, 0, 0, 0),
 	(23748, 29453, 5, 0, 0, 0),
 	(23748, 27858, 5, 0, 0, 0),
-	(23748, 27859, 5, 0, 0, 0),
+	(23748, 27859, 5, 0, 0, 0);
+INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
 	(23748, 29452, 5, 0, 0, 0),
 	(23802, 28056, 200, 0, 0, 0),
 	(23802, 29014, 1, 0, 0, 0),
@@ -30017,7 +30019,8 @@ INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `exte
 	(33963, 40753, 1, 0, 0, 2637),
 	(33963, 45822, 1, 0, 0, 2606),
 	(33963, 45823, 1, 0, 0, 2606),
-	(33963, 45835, 1, 0, 0, 2607),
+	(33963, 45835, 1, 0, 0, 2607);
+INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
 	(33963, 45834, 1, 0, 0, 2607),
 	(33963, 45826, 1, 0, 0, 2607),
 	(33963, 45837, 1, 0, 0, 2607),
@@ -30466,8 +30469,7 @@ INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `exte
 	(34075, 40984, 1, 0, 0, 2967),
 	(34075, 40890, 1, 0, 0, 2967),
 	(34075, 42078, 1, 0, 0, 2968),
-	(34075, 42080, 1, 0, 0, 2968);
-INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `extended_cost`) VALUES
+	(34075, 42080, 1, 0, 0, 2968),
 	(34075, 42076, 1, 0, 0, 2968),
 	(34075, 42079, 1, 0, 0, 2968),
 	(34075, 42077, 1, 0, 0, 2968),
@@ -37797,5 +37799,6 @@ INSERT INTO `vendors` (`entry`, `item`, `amount`, `max_amount`, `inctime`, `exte
 /*!40000 ALTER TABLE `vendors` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

@@ -3,33 +3,34 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `worldmap_info` (
-  `entry` int(10) unsigned NOT NULL DEFAULT '0',
-  `build` smallint(6) NOT NULL DEFAULT '12340',
-  `screenid` int(10) unsigned DEFAULT '0',
-  `type` int(10) unsigned DEFAULT '0',
-  `maxplayers` int(10) unsigned DEFAULT '0',
-  `minlevel` int(10) unsigned DEFAULT '1',
-  `minlevel_heroic` int(10) unsigned NOT NULL DEFAULT '0',
+  `entry` int unsigned NOT NULL DEFAULT '0',
+  `build` smallint NOT NULL DEFAULT '12340',
+  `screenid` int unsigned DEFAULT '0',
+  `type` int unsigned DEFAULT '0',
+  `maxplayers` int unsigned DEFAULT '0',
+  `minlevel` int unsigned DEFAULT '1',
+  `minlevel_heroic` int unsigned NOT NULL DEFAULT '0',
   `repopx` float DEFAULT '0',
   `repopy` float DEFAULT '0',
   `repopz` float DEFAULT '0',
-  `repopentry` int(10) unsigned DEFAULT '0',
-  `area_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT '0',
-  `flags` int(10) unsigned NOT NULL DEFAULT '0',
-  `cooldown` int(10) unsigned NOT NULL DEFAULT '0',
-  `lvl_mod_a` int(10) unsigned NOT NULL DEFAULT '0',
-  `required_quest_A` int(10) unsigned NOT NULL DEFAULT '0',
-  `required_quest_H` int(10) unsigned NOT NULL DEFAULT '0',
-  `required_item` int(10) unsigned NOT NULL DEFAULT '0',
-  `heroic_keyid_1` int(30) NOT NULL DEFAULT '0',
-  `heroic_keyid_2` int(30) NOT NULL DEFAULT '0',
+  `repopentry` int unsigned DEFAULT '0',
+  `area_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '0',
+  `flags` int unsigned NOT NULL DEFAULT '0',
+  `cooldown` int unsigned NOT NULL DEFAULT '0',
+  `lvl_mod_a` int unsigned NOT NULL DEFAULT '0',
+  `required_quest_A` int unsigned NOT NULL DEFAULT '0',
+  `required_quest_H` int unsigned NOT NULL DEFAULT '0',
+  `required_item` int unsigned NOT NULL DEFAULT '0',
+  `heroic_keyid_1` int NOT NULL DEFAULT '0',
+  `heroic_keyid_2` int NOT NULL DEFAULT '0',
   `viewingDistance` float NOT NULL DEFAULT '80',
-  `required_checkpoint` int(30) NOT NULL DEFAULT '0',
+  `required_checkpoint` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`build`),
   UNIQUE KEY `unique_index` (`entry`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='World System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='World System';
 
 DELETE FROM `worldmap_info`;
 /*!40000 ALTER TABLE `worldmap_info` DISABLE KEYS */;
@@ -208,5 +209,6 @@ INSERT INTO `worldmap_info` (`entry`, `build`, `screenid`, `type`, `maxplayers`,
 /*!40000 ALTER TABLE `worldmap_info` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

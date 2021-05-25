@@ -3,21 +3,22 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `npc_script_text` (
-  `entry` int(10) NOT NULL AUTO_INCREMENT,
-  `text` longtext,
-  `creature_entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'entry from creature_names',
-  `id` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT 'creature_entry and id (unique)',
-  `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `language` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `entry` int NOT NULL AUTO_INCREMENT,
+  `text` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `creature_entry` mediumint unsigned NOT NULL DEFAULT '0' COMMENT 'entry from creature_names',
+  `id` tinyint unsigned NOT NULL DEFAULT '0' COMMENT 'creature_entry and id (unique)',
+  `type` tinyint unsigned NOT NULL DEFAULT '0',
+  `language` tinyint unsigned NOT NULL DEFAULT '0',
   `probability` float NOT NULL DEFAULT '0',
-  `emote` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `duration` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `sound` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `broadcast_id` mediumint(6) NOT NULL DEFAULT '0',
+  `emote` mediumint unsigned NOT NULL DEFAULT '0',
+  `duration` mediumint unsigned NOT NULL DEFAULT '0',
+  `sound` mediumint unsigned NOT NULL DEFAULT '0',
+  `broadcast_id` mediumint NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM AUTO_INCREMENT=8947 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8947 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 DELETE FROM `npc_script_text`;
 /*!40000 ALTER TABLE `npc_script_text` DISABLE KEYS */;
@@ -3889,8 +3890,7 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(3865, 'The screams of the dying will fill the air. A symphony of terror is about to begin!', 15263, 2, 14, 0, 100, 0, 0, 8620, 0),
 	(3866, 'Prepare for the return of the ancient ones!', 15263, 0, 14, 0, 100, 0, 0, 8618, 0),
 	(3867, 'You only delay the inevitable!', 15263, 0, 14, 0, 100, 0, 0, 8622, 11447),
-	(3868, 'Here they come! Defend yourselves!', 10638, 0, 12, 0, 100, 0, 0, 0, 6149);
-INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
+	(3868, 'Here they come! Defend yourselves!', 10638, 0, 12, 0, 100, 0, 0, 0, 6149),
 	(3869, 'Be on guard... Arnak has some strange power over the Grimtotem... they will not be happy to see me escape.', 10646, 0, 12, 0, 100, 0, 0, 0, 5926),
 	(3870, 'Look out, the Grimtotem are upon us!', 10646, 0, 12, 0, 100, 0, 0, 0, 5927),
 	(3871, 'Here they come.', 10646, 0, 12, 0, 100, 0, 0, 0, 5928),
@@ -8348,8 +8348,7 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(8323, 'Me honored... $g king : queen; kill me.', 19997, 4, 12, 0, 100, 0, 0, 0, 21034),
 	(8324, '$G King : Queen; $n, me die now.', 19997, 5, 12, 0, 100, 0, 0, 0, 21035),
 	(8325, '%s goes into a frenzy!', 19997, 0, 16, 0, 100, 0, 0, 0, 38630),
-	(8326, 'Stupid puny thing.  Me smash!', 20756, 0, 12, 0, 100, 0, 0, 0, 19892);
-INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
+	(8326, 'Stupid puny thing.  Me smash!', 20756, 0, 12, 0, 100, 0, 0, 0, 19892),
 	(8327, 'Me mad. You get smash in face!', 20756, 1, 12, 0, 100, 0, 0, 0, 19893),
 	(8328, 'Raaar!!! Me smash $r!', 20756, 2, 12, 0, 100, 0, 0, 0, 1927),
 	(8329, 'Puny $r... you were a... horrible $g king : queen;.', 20756, 0, 12, 0, 100, 0, 0, 0, 21050),
@@ -8537,7 +8536,8 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(8511, 'When dwarves fly! They do? Then yes!', 23224, 7, 15, 0, 100, 0, 0, 0, 21164),
 	(8512, 'Sure, but you\'re not going to like it.', 23224, 8, 15, 0, 100, 0, 0, 0, 21165),
 	(8513, 'Be quiet \'bout what you hear and see around here, $r.', 23224, 9, 15, 0, 100, 0, 0, 0, 21166),
-	(8514, 'Unfortunately... yes.', 23224, 10, 15, 0, 100, 0, 0, 0, 21169),
+	(8514, 'Unfortunately... yes.', 23224, 10, 15, 0, 100, 0, 0, 0, 21169);
+INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
 	(8515, 'I can\'t see why not, although, I can\'t see a lot of things right now.', 23224, 11, 15, 0, 100, 0, 0, 0, 21170),
 	(8516, 'I would bet your soul on it.', 23224, 12, 15, 0, 100, 0, 0, 0, 21171),
 	(8517, 'Yes, but if anyone asks... It wasn\'t me who told you.', 23224, 13, 15, 0, 100, 0, 0, 0, 21172),
@@ -8969,5 +8969,6 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 /*!40000 ALTER TABLE `npc_script_text` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

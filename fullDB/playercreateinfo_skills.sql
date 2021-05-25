@@ -3,16 +3,17 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `playercreateinfo_skills` (
-  `indexid` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `skillid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `build` smallint(6) NOT NULL DEFAULT '12340',
-  `level` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `maxlevel` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `indexid` tinyint unsigned NOT NULL DEFAULT '0',
+  `skillid` smallint unsigned NOT NULL DEFAULT '0',
+  `build` smallint NOT NULL DEFAULT '12340',
+  `level` smallint unsigned NOT NULL DEFAULT '0',
+  `maxlevel` smallint unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`indexid`,`skillid`,`build`),
   UNIQUE KEY `unique_index` (`indexid`,`skillid`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Player System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Player System';
 
 DELETE FROM `playercreateinfo_skills`;
 /*!40000 ALTER TABLE `playercreateinfo_skills` DISABLE KEYS */;
@@ -1624,5 +1625,6 @@ INSERT INTO `playercreateinfo_skills` (`indexid`, `skillid`, `build`, `level`, `
 /*!40000 ALTER TABLE `playercreateinfo_skills` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

@@ -3,17 +3,18 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `reputation_instance_onkill` (
-  `mapid` smallint(5) unsigned NOT NULL,
-  `mob_rep_reward` mediumint(10) NOT NULL DEFAULT '0',
-  `mob_rep_limit` mediumint(10) NOT NULL DEFAULT '0',
-  `boss_rep_reward` mediumint(10) NOT NULL DEFAULT '0',
-  `boss_rep_limit` mediumint(10) NOT NULL DEFAULT '0',
-  `faction_change_alliance` smallint(5) unsigned NOT NULL,
-  `faction_change_horde` smallint(5) unsigned NOT NULL,
+  `mapid` smallint unsigned NOT NULL,
+  `mob_rep_reward` mediumint NOT NULL DEFAULT '0',
+  `mob_rep_limit` mediumint NOT NULL DEFAULT '0',
+  `boss_rep_reward` mediumint NOT NULL DEFAULT '0',
+  `boss_rep_limit` mediumint NOT NULL DEFAULT '0',
+  `faction_change_alliance` smallint unsigned NOT NULL,
+  `faction_change_horde` smallint unsigned NOT NULL,
   PRIMARY KEY (`mapid`,`faction_change_alliance`,`faction_change_horde`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Creature System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Creature System';
 
 DELETE FROM `reputation_instance_onkill`;
 /*!40000 ALTER TABLE `reputation_instance_onkill` DISABLE KEYS */;
@@ -45,5 +46,6 @@ INSERT INTO `reputation_instance_onkill` (`mapid`, `mob_rep_reward`, `mob_rep_li
 /*!40000 ALTER TABLE `reputation_instance_onkill` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

@@ -3,21 +3,22 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `areatriggers` (
-  `entry` smallint(5) unsigned NOT NULL,
-  `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `map` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `screen` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `name` varchar(100) DEFAULT 'Unknown',
+  `entry` smallint unsigned NOT NULL,
+  `type` tinyint unsigned NOT NULL DEFAULT '0',
+  `map` smallint unsigned NOT NULL DEFAULT '0',
+  `screen` smallint unsigned NOT NULL DEFAULT '0',
+  `name` varchar(100) CHARACTER SET utf8 DEFAULT 'Unknown',
   `position_x` float NOT NULL DEFAULT '0',
   `position_y` float NOT NULL DEFAULT '0',
   `position_z` float NOT NULL DEFAULT '0',
   `orientation` float NOT NULL DEFAULT '0',
-  `required_honor_rank` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `required_level` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `required_honor_rank` tinyint unsigned NOT NULL DEFAULT '0',
+  `required_level` tinyint unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=FIXED COMMENT='Trigger System';
 
 DELETE FROM `areatriggers`;
 /*!40000 ALTER TABLE `areatriggers` DISABLE KEYS */;
@@ -470,5 +471,6 @@ INSERT INTO `areatriggers` (`entry`, `type`, `map`, `screen`, `name`, `position_
 /*!40000 ALTER TABLE `areatriggers` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

@@ -3,18 +3,19 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `vendor_restrictions` (
-  `entry` int(10) unsigned NOT NULL,
-  `racemask` int(11) NOT NULL DEFAULT '-1',
-  `classmask` int(11) NOT NULL DEFAULT '-1',
-  `reqrepfaction` int(10) unsigned NOT NULL DEFAULT '0',
-  `reqrepfactionvalue` int(10) unsigned NOT NULL DEFAULT '0',
-  `canbuyattextid` int(10) unsigned NOT NULL DEFAULT '0',
-  `cannotbuyattextid` int(10) unsigned NOT NULL DEFAULT '0',
-  `flags` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '0 - check for all values, 1 - classic mount vendor',
+  `entry` int unsigned NOT NULL,
+  `racemask` int NOT NULL DEFAULT '-1',
+  `classmask` int NOT NULL DEFAULT '-1',
+  `reqrepfaction` int unsigned NOT NULL DEFAULT '0',
+  `reqrepfactionvalue` int unsigned NOT NULL DEFAULT '0',
+  `canbuyattextid` int unsigned NOT NULL DEFAULT '0',
+  `cannotbuyattextid` int unsigned NOT NULL DEFAULT '0',
+  `flags` int unsigned NOT NULL DEFAULT '0' COMMENT '0 - check for all values, 1 - classic mount vendor',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Vendor System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Vendor System';
 
 DELETE FROM `vendor_restrictions`;
 /*!40000 ALTER TABLE `vendor_restrictions` DISABLE KEYS */;
@@ -33,5 +34,6 @@ INSERT INTO `vendor_restrictions` (`entry`, `racemask`, `classmask`, `reqrepfact
 /*!40000 ALTER TABLE `vendor_restrictions` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

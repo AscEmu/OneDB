@@ -3,18 +3,19 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `playercreateinfo_bars` (
-  `race` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `class` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `button` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `build` smallint(6) NOT NULL DEFAULT '12340',
-  `action` mediumint(10) unsigned DEFAULT NULL,
-  `type` tinyint(3) unsigned DEFAULT NULL,
-  `misc` tinyint(3) unsigned DEFAULT NULL,
+  `race` tinyint unsigned NOT NULL DEFAULT '0',
+  `class` tinyint unsigned NOT NULL DEFAULT '0',
+  `button` tinyint unsigned NOT NULL DEFAULT '0',
+  `build` smallint NOT NULL DEFAULT '12340',
+  `action` mediumint unsigned DEFAULT NULL,
+  `type` tinyint unsigned DEFAULT NULL,
+  `misc` tinyint unsigned DEFAULT NULL,
   PRIMARY KEY (`race`,`class`,`button`,`build`),
   UNIQUE KEY `unique_index` (`race`,`class`,`button`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Player System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Player System';
 
 DELETE FROM `playercreateinfo_bars`;
 /*!40000 ALTER TABLE `playercreateinfo_bars` DISABLE KEYS */;
@@ -733,5 +734,6 @@ INSERT INTO `playercreateinfo_bars` (`race`, `class`, `button`, `build`, `action
 /*!40000 ALTER TABLE `playercreateinfo_bars` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

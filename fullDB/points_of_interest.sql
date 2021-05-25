@@ -3,17 +3,18 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `points_of_interest` (
-  `entry` int(10) unsigned NOT NULL DEFAULT '0',
+  `entry` int unsigned NOT NULL DEFAULT '0',
   `x` float NOT NULL DEFAULT '0',
   `y` float NOT NULL DEFAULT '0',
-  `icon` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `flags` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `data` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `icon_name` text NOT NULL,
+  `icon` mediumint unsigned NOT NULL DEFAULT '0',
+  `flags` mediumint unsigned NOT NULL DEFAULT '0',
+  `data` mediumint unsigned NOT NULL DEFAULT '0',
+  `icon_name` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Points of interest';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Points of interest';
 
 DELETE FROM `points_of_interest`;
 /*!40000 ALTER TABLE `points_of_interest` DISABLE KEYS */;
@@ -514,5 +515,6 @@ INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `i
 /*!40000 ALTER TABLE `points_of_interest` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

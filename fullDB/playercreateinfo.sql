@@ -3,35 +3,36 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `playercreateinfo` (
-  `Index` tinyint(3) unsigned NOT NULL AUTO_INCREMENT,
-  `build` smallint(6) NOT NULL DEFAULT '12340',
-  `race` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `class` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `mapID` int(10) unsigned NOT NULL DEFAULT '0',
-  `zoneID` int(10) unsigned NOT NULL DEFAULT '0',
+  `Index` tinyint unsigned NOT NULL AUTO_INCREMENT,
+  `build` smallint NOT NULL DEFAULT '12340',
+  `race` tinyint unsigned NOT NULL DEFAULT '0',
+  `class` tinyint unsigned NOT NULL DEFAULT '0',
+  `mapID` int unsigned NOT NULL DEFAULT '0',
+  `zoneID` int unsigned NOT NULL DEFAULT '0',
   `positionX` float NOT NULL DEFAULT '0',
   `positionY` float NOT NULL DEFAULT '0',
   `positionZ` float NOT NULL DEFAULT '0',
   `orientation` float DEFAULT '0',
-  `BaseStrength` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `BaseAgility` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `BaseStamina` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `BaseIntellect` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `BaseSpirit` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `BaseHealth` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `BaseMana` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `BaseRage` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `BaseFocus` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `BaseEnergy` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `attackpower` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `BaseStrength` tinyint unsigned NOT NULL DEFAULT '0',
+  `BaseAgility` tinyint unsigned NOT NULL DEFAULT '0',
+  `BaseStamina` tinyint unsigned NOT NULL DEFAULT '0',
+  `BaseIntellect` tinyint unsigned NOT NULL DEFAULT '0',
+  `BaseSpirit` tinyint unsigned NOT NULL DEFAULT '0',
+  `BaseHealth` smallint unsigned NOT NULL DEFAULT '0',
+  `BaseMana` tinyint unsigned NOT NULL DEFAULT '0',
+  `BaseRage` smallint unsigned NOT NULL DEFAULT '0',
+  `BaseFocus` tinyint unsigned NOT NULL DEFAULT '0',
+  `BaseEnergy` tinyint unsigned NOT NULL DEFAULT '0',
+  `attackpower` tinyint unsigned NOT NULL DEFAULT '0',
   `mindmg` float NOT NULL DEFAULT '0',
   `maxdmg` float NOT NULL DEFAULT '0',
-  `taximask` tinytext,
+  `taximask` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`Index`,`build`),
   UNIQUE KEY `unique_index` (`Index`,`build`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=95 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Player System';
+) ENGINE=MyISAM AUTO_INCREMENT=95 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Player System';
 
 DELETE FROM `playercreateinfo`;
 /*!40000 ALTER TABLE `playercreateinfo` DISABLE KEYS */;
@@ -192,5 +193,6 @@ INSERT INTO `playercreateinfo` (`Index`, `build`, `race`, `class`, `mapID`, `zon
 /*!40000 ALTER TABLE `playercreateinfo` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

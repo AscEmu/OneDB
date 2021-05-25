@@ -3,14 +3,15 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `creature_difficulty` (
-  `entry` int(30) unsigned NOT NULL DEFAULT '0',
-  `difficulty_1` int(30) unsigned NOT NULL DEFAULT '0' COMMENT 'Dungeon heroic / Raid 25 man',
-  `difficulty_2` int(30) unsigned NOT NULL DEFAULT '0' COMMENT 'Raid heroic 10 man',
-  `difficulty_3` int(30) unsigned NOT NULL DEFAULT '0' COMMENT 'Raid heroic 25 man',
+  `entry` int unsigned NOT NULL DEFAULT '0',
+  `difficulty_1` int unsigned NOT NULL DEFAULT '0' COMMENT 'Dungeon heroic / Raid 25 man',
+  `difficulty_2` int unsigned NOT NULL DEFAULT '0' COMMENT 'Raid heroic 10 man',
+  `difficulty_3` int unsigned NOT NULL DEFAULT '0' COMMENT 'Raid heroic 25 man',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Creature System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Creature System';
 
 DELETE FROM `creature_difficulty`;
 /*!40000 ALTER TABLE `creature_difficulty` DISABLE KEYS */;
@@ -1835,5 +1836,6 @@ INSERT INTO `creature_difficulty` (`entry`, `difficulty_1`, `difficulty_2`, `dif
 /*!40000 ALTER TABLE `creature_difficulty` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

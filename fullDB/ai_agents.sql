@@ -3,23 +3,24 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `ai_agents` (
-  `entry` int(10) unsigned NOT NULL,
-  `instance_mode` tinyint(1) unsigned NOT NULL DEFAULT '4',
-  `type` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `event` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `chance` tinyint(3) unsigned NOT NULL DEFAULT '100',
-  `maxcount` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `spell` int(10) unsigned NOT NULL DEFAULT '0',
-  `spelltype` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `targettype_overwrite` tinyint(3) NOT NULL DEFAULT '-1',
-  `cooldown_overwrite` mediumint(10) NOT NULL DEFAULT '-1',
+  `entry` int unsigned NOT NULL,
+  `instance_mode` tinyint unsigned NOT NULL DEFAULT '4',
+  `type` tinyint unsigned NOT NULL DEFAULT '0',
+  `event` tinyint unsigned NOT NULL DEFAULT '0',
+  `chance` tinyint unsigned NOT NULL DEFAULT '100',
+  `maxcount` tinyint unsigned NOT NULL DEFAULT '0',
+  `spell` int unsigned NOT NULL DEFAULT '0',
+  `spelltype` tinyint unsigned NOT NULL DEFAULT '0',
+  `targettype_overwrite` tinyint NOT NULL DEFAULT '-1',
+  `cooldown_overwrite` mediumint NOT NULL DEFAULT '-1',
   `floatMisc1` float NOT NULL DEFAULT '0',
-  `Misc2` mediumint(10) unsigned NOT NULL DEFAULT '0',
-  `comments` text NOT NULL,
+  `Misc2` mediumint unsigned NOT NULL DEFAULT '0',
+  `comments` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   UNIQUE KEY `entry` (`entry`,`instance_mode`,`type`,`spell`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='AI System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='AI System';
 
 DELETE FROM `ai_agents`;
 /*!40000 ALTER TABLE `ai_agents` DISABLE KEYS */;
@@ -7477,5 +7478,6 @@ INSERT INTO `ai_agents` (`entry`, `instance_mode`, `type`, `event`, `chance`, `m
 /*!40000 ALTER TABLE `ai_agents` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

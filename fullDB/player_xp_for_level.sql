@@ -3,14 +3,15 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `player_xp_for_level` (
-  `player_lvl` tinyint(3) unsigned NOT NULL,
-  `build` smallint(6) NOT NULL DEFAULT '12340',
-  `next_lvl_req_xp` int(10) unsigned NOT NULL,
+  `player_lvl` tinyint unsigned NOT NULL,
+  `build` smallint NOT NULL DEFAULT '12340',
+  `next_lvl_req_xp` int unsigned NOT NULL,
   PRIMARY KEY (`player_lvl`,`build`),
   UNIQUE KEY `unique_index` (`player_lvl`,`build`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 DELETE FROM `player_xp_for_level`;
 /*!40000 ALTER TABLE `player_xp_for_level` DISABLE KEYS */;
@@ -171,5 +172,6 @@ INSERT INTO `player_xp_for_level` (`player_lvl`, `build`, `next_lvl_req_xp`) VAL
 /*!40000 ALTER TABLE `player_xp_for_level` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

@@ -3,12 +3,13 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `world_db_version` (
-  `id` smallint(6) NOT NULL AUTO_INCREMENT,
-  `LastUpdate` varchar(255) NOT NULL DEFAULT '',
+  `id` smallint NOT NULL AUTO_INCREMENT,
+  `LastUpdate` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='WorldDB version';
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='WorldDB version';
 
 DELETE FROM `world_db_version`;
 /*!40000 ALTER TABLE `world_db_version` DISABLE KEYS */;
@@ -45,9 +46,42 @@ INSERT INTO `world_db_version` (`id`, `LastUpdate`) VALUES
 	(30, '20180501-01_creature_spawns'),
 	(31, '20180501-02_gameobject_spawns'),
 	(32, '20180619-01_misc_tbc'),
-	(33, '20180916-02_update_utf8');
+	(33, '20180916-02_update_utf8'),
+	(37, '20180930-00_creature_properties'),
+	(38, '20181006-00_spell_custom_override'),
+	(39, '20181201-00_creature_quest_starter_ender'),
+	(40, '20181201-01_gameobject_quest_starter_ender'),
+	(41, '20181201-02_creature_quest_starter'),
+	(42, '20181201-03_creature_quest_finisher'),
+	(43, '20181201-04_gameobject_quest_starter'),
+	(44, '20181201-05_gameobject_quest_finisher'),
+	(45, '20181208-00_spell_coefficient_override'),
+	(46, '20190114-00_spell_custom_override'),
+	(47, '20190806-00_spell_required'),
+	(48, '20190807-00_recall'),
+	(49, '20191108-00_duplicate_event_spawns'),
+	(50, '20191117-00_creature_properties_gossip'),
+	(51, '20200221-00_utf8mb4_unicode_ci'),
+	(52, '20200324-00_gossips'),
+	(53, '20200428-00_gossips_actions'),
+	(54, '20200428-01_gossips'),
+	(55, '20200428-02_gossips'),
+	(56, '20200429-00_gossips'),
+	(57, '20200429-01_gameobject_event_spawns'),
+	(58, '20200429-02_recall_fix'),
+	(59, '20200430-00_new_years_spawns'),
+	(60, '20201012-00_worldstring_tables'),
+	(61, '20201116-00_instance_encounters'),
+	(62, '20201209-00_remove_duplicate_spawns'),
+	(63, '20201216-00_rename_event_properties'),
+	(64, '20201216-01_creature_spawns'),
+	(65, '20201220-00_creature_properties'),
+	(66, '20201226-00_transport_data'),
+	(67, '20210331-00_creature_properties'),
+	(68, '20210413-00_creature_properties');
 /*!40000 ALTER TABLE `world_db_version` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

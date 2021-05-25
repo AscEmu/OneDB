@@ -3,23 +3,24 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `creature_waypoints_manual` (
-  `group_id` int(10) unsigned NOT NULL DEFAULT '0',
-  `waypoint_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `group_id` int unsigned NOT NULL DEFAULT '0',
+  `waypoint_id` int unsigned NOT NULL DEFAULT '0',
   `position_x` float(8,2) NOT NULL DEFAULT '0.00',
   `position_y` float(8,2) NOT NULL DEFAULT '0.00',
   `position_z` float(8,2) NOT NULL DEFAULT '0.00',
-  `wait_time` int(10) unsigned NOT NULL DEFAULT '0',
-  `flags` int(10) unsigned NOT NULL DEFAULT '0',
-  `forward_emote_oneshot` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `forward_emote_id` int(10) unsigned NOT NULL DEFAULT '0',
-  `backward_emote_oneshot` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `backward_emote_id` int(10) unsigned NOT NULL DEFAULT '0',
-  `forward_skin_id` int(10) unsigned NOT NULL DEFAULT '0',
-  `backward_skin_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `wait_time` int unsigned NOT NULL DEFAULT '0',
+  `flags` int unsigned NOT NULL DEFAULT '0',
+  `forward_emote_oneshot` tinyint unsigned NOT NULL DEFAULT '0',
+  `forward_emote_id` int unsigned NOT NULL DEFAULT '0',
+  `backward_emote_oneshot` tinyint unsigned NOT NULL DEFAULT '0',
+  `backward_emote_id` int unsigned NOT NULL DEFAULT '0',
+  `forward_skin_id` int unsigned NOT NULL DEFAULT '0',
+  `backward_skin_id` int unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`group_id`,`waypoint_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Creature System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Creature System';
 
 DELETE FROM `creature_waypoints_manual`;
 /*!40000 ALTER TABLE `creature_waypoints_manual` DISABLE KEYS */;
@@ -171,5 +172,6 @@ INSERT INTO `creature_waypoints_manual` (`group_id`, `waypoint_id`, `position_x`
 /*!40000 ALTER TABLE `creature_waypoints_manual` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

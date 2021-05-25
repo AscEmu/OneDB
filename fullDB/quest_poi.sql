@@ -3,18 +3,19 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE IF NOT EXISTS `quest_poi` (
-  `questId` smallint(5) unsigned NOT NULL COMMENT 'Quest ID',
-  `poiId` tinyint(3) unsigned NOT NULL COMMENT 'Refers to quest_poi_points',
-  `objIndex` tinyint(2) NOT NULL DEFAULT '0' COMMENT 'Objective ID',
-  `mapId` smallint(3) unsigned NOT NULL DEFAULT '0' COMMENT 'Map ID',
-  `mapAreaId` smallint(3) unsigned NOT NULL DEFAULT '0' COMMENT 'Zone ID',
-  `floorId` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT 'Area ID',
-  `unk3` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `unk4` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `questId` smallint unsigned NOT NULL COMMENT 'Quest ID',
+  `poiId` tinyint unsigned NOT NULL COMMENT 'Refers to quest_poi_points',
+  `objIndex` tinyint NOT NULL DEFAULT '0' COMMENT 'Objective ID',
+  `mapId` smallint unsigned NOT NULL DEFAULT '0' COMMENT 'Map ID',
+  `mapAreaId` smallint unsigned NOT NULL DEFAULT '0' COMMENT 'Zone ID',
+  `floorId` tinyint unsigned NOT NULL DEFAULT '0' COMMENT 'Area ID',
+  `unk3` tinyint unsigned NOT NULL DEFAULT '0',
+  `unk4` tinyint unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`questId`,`poiId`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 DELETE FROM `quest_poi`;
 /*!40000 ALTER TABLE `quest_poi` DISABLE KEYS */;
@@ -10018,7 +10019,8 @@ INSERT INTO `quest_poi` (`questId`, `poiId`, `objIndex`, `mapId`, `mapAreaId`, `
 	(9933, 0, -1, 530, 477, 0, 0, 1),
 	(9934, 0, -1, 530, 477, 0, 0, 1),
 	(9935, 0, 0, 530, 477, 0, 0, 1),
-	(9935, 1, 1, 530, 477, 0, 0, 1),
+	(9935, 1, 1, 530, 477, 0, 0, 1);
+INSERT INTO `quest_poi` (`questId`, `poiId`, `objIndex`, `mapId`, `mapAreaId`, `floorId`, `unk3`, `unk4`) VALUES
 	(9935, 2, -1, 530, 477, 0, 0, 1),
 	(9936, 0, 0, 530, 477, 0, 0, 1),
 	(9936, 1, 1, 530, 477, 0, 0, 1),
@@ -13615,8 +13617,7 @@ INSERT INTO `quest_poi` (`questId`, `poiId`, `objIndex`, `mapId`, `mapAreaId`, `
 	(11693, 0, 0, 571, 486, 0, 0, 1),
 	(11693, 1, 0, 571, 486, 0, 0, 1),
 	(11693, 2, -1, 571, 486, 0, 0, 1),
-	(11694, 0, -1, 571, 486, 0, 0, 1);
-INSERT INTO `quest_poi` (`questId`, `poiId`, `objIndex`, `mapId`, `mapAreaId`, `floorId`, `unk3`, `unk4`) VALUES
+	(11694, 0, -1, 571, 486, 0, 0, 1),
 	(11694, 1, 0, 571, 486, 0, 0, 1),
 	(11694, 2, 0, 571, 486, 0, 0, 1),
 	(11695, 0, 4, 571, 486, 0, 2, 1),
@@ -18879,5 +18880,6 @@ INSERT INTO `quest_poi` (`questId`, `poiId`, `objIndex`, `mapId`, `mapAreaId`, `
 /*!40000 ALTER TABLE `quest_poi` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
