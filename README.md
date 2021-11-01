@@ -1,9 +1,9 @@
 # Welcome to OneDB
-OneDB is an experimental database for AscEmu. Feel free to share your thoughts with us.
+OneDB is the official world database for AscEmu. Feel free to share your thoughts with us.
 
 
 ## About OneDB
-Since AscEmu supports multiple versions on its repo, it was open how we deliver the necessary data for the different versions. AscEmu has not enough people to work on several databases. It is difficult to implement a proper versioning and implement automatic DB updates for all versions in a maintainable way. So we try to achieve to put all data in one database (AscEmu is already working this way with the core).
+Since AscEmu supports multiple versions on its repo, it was open how we deliver the necessary data for the different versions. AscEmu has not enough people to work on several databases. It is difficult to implement a proper versioning and implement automatic DB updates for all versions in a maintainable way. So we try to achieve to put all data in one database.
 
 
 ## How does it work?
