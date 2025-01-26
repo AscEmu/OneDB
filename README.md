@@ -52,4 +52,6 @@ We can not change structures for the tables. So if you ever tried to switch to a
 The build is key... I mean history is key. We link data to a build number and with that, we know exactly when the data changed. We will be able to compare old and new data which will help us when we work with it.
 
 ## Issues?
-Please create new issue reports in our main project AscEmu/AscEmu.
+
+> [!IMPORTANT]
+> **Please create [new issue reports](https://github.com/AscEmu/AscEmu/issues) in our main project AscEmu/AscEmu.**
