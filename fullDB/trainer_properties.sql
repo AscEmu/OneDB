@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `trainer_properties` (
   `can_train_min_skill_value` int DEFAULT '0',
   `can_train_max_skill_value` int DEFAULT '0',
   `comment` varchar(250) DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Exportiere Daten aus Tabelle ascemu_world.trainer_properties: ~780 rows (ungefähr)
 INSERT INTO `trainer_properties` (`entry`, `build`, `required_skill`, `required_skillvalue`, `req_class`, `RequiredRace`, `RequiredReputation`, `RequiredReputationValue`, `trainer_type`, `trainer_ui_window_message`, `can_train_gossip_textid`, `cannot_train_gossip_textid`, `spellset_id`, `can_train_max_level`, `can_train_min_skill_value`, `can_train_max_skill_value`, `comment`) VALUES
