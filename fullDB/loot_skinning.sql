@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -28,7 +28,6 @@ CREATE TABLE IF NOT EXISTS `loot_skinning` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Loot System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.loot_skinning: 5.397 rows
-/*!40000 ALTER TABLE `loot_skinning` DISABLE KEYS */;
 INSERT INTO `loot_skinning` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(113, 2318, 39.82, 0.00, 0.00, 0.00, 1, 1),
 	(113, 2934, 60.17, 0.00, 0.00, 0.00, 1, 1),
@@ -5427,7 +5426,6 @@ INSERT INTO `loot_skinning` (`entryid`, `itemid`, `normal10percentchance`, `norm
 	(40423, 33568, 72.07, 0.00, 0.00, 0.00, 1, 3),
 	(40423, 38557, 26.98, 0.00, 0.00, 0.00, 1, 2),
 	(40423, 44128, 1.00, 0.00, 0.00, 0.00, 1, 1);
-/*!40000 ALTER TABLE `loot_skinning` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

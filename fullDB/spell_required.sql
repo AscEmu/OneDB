@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `spell_required` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=FIXED COMMENT='Spell Additinal Data';
 
 -- Exportiere Daten aus Tabelle ascemu_world.spell_required: 22 rows
-/*!40000 ALTER TABLE `spell_required` DISABLE KEYS */;
 INSERT INTO `spell_required` (`spell_id`, `req_spell`) VALUES
 	(9788, 9785),
 	(10656, 10662),
@@ -46,7 +45,6 @@ INSERT INTO `spell_required` (`spell_id`, `req_spell`) VALUES
 	(28677, 28596),
 	(34767, 33391),
 	(34767, 34769);
-/*!40000 ALTER TABLE `spell_required` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

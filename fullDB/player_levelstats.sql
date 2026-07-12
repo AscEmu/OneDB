@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -30,7 +30,6 @@ CREATE TABLE IF NOT EXISTS `player_levelstats` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 PACK_KEYS=0 COMMENT='Stores levels stats.';
 
 -- Exportiere Daten aus Tabelle ascemu_world.player_levelstats: 33.360 rows
-/*!40000 ALTER TABLE `player_levelstats` DISABLE KEYS */;
 INSERT INTO `player_levelstats` (`build`, `race`, `class`, `level`, `BaseStrength`, `BaseAgility`, `BaseStamina`, `BaseIntellect`, `BaseSpirit`) VALUES
 	(5875, 1, 1, 1, 23, 20, 22, 20, 21),
 	(5875, 1, 1, 2, 24, 21, 23, 20, 21),
@@ -33395,7 +33394,6 @@ INSERT INTO `player_levelstats` (`build`, `race`, `class`, `level`, `BaseStrengt
 	(18414, 26, 10, 88, 165, 337, 236, 274, 208),
 	(18414, 26, 10, 89, 171, 348, 244, 283, 215),
 	(18414, 26, 10, 90, 176, 359, 251, 292, 222);
-/*!40000 ALTER TABLE `player_levelstats` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

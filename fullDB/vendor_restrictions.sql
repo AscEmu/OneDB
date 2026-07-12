@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -28,7 +28,6 @@ CREATE TABLE IF NOT EXISTS `vendor_restrictions` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Vendor System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.vendor_restrictions: 11 rows
-/*!40000 ALTER TABLE `vendor_restrictions` DISABLE KEYS */;
 INSERT INTO `vendor_restrictions` (`entry`, `racemask`, `classmask`, `reqrepfaction`, `reqrepfactionvalue`, `canbuyattextid`, `cannotbuyattextid`, `flags`) VALUES
 	(384, 1, -1, 72, 42000, 0, 5855, 1),
 	(1261, 4, -1, 47, 42000, 0, 5856, 1),
@@ -41,7 +40,6 @@ INSERT INTO `vendor_restrictions` (`entry`, `racemask`, `classmask`, `reqrepfact
 	(16264, 512, -1, 911, 42000, 0, 10305, 1),
 	(17584, 1024, -1, 930, 42000, 0, 10705, 1),
 	(19679, -1, -1, 933, 3000, 9896, 9895, 1);
-/*!40000 ALTER TABLE `vendor_restrictions` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

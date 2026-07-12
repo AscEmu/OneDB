@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `spelloverride` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Spell System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.spelloverride: 513 rows
-/*!40000 ALTER TABLE `spelloverride` DISABLE KEYS */;
 INSERT INTO `spelloverride` (`overrideId`, `spellId`) VALUES
 	(836, 10),
 	(836, 6141),
@@ -537,7 +536,6 @@ INSERT INTO `spelloverride` (`overrideId`, `spellId`) VALUES
 	(5634, 17364),
 	(5634, 32175),
 	(5634, 32176);
-/*!40000 ALTER TABLE `spelloverride` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

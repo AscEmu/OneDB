@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -22,8 +22,9 @@ CREATE TABLE IF NOT EXISTS `worldstring_tables` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Exportiere Daten aus Tabelle ascemu_world.worldstring_tables: 66 rows
-/*!40000 ALTER TABLE `worldstring_tables` DISABLE KEYS */;
 INSERT INTO `worldstring_tables` (`entry`, `text`) VALUES
+	(0, 'Are you sure you wish to purchase a Dual Talent Specialization.'),
+	(1, 'I wish to learn Dual Specialization.'),
 	(26, 'This instance is unavailable.'),
 	(27, 'You must have The Burning Crusade Expansion to access this content.'),
 	(28, 'Heroic mode unavailable for this instance.'),
@@ -79,18 +80,15 @@ INSERT INTO `worldstring_tables` (`entry`, `text`) VALUES
 	(78, 'Target player cannot sign your charter for one or more reasons.'),
 	(79, 'You have already signed that charter.'),
 	(80, 'You don\'t have the required amount of signatures to turn in this petition.'),
-	(500, 'You must have Wrath of the Lich King Expansion to access this content.'),
+	(81, 'You must have the quest, \'%s\' completed to pass through here.'),
 	(87, 'Are you sure you would like to purchase your second talent specialization?'),
 	(88, 'Purchase a Dual Talent Specialization.'),
 	(89, 'You do not have enough gold to purchase a dual spec.'),
 	(397, 'You need to be Revered with the faction Keepers of Time!'),
+	(500, 'You must have Wrath of the Lich King Expansion to access this content.'),
 	(501, 'This character is not allowed to play.'),
 	(502, 'You have been banned for: %s'),
-	(503, 'You were removed from the queue for the battleground for not joining after 1 minute 20 seconds.'),
-	(1, 'I wish to learn Dual Specialization.'),
-	(0, 'Are you sure you wish to purchase a Dual Talent Specialization.'),
-	(81, 'You must have the quest, \'%s\' completed to pass through here.');
-/*!40000 ALTER TABLE `worldstring_tables` ENABLE KEYS */;
+	(503, 'You were removed from the queue for the battleground for not joining after 1 minute 20 seconds.');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

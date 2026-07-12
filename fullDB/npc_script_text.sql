@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -32,7 +32,6 @@ CREATE TABLE IF NOT EXISTS `npc_script_text` (
 ) ENGINE=MyISAM AUTO_INCREMENT=10773 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Exportiere Daten aus Tabelle ascemu_world.npc_script_text: 10.715 rows
-/*!40000 ALTER TABLE `npc_script_text` DISABLE KEYS */;
 INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
 	(1, 'You are dismissed, $n.', 197, 0, 12, 0, 100, 113, 0, 0, 1242),
 	(2, 'This shouldn\'t take long...', 253, 0, 12, 0, 100, 432, 0, 0, 1851),
@@ -3891,9 +3890,9 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(3855, '%s goes into a killing frenzy!', 15509, 0, 16, 0, 100, 0, 0, 0, 24143),
 	(3856, '%s goes into a berserker rage!', 15509, 1, 16, 0, 100, 0, 0, 0, 34057),
 	(3857, 'You will be judged for defiling these sacred grounds!  The laws of the Ancients will not be challenged!  Trespassers will be annihilated!\n', 15516, 0, 14, 0, 100, 0, 0, 8646, 11442),
-	(3858, 'I sentence you to death!', 15516, 1, 14, 0, 100, 0, 0, 8647, 11443),
-	(3859, 'I serve to the last!', 15516, 2, 14, 0, 100, 0, 0, 8648, 11444);
+	(3858, 'I sentence you to death!', 15516, 1, 14, 0, 100, 0, 0, 8647, 11443);
 INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
+	(3859, 'I serve to the last!', 15516, 2, 14, 0, 100, 0, 0, 8648, 11444),
 	(3860, 'Are you so eager to die? I will be happy to accommodate you...', 15263, 0, 14, 0, 100, 0, 0, 8615, 11445),
 	(3861, 'Cower mortals! The age of darkness is at hand.', 15263, 1, 14, 0, 100, 0, 0, 8616, 0),
 	(3862, 'Tremble! The end is upon you.', 15263, 2, 14, 0, 100, 0, 0, 8621, 0),
@@ -8343,9 +8342,9 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(8306, '$G King : Queen; $n, me die now.', 22384, 8, 12, 0, 100, 0, 0, 0, 21035),
 	(8307, 'Me smash! You die!', 19996, 0, 12, 0, 100, 0, 0, 0, 1926),
 	(8308, 'Raaar!!! Me smash $r!', 19996, 1, 12, 0, 100, 0, 0, 0, 1927),
-	(8309, 'I\'ll crush you!', 19996, 2, 12, 0, 100, 0, 0, 0, 1925),
-	(8310, 'Puny $r... you were a... horrible $g king : queen;.', 19996, 3, 12, 0, 100, 0, 0, 0, 21050);
+	(8309, 'I\'ll crush you!', 19996, 2, 12, 0, 100, 0, 0, 0, 1925);
 INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
+	(8310, 'Puny $r... you were a... horrible $g king : queen;.', 19996, 3, 12, 0, 100, 0, 0, 0, 21050),
 	(8311, 'Agh... me am...dead.', 19996, 4, 12, 0, 100, 0, 0, 0, 21032),
 	(8312, 'Me go to... Ogri\'la.', 19996, 5, 12, 0, 100, 0, 0, 0, 21033),
 	(8313, '$G King : Queen; think... there really is... an Ogri\'la?', 19996, 6, 12, 0, 100, 0, 0, 0, 21049),
@@ -8793,8 +8792,8 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(8756, 'You will never wake the dreamer!', 3669, 0, 14, 0, 0, 0, 0, 5785, 0),
 	(8757, 'The coils of death... Will crush you!', 3670, 0, 14, 0, 0, 0, 0, 5787, 0),
 	(8758, 'I am the serpent king, i can do anything!', 3673, 0, 14, 0, 0, 0, 0, 5788, 0),
-	(8760, 'Aah, fresh meat!', 1716, 1, 0, 0, 0, 0, 0, 0, 0),
 	(8759, 'I\'ll crush you!', 1717, 0, 12, 0, 100, 0, 0, 0, 0),
+	(8760, 'Aah, fresh meat!', 1716, 1, 0, 0, 0, 0, 0, 0, 0),
 	(8762, 'That one maybe not so good to eat now, stupied Garfrost! BAD! BAD!', 36494, 8, 14, 0, 0, 0, 0, 16914, 0),
 	(8763, 'Will save.. for snack for.. for later!', 36494, 9, 14, 0, 0, 0, 0, 16913, 0),
 	(8764, 'Garfrost hope giant underpants clean. Save boss great shame. For later.', 36494, 10, 14, 0, 0, 0, 0, 16915, 0),
@@ -10751,7 +10750,6 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(10770, 'You will have your challenge, Fordring.', 16980, 4, 14, 0, 0, 0, 0, 16321, 35747),
 	(10771, 'The souls of your fallen champions will be mine, Fordring.', 16980, 5, 14, 0, 0, 0, 0, 16323, 35749),
 	(10772, 'You have been infected with a Paralytic Toxin!', 35144, 2, 42, 0, 0, 0, 0, 0, 36323);
-/*!40000 ALTER TABLE `npc_script_text` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

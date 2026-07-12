@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -23,7 +23,6 @@ CREATE TABLE IF NOT EXISTS `fishing` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Fishing System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.fishing: 620 rows
-/*!40000 ALTER TABLE `fishing` DISABLE KEYS */;
 INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(1, 1, 25),
 	(2, 1, 75),
@@ -645,7 +644,6 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(4646, 380, 475),
 	(4654, 430, 525),
 	(4679, 1, 25);
-/*!40000 ALTER TABLE `fishing` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

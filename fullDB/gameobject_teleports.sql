@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -29,10 +29,8 @@ CREATE TABLE IF NOT EXISTS `gameobject_teleports` (
 ) ENGINE=MyISAM AUTO_INCREMENT=700001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Optional table to create custom portals';
 
 -- Exportiere Daten aus Tabelle ascemu_world.gameobject_teleports: 1 rows
-/*!40000 ALTER TABLE `gameobject_teleports` DISABLE KEYS */;
 INSERT INTO `gameobject_teleports` (`entry`, `mapid`, `x_pos`, `y_pos`, `z_pos`, `orientation`, `required_level`, `required_class`, `required_achievement`) VALUES
 	(700000, 1, -1304.57, 205.285, 68.6814, 0, 1, 0, 0);
-/*!40000 ALTER TABLE `gameobject_teleports` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

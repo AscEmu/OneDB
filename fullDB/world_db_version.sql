@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -19,9 +19,9 @@ CREATE TABLE IF NOT EXISTS `world_db_version` (
   `id` smallint NOT NULL AUTO_INCREMENT,
   `LastUpdate` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=142 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='WorldDB version';
+) ENGINE=InnoDB AUTO_INCREMENT=166 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='WorldDB version';
 
--- Exportiere Daten aus Tabelle ascemu_world.world_db_version: ~138 rows (ungefähr)
+-- Exportiere Daten aus Tabelle ascemu_world.world_db_version: ~162 rows (ungefähr)
 INSERT INTO `world_db_version` (`id`, `LastUpdate`) VALUES
 	(1, '20180331-00_build_creature_properties'),
 	(2, '20180331-01_world_db_version'),
@@ -160,7 +160,31 @@ INSERT INTO `world_db_version` (`id`, `LastUpdate`) VALUES
 	(138, '20240511-00_creature_properties'),
 	(139, '20240511-01_creature_properties'),
 	(140, '20240904-00_misc'),
-	(141, '20250112-00_world_db_version');
+	(141, '20250112-00_world_db_version'),
+	(142, '20250516-00_creature_spawns'),
+	(143, '20250829-00_missing_locales_tables'),
+	(144, '20250903-00_misc'),
+	(145, '20250906-00_tbc_instance_spawns'),
+	(146, '20250906-01_locales_creature'),
+	(147, '20250912-00_creature_properties_cata'),
+	(148, '20250917-00_item_properties_cata'),
+	(149, '20250920-00_vendors_cata'),
+	(150, '20250920-01_loot_gameobjects_cata'),
+	(151, '20250920-02_loot_creatures_cata'),
+	(152, '20250921-00_item_properties_stats'),
+	(153, '20250921-01_item_properties_spells'),
+	(154, '20250922-00_itemset_cata'),
+	(155, '20251101-00_locales_creature'),
+	(156, '20251109-00_creature_spawns'),
+	(157, '20251123-00_creature_properties'),
+	(158, '20251125-00_spell_coefficient_override'),
+	(159, '20260203-00_pandaren_playercreateinfo'),
+	(160, '20260627-00_creature_spawns'),
+	(161, '20260627-01_creature_quests_mop'),
+	(162, '20260627-02_creature_spawns_mop'),
+	(163, '20260627-03_gameobject_spawns'),
+	(164, '20260627-04_gameobject_properties_spawns_mop'),
+	(165, '20260630-00_item_properties_mop');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

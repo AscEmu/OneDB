@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -23,7 +23,6 @@ CREATE TABLE IF NOT EXISTS `item_quest_association` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Quest System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.item_quest_association: 786 rows
-/*!40000 ALTER TABLE `item_quest_association` DISABLE KEYS */;
 INSERT INTO `item_quest_association` (`item`, `quest`, `item_count`) VALUES
 	(3467, 498, 1),
 	(3499, 498, 1),
@@ -811,7 +810,6 @@ INSERT INTO `item_quest_association` (`item`, `quest`, `item_count`) VALUES
 	(53510, 25444, 5),
 	(53637, 25446, 1),
 	(54215, 25461, 1);
-/*!40000 ALTER TABLE `item_quest_association` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

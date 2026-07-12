@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `itemset_linked_itemsetbonus` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Exportiere Daten aus Tabelle ascemu_world.itemset_linked_itemsetbonus: 359 rows
-/*!40000 ALTER TABLE `itemset_linked_itemsetbonus` DISABLE KEYS */;
 INSERT INTO `itemset_linked_itemsetbonus` (`itemset`, `itemset_bonus`) VALUES
 	(-857, 901),
 	(-856, 900),
@@ -383,7 +382,6 @@ INSERT INTO `itemset_linked_itemsetbonus` (`itemset`, `itemset_bonus`) VALUES
 	(-3, 568),
 	(-2, 567),
 	(-1, 582);
-/*!40000 ALTER TABLE `itemset_linked_itemsetbonus` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

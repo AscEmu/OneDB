@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -25,15 +25,13 @@ CREATE TABLE IF NOT EXISTS `transport_data` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=FIXED COMMENT='Transports';
 
 -- Exportiere Daten aus Tabelle ascemu_world.transport_data: 20 rows
-/*!40000 ALTER TABLE `transport_data` DISABLE KEYS */;
 INSERT INTO `transport_data` (`entry`, `min_build`, `max_build`, `name`) VALUES
-	(176310, 12340, 18414, 'Stormwind Harbor and Auberdine, Darkshore ("Ship (The Bravery)")'),
-	(176244, 5875, 12340, 'Rut\'theran Village, Teldrassil and Auberdine, Darkshore ("The Moonspray")'),
-	(176231, 5875, 18414, 'Menethil Harbor, Wetlands and Theramore Isle, Dustwallow Marsh ("The Lady Mehley")'),
-	(175080, 5875, 18414, 'Orgrimmar, Durotar and Grom\'gol Base Camp, Stranglethorn Vale ("The Iron Eagle")'),
-	(164871, 5875, 18414, 'Orgrimmar, Durotar and Undercity, Tirisfal Glades ("The Thundercaller")'),
 	(20808, 5875, 18414, 'Steamwheedle Cartel ports, Ratchet and Booty Bay ("The Maiden\'s Fancy")'),
-	(190536, 12340, 18414, 'Stormwing Harbor and Valiance Keep, Borean Tundra ("The Kraken")'),
+	(164871, 5875, 18414, 'Orgrimmar, Durotar and Undercity, Tirisfal Glades ("The Thundercaller")'),
+	(175080, 5875, 18414, 'Orgrimmar, Durotar and Grom\'gol Base Camp, Stranglethorn Vale ("The Iron Eagle")'),
+	(176231, 5875, 18414, 'Menethil Harbor, Wetlands and Theramore Isle, Dustwallow Marsh ("The Lady Mehley")'),
+	(176244, 5875, 12340, 'Rut\'theran Village, Teldrassil and Auberdine, Darkshore ("The Moonspray")'),
+	(176310, 12340, 18414, 'Stormwind Harbor and Auberdine, Darkshore ("Ship (The Bravery)")'),
 	(176495, 5875, 18414, 'Undercity, Tirisfal Glades and Grom\'gol Base Camp, Stranglethorn Vale ("The Purple Princess")'),
 	(177233, 5875, 12340, 'The Forgotten Coast, Feralas and Feathermoon Stronghold, Sardor Isle, Feralas ("Feathermoon Ferry")'),
 	(181646, 8606, 18414, 'Valaar\'s Berth, Azuremyst Isle and Auberdine, Darkshore ("Elune\'s Blessing")'),
@@ -44,10 +42,10 @@ INSERT INTO `transport_data` (`entry`, `min_build`, `max_build`, `name`) VALUES
 	(187038, 12340, 18414, 'Not Boardable - Cyrcling in Howling Fjord ("Sister Mercy")'),
 	(187568, 12340, 18414, 'Unu\'pe, Borean Tundra and Moa\'ki Harbor, Dragonblight ("Turtle (Walker of Waves)")'),
 	(188511, 12340, 18414, 'Moa\'ki Harbor and Kamagua ("Turtle (Green Island)")'),
+	(190536, 12340, 18414, 'Stormwing Harbor and Valiance Keep, Borean Tundra ("The Kraken")'),
+	(190549, 12340, 18414, 'Orgrimmar and Thunder Bluff ("The Zephyr")'),
 	(192241, 12340, 18414, 'Horde gunship patrolling above Icecrown ("Orgrim\'s Hammer")'),
-	(192242, 12340, 18414, 'Alliance gunship patrolling above Icecrown ("The Skybreaker")'),
-	(190549, 12340, 18414, 'Orgrimmar and Thunder Bluff ("The Zephyr")');
-/*!40000 ALTER TABLE `transport_data` ENABLE KEYS */;
+	(192242, 12340, 18414, 'Alliance gunship patrolling above Icecrown ("The Skybreaker")');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

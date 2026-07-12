@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,7 +27,6 @@ CREATE TABLE IF NOT EXISTS `points_of_interest` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Points of interest';
 
 -- Exportiere Daten aus Tabelle ascemu_world.points_of_interest: 493 rows
-/*!40000 ALTER TABLE `points_of_interest` DISABLE KEYS */;
 INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `icon_name`) VALUES
 	(1, -8811.46, 667.46, 7, 6, 0, 'Stormwind Auction House'),
 	(2, -8916.87, 622.87, 7, 6, 0, 'Stormwind Bank'),
@@ -522,7 +521,6 @@ INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `i
 	(491, 5752, 645.427, 7, 99, 0, 'Dalaran Trinkets'),
 	(492, 5815.91, 453.64, 7, 99, 0, 'Flight Master'),
 	(493, 5934, 575.626, 7, 99, 0, 'Dalaran Locksmith');
-/*!40000 ALTER TABLE `points_of_interest` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

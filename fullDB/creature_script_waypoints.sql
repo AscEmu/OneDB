@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -31,7 +31,6 @@ CREATE TABLE IF NOT EXISTS `creature_script_waypoints` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
 
 -- Exportiere Daten aus Tabelle ascemu_world.creature_script_waypoints: 30 rows
-/*!40000 ALTER TABLE `creature_script_waypoints` DISABLE KEYS */;
 INSERT INTO `creature_script_waypoints` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `delay`, `move_type`, `action`, `action_chance`, `description`) VALUES
 	(1, 1, -250.923, 2116.26, 81.179, 0, 0, 0, 0, 100, 'Adamant Shadowfang'),
 	(1, 2, -255.049, 2119.39, 81.179, 0, 0, 0, 0, 100, 'Adamant Shadowfang'),
@@ -63,7 +62,6 @@ INSERT INTO `creature_script_waypoints` (`id`, `point`, `position_x`, `position_
 	(1, 28, -226.993, 2111.47, 76.8925, 0, 0, 1, 1, 100, 'Adamant Shadowfang'),
 	(1, 29, -227.955, 2112.34, 76.8925, 0, 0, 1, 0, 100, 'Adamant Shadowfang'),
 	(1, 30, -229.159, 2109.52, 76.8895, 0, 0, 1, 0, 100, 'Adamant Shadowfang');
-/*!40000 ALTER TABLE `creature_script_waypoints` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -28,7 +28,6 @@ CREATE TABLE IF NOT EXISTS `lfg_dungeon_rewards` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Exportiere Daten aus Tabelle ascemu_world.lfg_dungeon_rewards: 15 rows
-/*!40000 ALTER TABLE `lfg_dungeon_rewards` DISABLE KEYS */;
 INSERT INTO `lfg_dungeon_rewards` (`dungeon_id`, `max_level`, `quest_id_1`, `money_var_1`, `xp_var_1`, `quest_id_2`, `money_var_2`, `xp_var_2`) VALUES
 	(258, 15, 24881, 0, 0, 24889, 0, 0),
 	(258, 25, 24882, 0, 0, 24890, 0, 0),
@@ -41,11 +40,10 @@ INSERT INTO `lfg_dungeon_rewards` (`dungeon_id`, `max_level`, `quest_id_1`, `mon
 	(260, 70, 24922, 0, 0, 24923, 0, 0),
 	(261, 80, 24790, 0, 0, 24791, 0, 0),
 	(262, 80, 24788, 0, 0, 24789, 0, 0),
-	(288, 80, 25485, 0, 0, 0, 0, 0),
-	(287, 80, 25483, 0, 0, 0, 0, 0),
+	(285, 80, 25482, 0, 0, 0, 0, 0),
 	(286, 80, 25484, 0, 0, 0, 0, 0),
-	(285, 80, 25482, 0, 0, 0, 0, 0);
-/*!40000 ALTER TABLE `lfg_dungeon_rewards` ENABLE KEYS */;
+	(287, 80, 25483, 0, 0, 0, 0, 0),
+	(288, 80, 25485, 0, 0, 0, 0, 0);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

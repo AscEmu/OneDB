@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -30,7 +30,6 @@ CREATE TABLE IF NOT EXISTS `graveyards` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Graveyard System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.graveyards: 685 rows
-/*!40000 ALTER TABLE `graveyards` DISABLE KEYS */;
 INSERT INTO `graveyards` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `zoneid`, `adjacentzoneid`, `mapid`, `faction`, `name`) VALUES
 	(1, -9115, 423, 96, 0, 0, 0, 0, '0', 'Stormwind'),
 	(2, -9194.31, -2313.26, 88.8265, 0, 0, 0, 0, '3', 'Redridge Mountains'),
@@ -717,7 +716,6 @@ INSERT INTO `graveyards` (`id`, `position_x`, `position_y`, `position_z`, `orien
 	(1683, 1620.95, 624.701, 32.8968, 0, 0, 0, 580, '3', 'Sunwell - Quel\'Delar Entrance'),
 	(1691, -13205.6, 272.703, 21.8571, 0, 0, 0, 0, '3', 'AAA - Arena (Dev Test)'),
 	(1720, 2585.83, -5808.93, 296.197, 0, 0, 0, 571, '3', 'Howling Fjord, Frostblade GY');
-/*!40000 ALTER TABLE `graveyards` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

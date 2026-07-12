@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,21 +27,19 @@ CREATE TABLE IF NOT EXISTS `creature_formations` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
 
 -- Exportiere Daten aus Tabelle ascemu_world.creature_formations: 12 rows
-/*!40000 ALTER TABLE `creature_formations` DISABLE KEYS */;
 INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES
-	(160092, 160096, 3, 260, 512, 0, 0),
-	(160092, 160095, 3, 100, 512, 0, 0),
-	(160092, 160092, 0, 0, 512, 0, 0),
-	(160040, 160080, 3, 260, 512, 4, 8),
-	(160040, 160082, 3, 100, 512, 4, 8),
-	(160040, 160040, 0, 0, 512, 0, 0),
-	(160039, 160081, 3, 260, 512, 0, 0),
-	(160039, 160084, 3, 100, 512, 0, 0),
+	(160038, 160038, 0, 0, 512, 0, 0),
 	(160039, 160039, 0, 0, 512, 0, 0),
-	(160038, 160085, 3, 100, 512, 0, 0),
+	(160040, 160040, 0, 0, 512, 0, 0),
+	(160040, 160080, 3, 260, 512, 4, 8),
+	(160039, 160081, 3, 260, 512, 0, 0),
+	(160040, 160082, 3, 100, 512, 4, 8),
 	(160038, 160083, 3, 260, 512, 0, 0),
-	(160038, 160038, 0, 0, 512, 0, 0);
-/*!40000 ALTER TABLE `creature_formations` ENABLE KEYS */;
+	(160039, 160084, 3, 100, 512, 0, 0),
+	(160038, 160085, 3, 100, 512, 0, 0),
+	(160092, 160092, 0, 0, 512, 0, 0),
+	(160092, 160095, 3, 100, 512, 0, 0),
+	(160092, 160096, 3, 260, 512, 0, 0);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

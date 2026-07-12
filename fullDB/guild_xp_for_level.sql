@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `guild_xp_for_level` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
 
 -- Exportiere Daten aus Tabelle ascemu_world.guild_xp_for_level: 25 rows
-/*!40000 ALTER TABLE `guild_xp_for_level` DISABLE KEYS */;
 INSERT INTO `guild_xp_for_level` (`lvl`, `xp_for_next_level`) VALUES
 	(1, 16580000),
 	(2, 18240000),
@@ -49,7 +48,6 @@ INSERT INTO `guild_xp_for_level` (`lvl`, `xp_for_next_level`) VALUES
 	(23, 53060000),
 	(24, 54730000),
 	(25, 56390000);
-/*!40000 ALTER TABLE `guild_xp_for_level` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

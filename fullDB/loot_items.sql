@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -28,7 +28,6 @@ CREATE TABLE IF NOT EXISTS `loot_items` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Loot System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.loot_items: 42.461 rows
-/*!40000 ALTER TABLE `loot_items` DISABLE KEYS */;
 INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(647, 20725, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(720, 11084, 100.00, 0.00, 0.00, 0.00, 1, 1),
@@ -9718,9 +9717,9 @@ INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal2
 	(10716, 11174, 22.36, 0.00, 0.00, 0.00, 1, 2),
 	(10716, 11177, 4.83, 0.00, 0.00, 0.00, 1, 1),
 	(10720, 11137, 76.92, 0.00, 0.00, 0.00, 2, 5),
-	(10720, 11174, 23.16, 0.00, 0.00, 0.00, 1, 2),
-	(10720, 11177, 7.69, 0.00, 0.00, 0.00, 1, 1);
+	(10720, 11174, 23.16, 0.00, 0.00, 0.00, 1, 2);
 INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+	(10720, 11177, 7.69, 0.00, 0.00, 0.00, 1, 1),
 	(10721, 11137, 71.43, 0.00, 0.00, 0.00, 2, 5),
 	(10721, 11174, 15.84, 0.00, 0.00, 0.00, 1, 2),
 	(10721, 11177, 6.62, 0.00, 0.00, 0.00, 1, 1),
@@ -19204,9 +19203,9 @@ INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal2
 	(21179, 14344, 75.00, 0.00, 0.00, 0.00, 1, 1),
 	(21179, 20725, 1.53, 0.00, 0.00, 0.00, 1, 1),
 	(21180, 20725, 100.00, 0.00, 0.00, 0.00, 1, 2),
-	(21181, 20725, 1.91, 0.00, 0.00, 0.00, 1, 1),
-	(21181, 22448, 83.33, 0.00, 0.00, 0.00, 1, 1);
+	(21181, 20725, 1.91, 0.00, 0.00, 0.00, 1, 1);
 INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+	(21181, 22448, 83.33, 0.00, 0.00, 0.00, 1, 1),
 	(21182, 20725, 1.16, 0.00, 0.00, 0.00, 1, 1),
 	(21182, 22448, 60.00, 0.00, 0.00, 0.00, 1, 1),
 	(21183, 20725, 1.16, 0.00, 0.00, 0.00, 1, 1),
@@ -28652,9 +28651,9 @@ INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal2
 	(31726, 22448, 99.00, 0.00, 0.00, 0.00, 1, 1),
 	(31727, 20725, 1.45, 0.00, 0.00, 0.00, 1, 1),
 	(31727, 22448, 99.00, 0.00, 0.00, 0.00, 1, 1),
-	(31728, 22445, 70.29, 0.00, 0.00, 0.00, 2, 3),
-	(31728, 22447, 20.42, 0.00, 0.00, 0.00, 2, 3);
+	(31728, 22445, 70.29, 0.00, 0.00, 0.00, 2, 3);
 INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+	(31728, 22447, 20.42, 0.00, 0.00, 0.00, 2, 3),
 	(31728, 22448, 3.00, 0.00, 0.00, 0.00, 1, 1),
 	(31729, 22445, 60.06, 0.00, 0.00, 0.00, 2, 3),
 	(31729, 22447, 23.30, 0.00, 0.00, 0.00, 2, 3),
@@ -33375,6 +33374,7 @@ INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal2
 	(36910, 36932, 24.34, 0.00, 0.00, 0.00, 1, 2),
 	(36910, 36933, 4.15, 0.00, 0.00, 0.00, 1, 2),
 	(36910, 36934, 4.52, 0.00, 0.00, 0.00, 1, 2),
+	(36910, 46849, 100.00, 0.00, 0.00, 0.00, 1, 2),
 	(36912, 36917, 18.04, 0.00, 0.00, 0.00, 1, 2),
 	(36912, 36918, 4.14, 0.00, 0.00, 0.00, 1, 2),
 	(36912, 36920, 18.11, 0.00, 0.00, 0.00, 1, 2),
@@ -38062,10 +38062,10 @@ INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal2
 	(43765, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(43766, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(43768, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
-	(43769, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
-	(43770, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
-	(43771, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1);
+	(43769, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1);
 INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+	(43770, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
+	(43771, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(43772, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(43773, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(43774, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
@@ -42493,9 +42493,7 @@ INSERT INTO `loot_items` (`entryid`, `itemid`, `normal10percentchance`, `normal2
 	(54589, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(54590, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
 	(54591, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
-	(54806, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1),
-	(36910, 46849, 100.00, 0.00, 0.00, 0.00, 1, 2);
-/*!40000 ALTER TABLE `loot_items` ENABLE KEYS */;
+	(54806, 34057, 100.00, 0.00, 0.00, 0.00, 1, 1);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `battlemasters` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Battlemasters System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.battlemasters: 147 rows
-/*!40000 ALTER TABLE `battlemasters` DISABLE KEYS */;
 INSERT INTO `battlemasters` (`creature_entry`, `battleground_id`) VALUES
 	(347, 1),
 	(857, 3),
@@ -171,7 +170,6 @@ INSERT INTO `battlemasters` (`creature_entry`, `battleground_id`) VALUES
 	(35026, 30),
 	(35027, 30),
 	(40413, 32);
-/*!40000 ALTER TABLE `battlemasters` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

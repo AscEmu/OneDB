@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -23,7 +23,6 @@ CREATE TABLE IF NOT EXISTS `spelltargetconstraints` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Spell System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.spelltargetconstraints: 1.046 rows
-/*!40000 ALTER TABLE `spelltargetconstraints` DISABLE KEYS */;
 INSERT INTO `spelltargetconstraints` (`SpellID`, `TargetType`, `TargetID`) VALUES
 	(2699, 0, 5307),
 	(3607, 0, 2530),
@@ -1071,7 +1070,6 @@ INSERT INTO `spelltargetconstraints` (`SpellID`, `TargetType`, `TargetID`) VALUE
 	(71281, 0, 36771),
 	(71281, 0, 36772),
 	(71281, 0, 36773);
-/*!40000 ALTER TABLE `spelltargetconstraints` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

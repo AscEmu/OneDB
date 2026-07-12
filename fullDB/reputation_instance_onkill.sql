@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,7 +27,6 @@ CREATE TABLE IF NOT EXISTS `reputation_instance_onkill` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Creature System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.reputation_instance_onkill: 24 rows
-/*!40000 ALTER TABLE `reputation_instance_onkill` DISABLE KEYS */;
 INSERT INTO `reputation_instance_onkill` (`mapid`, `mob_rep_reward`, `mob_rep_limit`, `boss_rep_reward`, `boss_rep_limit`, `faction_change_alliance`, `faction_change_horde`) VALUES
 	(269, 0, 42000, 120, 42000, 989, 989),
 	(269, 8, 21000, 80, 21000, 1779, 1779),
@@ -53,7 +52,6 @@ INSERT INTO `reputation_instance_onkill` (`mapid`, `mob_rep_reward`, `mob_rep_li
 	(558, 9, 12000, 90, 12000, 1011, 1011),
 	(560, 8, 42000, 150, 42000, 989, 989),
 	(564, 15, 42000, 250, 42000, 1012, 1012);
-/*!40000 ALTER TABLE `reputation_instance_onkill` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

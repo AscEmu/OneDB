@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -26,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `instance_encounters` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Exportiere Daten aus Tabelle ascemu_world.instance_encounters: 612 rows
-/*!40000 ALTER TABLE `instance_encounters` DISABLE KEYS */;
 INSERT INTO `instance_encounters` (`entry`, `creditType`, `creditEntry`, `lastEncounterDungeon`, `comment`, `mapid`) VALUES
 	(161, 0, 644, 0, 'Rhahk\'zor', 36),
 	(162, 0, 643, 0, 'Sneed', 36),
@@ -640,7 +639,6 @@ INSERT INTO `instance_encounters` (`entry`, `creditType`, `creditEntry`, `lastEn
 	(892, 0, 39747, 0, 'Saviana Ragefire', 724),
 	(893, 0, 39746, 0, 'General Zarithrian', 724),
 	(894, 0, 39746, 0, 'General Zarithrian', 724);
-/*!40000 ALTER TABLE `instance_encounters` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -21,7 +21,6 @@ CREATE TABLE IF NOT EXISTS `petdefaultspells` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Pet System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.petdefaultspells: 438 rows
-/*!40000 ALTER TABLE `petdefaultspells` DISABLE KEYS */;
 INSERT INTO `petdefaultspells` (`entry`, `spell`) VALUES
 	(30, 17253),
 	(113, 7371),
@@ -461,7 +460,6 @@ INSERT INTO `petdefaultspells` (`entry`, `spell`) VALUES
 	(22265, 27049),
 	(22807, 27048),
 	(23219, 35346);
-/*!40000 ALTER TABLE `petdefaultspells` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

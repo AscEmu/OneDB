@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,7 +27,6 @@ CREATE TABLE IF NOT EXISTS `weather` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=FIXED COMMENT='Weather System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.weather: 62 rows
-/*!40000 ALTER TABLE `weather` DISABLE KEYS */;
 INSERT INTO `weather` (`zoneId`, `high_chance`, `high_type`, `med_chance`, `med_type`, `low_chance`, `low_type`) VALUES
 	(1, 80, 8, 5, 1, 1, 2),
 	(3, 20, 16, 2, 2, 0, 0),
@@ -91,7 +90,6 @@ INSERT INTO `weather` (`zoneId`, `high_chance`, `high_type`, `med_chance`, `med_
 	(3711, 40, 4, 15, 2, 0, 0),
 	(4197, 70, 8, 10, 2, 0, 0),
 	(4395, 15, 2, 10, 8, 0, 0);
-/*!40000 ALTER TABLE `weather` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

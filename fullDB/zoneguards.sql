@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -23,7 +23,6 @@ CREATE TABLE IF NOT EXISTS `zoneguards` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci COMMENT='World System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.zoneguards: 29 rows
-/*!40000 ALTER TABLE `zoneguards` DISABLE KEYS */;
 INSERT INTO `zoneguards` (`zone`, `horde_entry`, `alliance_entry`) VALUES
 	(1, 0, 13076),
 	(3, 8155, 0),
@@ -54,7 +53,6 @@ INSERT INTO `zoneguards` (`zone`, `horde_entry`, `alliance_entry`) VALUES
 	(1638, 3084, 0),
 	(1657, 0, 4262),
 	(3557, 0, 16733);
-/*!40000 ALTER TABLE `zoneguards` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

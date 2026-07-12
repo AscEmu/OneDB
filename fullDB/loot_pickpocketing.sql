@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -28,7 +28,6 @@ CREATE TABLE IF NOT EXISTS `loot_pickpocketing` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Loot System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.loot_pickpocketing: 16.225 rows
-/*!40000 ALTER TABLE `loot_pickpocketing` DISABLE KEYS */;
 INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(6, 117, 21.17, 0.00, 0.00, 0.00, 1, 1),
 	(6, 118, 5.63, 0.00, 0.00, 0.00, 1, 1),
@@ -161,6 +160,12 @@ INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, 
 	(171, 1210, 1.58, 0.00, 0.00, 0.00, 1, 1),
 	(171, 5371, 17.39, 0.00, 0.00, 0.00, 1, 1),
 	(171, 6289, 9.88, 0.00, 0.00, 0.00, 1, 2),
+	(203, 929, 5.00, 0.00, 0.00, 0.00, 1, 1),
+	(203, 1206, 0.50, 0.00, 0.00, 0.00, 1, 1),
+	(203, 1705, 1.20, 0.00, 0.00, 0.00, 1, 1),
+	(203, 4606, 10.00, 0.00, 0.00, 0.00, 1, 1),
+	(203, 5376, 14.00, 0.00, 0.00, 0.00, 1, 1),
+	(203, 16882, 32.00, 0.00, 0.00, 0.00, 1, 1),
 	(212, 929, 2.83, 0.00, 0.00, 0.00, 1, 1),
 	(212, 1206, 0.17, 0.00, 0.00, 0.00, 1, 1),
 	(212, 1705, 0.50, 0.00, 0.00, 0.00, 1, 1),
@@ -9932,15 +9937,15 @@ INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, 
 	(16545, 27854, 3.82, 0.00, 0.00, 0.00, 1, 1),
 	(16545, 27855, 3.82, 0.00, 0.00, 0.00, 1, 1),
 	(16545, 29569, 8.87, 0.00, 0.00, 0.00, 1, 1),
-	(16545, 29570, 9.02, 0.00, 0.00, 0.00, 1, 1),
+	(16545, 29570, 9.02, 0.00, 0.00, 0.00, 1, 1);
+INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
 	(16593, 22829, 3.91, 0.00, 0.00, 0.00, 1, 1),
 	(16593, 27854, 7.04, 0.00, 0.00, 0.00, 1, 1),
 	(16593, 27855, 5.13, 0.00, 0.00, 0.00, 1, 1),
 	(16593, 29569, 20.50, 0.00, 0.00, 0.00, 1, 1),
 	(16593, 29570, 19.72, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 22829, 3.51, 0.00, 0.00, 0.00, 1, 1),
-	(16594, 27854, 10.27, 0.00, 0.00, 0.00, 1, 1);
-INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, `normal25percentchance`, `heroic10percentchance`, `heroic25percentchance`, `mincount`, `maxcount`) VALUES
+	(16594, 27854, 10.27, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 27855, 5.54, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 29569, 18.51, 0.00, 0.00, 0.00, 1, 1),
 	(16594, 29570, 23.51, 0.00, 0.00, 0.00, 1, 1),
@@ -16249,14 +16254,7 @@ INSERT INTO `loot_pickpocketing` (`entryid`, `itemid`, `normal10percentchance`, 
 	(40446, 37452, 58.65, 0.00, 0.00, 0.00, 1, 1),
 	(40446, 38273, 70.68, 0.00, 0.00, 0.00, 1, 1),
 	(40446, 38274, 48.12, 0.00, 0.00, 0.00, 1, 1),
-	(40446, 43575, 96.24, 0.00, 0.00, 0.00, 1, 1),
-	(203, 16882, 32.00, 0.00, 0.00, 0.00, 1, 1),
-	(203, 5376, 14.00, 0.00, 0.00, 0.00, 1, 1),
-	(203, 4606, 10.00, 0.00, 0.00, 0.00, 1, 1),
-	(203, 929, 5.00, 0.00, 0.00, 0.00, 1, 1),
-	(203, 1705, 1.20, 0.00, 0.00, 0.00, 1, 1),
-	(203, 1206, 0.50, 0.00, 0.00, 0.00, 1, 1);
-/*!40000 ALTER TABLE `loot_pickpocketing` ENABLE KEYS */;
+	(40446, 43575, 96.24, 0.00, 0.00, 0.00, 1, 1);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

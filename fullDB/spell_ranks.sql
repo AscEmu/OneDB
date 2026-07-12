@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `spell_ranks` (
   UNIQUE KEY `unique_index` (`spell_id`,`min_build`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Spell Rank Data';
 
--- Exportiere Daten aus Tabelle ascemu_world.spell_ranks: ~4.014 rows (ungefähr)
+-- Exportiere Daten aus Tabelle ascemu_world.spell_ranks: ~4.038 rows (ungefähr)
 INSERT INTO `spell_ranks` (`spell_id`, `min_build`, `max_build`, `first_spell`, `rank`, `comment`) VALUES
 	(10, 5875, 12340, 10, 1, 'Blizzard'),
 	(6141, 5875, 12340, 10, 2, 'Blizzard'),
@@ -2803,6 +2803,15 @@ INSERT INTO `spell_ranks` (`spell_id`, `min_build`, `max_build`, `first_spell`, 
 	(20356, 5875, 8606, 20166, 2, 'Seal of Wisdom'),
 	(20357, 5875, 8606, 20166, 3, 'Seal of Wisdom'),
 	(27166, 8606, 8606, 20166, 4, 'Seal of Wisdom'),
+	(20167, 5875, 8606, 20167, 1, 'Seal of Light'),
+	(20333, 5875, 8606, 20167, 2, 'Seal of Light'),
+	(20334, 5875, 8606, 20167, 3, 'Seal of Light'),
+	(20340, 5875, 8606, 20167, 4, 'Seal of Light'),
+	(27161, 8606, 8606, 20167, 5, 'Seal of Light'),
+	(20168, 5875, 8606, 20168, 1, 'Seal of Wisdom'),
+	(20350, 5875, 8606, 20168, 2, 'Seal of Wisdom'),
+	(20351, 5875, 8606, 20168, 3, 'Seal of Wisdom'),
+	(27167, 8606, 8606, 20168, 4, 'Seal of Wisdom'),
 	(20184, 8606, 8606, 20184, 1, 'Judgement of Justice'),
 	(31896, 8606, 8606, 20184, 2, 'Judgement of Justice'),
 	(20185, 5875, 8606, 20185, 1, 'Judgement of Light'),
@@ -2845,6 +2854,15 @@ INSERT INTO `spell_ranks` (`spell_id`, `min_build`, `max_build`, `first_spell`, 
 	(20615, 5875, 12340, 20253, 3, 'Intercept Stun'),
 	(25273, 8606, 12340, 20253, 4, 'Intercept Stun'),
 	(25274, 8606, 12340, 20253, 5, 'Intercept Stun'),
+	(20267, 5875, 8606, 20267, 1, 'Judgement of Light'),
+	(20341, 5875, 8606, 20267, 2, 'Judgement of Light'),
+	(20342, 5875, 8606, 20267, 3, 'Judgement of Light'),
+	(20343, 5875, 8606, 20267, 4, 'Judgement of Light'),
+	(27163, 8606, 8606, 20267, 5, 'Judgement of Light'),
+	(20268, 5875, 8606, 20268, 1, 'Judgement of Wisdom'),
+	(20352, 5875, 8606, 20268, 2, 'Judgement of Wisdom'),
+	(20353, 5875, 8606, 20268, 3, 'Judgement of Wisdom'),
+	(27165, 8606, 8606, 20268, 4, 'Judgement of Wisdom'),
 	(20322, 5875, 15595, 20322, 1, 'Fire Shield'),
 	(20323, 5875, 15595, 20322, 2, 'Fire Shield'),
 	(20324, 5875, 15595, 20322, 3, 'Fire Shield'),
@@ -2889,6 +2907,12 @@ INSERT INTO `spell_ranks` (`spell_id`, `min_build`, `max_build`, `first_spell`, 
 	(20405, 5875, 15595, 20403, 3, 'Soothing Kiss'),
 	(20406, 5875, 15595, 20403, 4, 'Soothing Kiss'),
 	(27494, 8606, 15595, 20403, 5, 'Soothing Kiss'),
+	(20425, 5875, 8606, 20425, 1, 'Judgement of Command'),
+	(20962, 5875, 8606, 20425, 2, 'Judgement of Command'),
+	(20961, 5875, 8606, 20425, 3, 'Judgement of Command'),
+	(20967, 5875, 8606, 20425, 4, 'Judgement of Command'),
+	(20968, 5875, 8606, 20425, 5, 'Judgement of Command'),
+	(27172, 8606, 8606, 20425, 6, 'Judgement of Command'),
 	(20429, 5875, 15595, 20429, 1, 'Tainted Blood'),
 	(20430, 5875, 15595, 20429, 2, 'Tainted Blood'),
 	(20431, 5875, 15595, 20429, 3, 'Tainted Blood'),

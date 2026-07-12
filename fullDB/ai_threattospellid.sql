@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server Version:               8.0.30 - MySQL Community Server - GPL
--- Server Betriebssystem:        Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Betriebssystem:        Win64
+-- HeidiSQL Version:             12.20.0.7320
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -23,7 +23,6 @@ CREATE TABLE IF NOT EXISTS `ai_threattospellid` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='AI System';
 
 -- Exportiere Daten aus Tabelle ascemu_world.ai_threattospellid: 151 rows
-/*!40000 ALTER TABLE `ai_threattospellid` DISABLE KEYS */;
 INSERT INTO `ai_threattospellid` (`spell`, `mod`, `modcoef`) VALUES
 	(72, 293, 1),
 	(78, 20, 1),
@@ -33,6 +32,7 @@ INSERT INTO `ai_threattospellid` (`spell`, `mod`, `modcoef`) VALUES
 	(469, 40, 1),
 	(676, 104, 1),
 	(770, 108, 1),
+	(779, 0, 1.5),
 	(781, -135, 0),
 	(845, 10, 1),
 	(1160, 16, 1),
@@ -171,12 +171,10 @@ INSERT INTO `ai_threattospellid` (`spell`, `mod`, `modcoef`) VALUES
 	(48560, 62, 1),
 	(48567, 409, 0.5),
 	(48568, 515, 0.5),
-	(57823, 500, 1),
 	(52212, 0, 1.9),
-	(779, 0, 1.5),
 	(56815, 0, 1.75),
-	(57755, 0, 1.5);
-/*!40000 ALTER TABLE `ai_threattospellid` ENABLE KEYS */;
+	(57755, 0, 1.5),
+	(57823, 500, 1);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
