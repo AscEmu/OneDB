@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `spell_ranks` (
   UNIQUE KEY `unique_index` (`spell_id`,`min_build`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Spell Rank Data';
 
--- Exportiere Daten aus Tabelle ascemu_world.spell_ranks: ~4.038 rows (ungefähr)
+-- Exportiere Daten aus Tabelle ascemu_world.spell_ranks: ~4.068 rows (ungefähr)
 INSERT INTO `spell_ranks` (`spell_id`, `min_build`, `max_build`, `first_spell`, `rank`, `comment`) VALUES
 	(10, 5875, 12340, 10, 1, 'Blizzard'),
 	(6141, 5875, 12340, 10, 2, 'Blizzard'),
@@ -3025,6 +3025,31 @@ INSERT INTO `spell_ranks` (`spell_id`, `min_build`, `max_build`, `first_spell`, 
 	(25329, 8606, 12340, 23455, 7, 'Holy Nova'),
 	(48075, 12340, 12340, 23455, 8, 'Holy Nova'),
 	(48076, 12340, 12340, 23455, 9, 'Holy Nova'),
+	(23759, 5875, 15595, 23759, 1, 'Master Demonologist - Imp'),
+	(23826, 5875, 15595, 23759, 2, 'Master Demonologist - Imp'),
+	(23827, 5875, 15595, 23759, 3, 'Master Demonologist - Imp'),
+	(23828, 5875, 15595, 23759, 4, 'Master Demonologist - Imp'),
+	(23829, 5875, 15595, 23759, 5, 'Master Demonologist - Imp'),
+	(23760, 5875, 15595, 23760, 1, 'Master Demonologist - Voidwalker'),
+	(23841, 5875, 15595, 23760, 2, 'Master Demonologist - Voidwalker'),
+	(23842, 5875, 15595, 23760, 3, 'Master Demonologist - Voidwalker'),
+	(23843, 5875, 15595, 23760, 4, 'Master Demonologist - Voidwalker'),
+	(23844, 5875, 15595, 23760, 5, 'Master Demonologist - Voidwalker'),
+	(23761, 5875, 15595, 23761, 1, 'Master Demonologist - Succubus'),
+	(23833, 5875, 15595, 23761, 2, 'Master Demonologist - Succubus'),
+	(23834, 5875, 15595, 23761, 3, 'Master Demonologist - Succubus'),
+	(23835, 5875, 15595, 23761, 4, 'Master Demonologist - Succubus'),
+	(23836, 5875, 15595, 23761, 5, 'Master Demonologist - Succubus'),
+	(23762, 5875, 15595, 23762, 1, 'Master Demonologist - Felhunter'),
+	(23837, 5875, 15595, 23762, 2, 'Master Demonologist - Felhunter'),
+	(23838, 5875, 15595, 23762, 3, 'Master Demonologist - Felhunter'),
+	(23839, 5875, 15595, 23762, 4, 'Master Demonologist - Felhunter'),
+	(23840, 5875, 15595, 23762, 5, 'Master Demonologist - Felhunter'),
+	(23784, 5875, 15595, 23784, 1, 'Master Demonologist - Script'),
+	(23830, 5875, 15595, 23784, 2, 'Master Demonologist - Script'),
+	(23831, 5875, 15595, 23784, 3, 'Master Demonologist - Script'),
+	(23832, 5875, 15595, 23784, 4, 'Master Demonologist - Script'),
+	(35708, 8606, 15595, 23784, 5, 'Master Demonologist - Script'),
 	(23922, 5875, 12340, 23922, 1, 'Shield Slam'),
 	(23923, 5875, 12340, 23922, 2, 'Shield Slam'),
 	(23924, 5875, 12340, 23922, 3, 'Shield Slam'),
@@ -3469,6 +3494,11 @@ INSERT INTO `spell_ranks` (`spell_id`, `min_build`, `max_build`, `first_spell`, 
 	(35548, 8606, 12340, 35542, 5, 'Combat Potency'),
 	(35694, 8606, 8606, 35694, 1, 'Avoidance'),
 	(35698, 8606, 8606, 35694, 2, 'Avoidance'),
+	(35702, 8606, 15595, 35702, 1, 'Master Demonologist - Felguard'),
+	(35703, 8606, 15595, 35702, 2, 'Master Demonologist - Felguard'),
+	(35704, 8606, 15595, 35702, 3, 'Master Demonologist - Felguard'),
+	(35705, 8606, 15595, 35702, 4, 'Master Demonologist - Felguard'),
+	(35706, 8606, 15595, 35702, 5, 'Master Demonologist - Felguard'),
 	(41635, 12340, 12340, 41635, 1, 'Prayer of Mending'),
 	(48110, 12340, 12340, 41635, 2, 'Prayer of Mending'),
 	(48111, 12340, 12340, 41635, 3, 'Prayer of Mending'),

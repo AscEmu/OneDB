@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `fishing` (
   PRIMARY KEY (`zone`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Fishing System';
 
--- Exportiere Daten aus Tabelle ascemu_world.fishing: 620 rows
+-- Exportiere Daten aus Tabelle ascemu_world.fishing: 639 rows
 INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(1, 1, 25),
 	(2, 1, 75),
@@ -36,6 +36,7 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(16, 205, 300),
 	(17, 1, 75),
 	(18, 1, 25),
+	(25, 425, 520),
 	(28, 205, 300),
 	(33, 130, 225),
 	(35, 130, 225),
@@ -47,6 +48,7 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(43, 130, 225),
 	(44, 55, 150),
 	(45, 130, 225),
+	(46, 330, 425),
 	(47, 205, 300),
 	(57, 1, 25),
 	(60, 1, 25),
@@ -159,6 +161,7 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(393, 1, 25),
 	(394, 380, 475),
 	(395, 380, 475),
+	(400, 130, 225),
 	(401, 1, 75),
 	(405, 130, 225),
 	(406, 55, 150),
@@ -224,6 +227,7 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(718, 1, 75),
 	(719, 1, 75),
 	(720, 1, 75),
+	(796, 130, 225),
 	(797, 1, 25),
 	(798, 1, 25),
 	(799, 55, 160),
@@ -282,6 +286,7 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(1297, 1, 25),
 	(1336, 205, 300),
 	(1377, 330, 425),
+	(1417, 205, 300),
 	(1477, 205, 300),
 	(1497, 1, 75),
 	(1519, 1, 75),
@@ -291,6 +296,8 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(1578, 130, 225),
 	(1581, 1, 75),
 	(1582, 1, 75),
+	(1583, 425, 520),
+	(1584, 425, 520),
 	(1617, 1, 75),
 	(1637, 1, 75),
 	(1638, 1, 75),
@@ -354,6 +361,7 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(2619, 330, 425),
 	(2621, 330, 425),
 	(2624, 330, 425),
+	(2717, 425, 520),
 	(2744, 330, 425),
 	(2817, 405, 500),
 	(2837, 330, 425),
@@ -384,7 +392,9 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(3473, 1, 25),
 	(3474, 1, 25),
 	(3475, 1, 25),
+	(3479, 25, 120),
 	(3482, 1, 25),
+	(3483, 280, 375),
 	(3496, 1, 75),
 	(3503, 1, 75),
 	(3506, 1, 75),
@@ -396,6 +406,7 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(3519, 355, 450),
 	(3520, 280, 375),
 	(3521, 305, 400),
+	(3523, 380, 475),
 	(3524, 1, 25),
 	(3525, 1, 75),
 	(3526, 1, 25),
@@ -562,6 +573,7 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(4091, 355, 450),
 	(4098, 380, 475),
 	(4099, 380, 475),
+	(4100, 450, 545),
 	(4101, 380, 475),
 	(4103, 380, 475),
 	(4104, 380, 475),
@@ -622,11 +634,13 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(4395, 430, 525),
 	(4411, 1, 75),
 	(4415, 430, 525),
+	(4416, 550, 645),
 	(4417, 430, 525),
 	(4474, 380, 475),
 	(4475, 380, 475),
 	(4478, 380, 475),
 	(4479, 380, 475),
+	(4493, 550, 645),
 	(4538, 430, 525),
 	(4539, 430, 525),
 	(4550, 405, 500),
@@ -643,7 +657,12 @@ INSERT INTO `fishing` (`zone`, `MinSkill`, `MaxSkill`) VALUES
 	(4615, 430, 525),
 	(4646, 380, 475),
 	(4654, 430, 525),
-	(4679, 1, 25);
+	(4656, 430, 525),
+	(4679, 1, 25),
+	(4710, 480, 575),
+	(4722, 430, 525),
+	(4813, 450, 545),
+	(4987, 480, 575);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

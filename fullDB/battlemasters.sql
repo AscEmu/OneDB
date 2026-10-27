@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `battlemasters` (
   PRIMARY KEY (`creature_entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Battlemasters System';
 
--- Exportiere Daten aus Tabelle ascemu_world.battlemasters: 147 rows
+-- Exportiere Daten aus Tabelle ascemu_world.battlemasters: 174 rows
 INSERT INTO `battlemasters` (`creature_entry`, `battleground_id`) VALUES
 	(347, 1),
 	(857, 3),
@@ -93,7 +93,10 @@ INSERT INTO `battlemasters` (`creature_entry`, `battleground_id`) VALUES
 	(21235, 6),
 	(22013, 7),
 	(22015, 7),
+	(22647, 1),
+	(22656, 1),
 	(25991, 6),
+	(26007, 6),
 	(29533, 6),
 	(29568, 6),
 	(29667, 2),
@@ -120,6 +123,8 @@ INSERT INTO `battlemasters` (`creature_entry`, `battleground_id`) VALUES
 	(30587, 9),
 	(30590, 9),
 	(30610, 6),
+	(31979, 1),
+	(32092, 1),
 	(32330, 6),
 	(32332, 6),
 	(32333, 6),
@@ -169,7 +174,29 @@ INSERT INTO `battlemasters` (`creature_entry`, `battleground_id`) VALUES
 	(35025, 30),
 	(35026, 30),
 	(35027, 30),
-	(40413, 32);
+	(37298, 1),
+	(37413, 1),
+	(40413, 32),
+	(44000, 120),
+	(44004, 120),
+	(44012, 108),
+	(44013, 108),
+	(44059, 108),
+	(44060, 120),
+	(50546, 108),
+	(50548, 108),
+	(50549, 108),
+	(50550, 108),
+	(50551, 108),
+	(50552, 108),
+	(50553, 108),
+	(50668, 120),
+	(50670, 120),
+	(50674, 120),
+	(50676, 120),
+	(50678, 120),
+	(50683, 120),
+	(50684, 120);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

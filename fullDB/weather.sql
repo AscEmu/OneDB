@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `weather` (
   PRIMARY KEY (`zoneId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=FIXED COMMENT='Weather System';
 
--- Exportiere Daten aus Tabelle ascemu_world.weather: 62 rows
+-- Exportiere Daten aus Tabelle ascemu_world.weather: 70 rows
 INSERT INTO `weather` (`zoneId`, `high_chance`, `high_type`, `med_chance`, `med_type`, `low_chance`, `low_type`) VALUES
 	(1, 80, 8, 5, 1, 1, 2),
 	(3, 20, 16, 2, 2, 0, 0),
@@ -72,12 +72,19 @@ INSERT INTO `weather` (`zoneId`, `high_chance`, `high_type`, `med_chance`, `med_
 	(490, 40, 2, 20, 4, 5, 1),
 	(495, 70, 8, 5, 2, 0, 0),
 	(618, 40, 2, 20, 4, 5, 1),
+	(796, 25, 2, 0, 0, 0, 0),
 	(1377, 25, 16, 0, 0, 0, 0),
 	(1519, 40, 2, 20, 4, 5, 1),
 	(1637, 5, 2, 0, 0, 0, 0),
 	(1638, 40, 2, 20, 4, 5, 1),
 	(1657, 40, 2, 20, 4, 5, 1),
+	(1977, 15, 2, 0, 0, 0, 0),
+	(2017, 5, 2, 0, 0, 0, 0),
+	(2597, 25, 8, 0, 0, 0, 0),
 	(2817, 35, 8, 20, 2, 0, 0),
+	(3358, 10, 2, 0, 0, 0, 0),
+	(3428, 20, 16, 0, 0, 0, 0),
+	(3429, 20, 16, 0, 0, 0, 0),
 	(3430, 5, 2, 0, 0, 0, 0),
 	(3433, 40, 2, 20, 4, 0, 0),
 	(3518, 40, 2, 20, 4, 5, 1),
@@ -88,6 +95,7 @@ INSERT INTO `weather` (`zoneId`, `high_chance`, `high_type`, `med_chance`, `med_
 	(3557, 40, 2, 20, 4, 5, 1),
 	(3703, 40, 2, 0, 0, 0, 0),
 	(3711, 40, 4, 15, 2, 0, 0),
+	(4080, 20, 2, 0, 0, 0, 0),
 	(4197, 70, 8, 10, 2, 0, 0),
 	(4395, 15, 2, 10, 8, 0, 0);
 

@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -29,9 +29,9 @@ CREATE TABLE IF NOT EXISTS `npc_script_text` (
   `broadcast_id` mediumint NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`),
   UNIQUE KEY `unique_index` (`creature_entry`,`id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=10773 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11045 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Exportiere Daten aus Tabelle ascemu_world.npc_script_text: 10.715 rows
+-- Exportiere Daten aus Tabelle ascemu_world.npc_script_text: 10.760 rows
 INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
 	(1, 'You are dismissed, $n.', 197, 0, 12, 0, 100, 113, 0, 0, 1242),
 	(2, 'This shouldn\'t take long...', 253, 0, 12, 0, 100, 432, 0, 0, 1851),
@@ -3890,8 +3890,7 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(3855, '%s goes into a killing frenzy!', 15509, 0, 16, 0, 100, 0, 0, 0, 24143),
 	(3856, '%s goes into a berserker rage!', 15509, 1, 16, 0, 100, 0, 0, 0, 34057),
 	(3857, 'You will be judged for defiling these sacred grounds!  The laws of the Ancients will not be challenged!  Trespassers will be annihilated!\n', 15516, 0, 14, 0, 100, 0, 0, 8646, 11442),
-	(3858, 'I sentence you to death!', 15516, 1, 14, 0, 100, 0, 0, 8647, 11443);
-INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
+	(3858, 'I sentence you to death!', 15516, 1, 14, 0, 100, 0, 0, 8647, 11443),
 	(3859, 'I serve to the last!', 15516, 2, 14, 0, 100, 0, 0, 8648, 11444),
 	(3860, 'Are you so eager to die? I will be happy to accommodate you...', 15263, 0, 14, 0, 100, 0, 0, 8615, 11445),
 	(3861, 'Cower mortals! The age of darkness is at hand.', 15263, 1, 14, 0, 100, 0, 0, 8616, 0),
@@ -4754,7 +4753,8 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(4718, 'I have better things to do...', 22949, 0, 14, 0, 100, 0, 0, 11422, 21734),
 	(4719, 'Enough games!', 22949, 1, 14, 0, 100, 0, 0, 11428, 21960),
 	(4720, 'Enjoy your final moments.', 22949, 2, 14, 0, 100, 0, 0, 11426, 21738),
-	(4721, 'You are MINE!', 22949, 3, 14, 0, 100, 0, 0, 11427, 21739),
+	(4721, 'You are MINE!', 22949, 3, 14, 0, 100, 0, 0, 11427, 21739);
+INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
 	(4722, 'Selama am\'oronor!', 22949, 4, 14, 0, 100, 0, 0, 11423, 21735),
 	(4723, 'Well done!', 22949, 5, 14, 0, 100, 0, 0, 11424, 36764),
 	(4724, 'Lord Illidan, I...', 22949, 6, 14, 0, 100, 0, 0, 11425, 21737),
@@ -8342,8 +8342,7 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(8306, '$G King : Queen; $n, me die now.', 22384, 8, 12, 0, 100, 0, 0, 0, 21035),
 	(8307, 'Me smash! You die!', 19996, 0, 12, 0, 100, 0, 0, 0, 1926),
 	(8308, 'Raaar!!! Me smash $r!', 19996, 1, 12, 0, 100, 0, 0, 0, 1927),
-	(8309, 'I\'ll crush you!', 19996, 2, 12, 0, 100, 0, 0, 0, 1925);
-INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
+	(8309, 'I\'ll crush you!', 19996, 2, 12, 0, 100, 0, 0, 0, 1925),
 	(8310, 'Puny $r... you were a... horrible $g king : queen;.', 19996, 3, 12, 0, 100, 0, 0, 0, 21050),
 	(8311, 'Agh... me am...dead.', 19996, 4, 12, 0, 100, 0, 0, 0, 21032),
 	(8312, 'Me go to... Ogri\'la.', 19996, 5, 12, 0, 100, 0, 0, 0, 21033),
@@ -10178,7 +10177,8 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(10198, 'Please don\'t beat me!', 19383, 0, 12, 7, 100, 0, 0, 0, 0),
 	(10199, 'I don\'t understand you!', 19383, 1, 12, 7, 100, 0, 0, 0, 0),
 	(10200, 'No, spirit, I am afraid that they are all trapped inside - FOREVER! Now leave me be...', 19417, 0, 12, 0, 100, 0, 0, 0, 0),
-	(10201, 'Why? WHY! Why was I "gifted" such a burden?', 19417, 1, 12, 0, 100, 0, 0, 0, 0),
+	(10201, 'Why? WHY! Why was I "gifted" such a burden?', 19417, 1, 12, 0, 100, 0, 0, 0, 0);
+INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, `language`, `probability`, `emote`, `duration`, `sound`, `broadcast_id`) VALUES
 	(10202, 'WORK FASTER!', 19426, 0, 12, 0, 100, 0, 0, 0, 0),
 	(10203, 'I want those catapults built YESTERDAY!', 19426, 1, 12, 0, 100, 0, 0, 0, 0),
 	(10204, 'You are spotted by the eye of Grillok!', 19440, 1, 12, 0, 100, 0, 0, 0, 0),
@@ -10749,7 +10749,52 @@ INSERT INTO `npc_script_text` (`entry`, `text`, `creature_entry`, `id`, `type`, 
 	(10769, 'hahahahaa aahaah', 17888, 6, 14, 0, 100, 0, 0, 11018, 0),
 	(10770, 'You will have your challenge, Fordring.', 16980, 4, 14, 0, 0, 0, 0, 16321, 35747),
 	(10771, 'The souls of your fallen champions will be mine, Fordring.', 16980, 5, 14, 0, 0, 0, 0, 16323, 35749),
-	(10772, 'You have been infected with a Paralytic Toxin!', 35144, 2, 42, 0, 0, 0, 0, 0, 36323);
+	(10772, 'You have been infected with a Paralytic Toxin!', 35144, 2, 42, 0, 0, 0, 0, 0, 36323),
+	(11000, 'Such skill for a new trainee.', 53565, 0, 12, 0, 100, 511, 0, 0, 0),
+	(11001, 'That target didn\'t stand a chance.', 53565, 1, 12, 0, 100, 511, 0, 0, 0),
+	(11002, 'One day you will have to teach me your secrets.', 53565, 2, 12, 0, 100, 509, 0, 0, 0),
+	(11003, 'You are bound for a great things, trainee.', 53565, 3, 12, 0, 100, 508, 0, 0, 0),
+	(11004, 'I must train harder so I can be like you.', 53565, 4, 12, 0, 100, 1, 0, 0, 0),
+	(11005, 'I hope the instructors saw that!', 53565, 5, 12, 0, 100, 1, 0, 0, 0),
+	(11006, 'I must work as hard as you.', 53565, 6, 12, 0, 100, 1, 0, 0, 0),
+	(11007, 'Your form is impeccable.', 53565, 7, 12, 0, 100, 1, 0, 0, 0),
+	(11008, 'My money\'s on Lam. Did you see him take down Chu during training last week?', 53565, 10, 12, 0, 100, 1, 0, 0, 0),
+	(11009, 'His stamina is nothing against Lam\'s strength.', 53565, 20, 12, 0, 100, 0, 0, 0, 0),
+	(11010, 'He has the legs of an ox! Have you ever been kicked by him in training?', 53565, 30, 12, 0, 100, 1, 0, 0, 0),
+	(11011, 'Raise you a keg of Stormshout Gold. It\'ll be your loss.', 53565, 40, 12, 0, 100, 1, 0, 0, 0),
+	(11012, 'That\'s where you\'re mistaken, friend. Zhou is as sturdy as an oak.', 53565, 50, 12, 0, 100, 1, 0, 0, 0),
+	(11013, 'Zhou has the stamina of three men, so he can out-stay most opponents.', 53565, 60, 12, 0, 100, 0, 0, 0, 0),
+	(11014, 'Four coppers on Zhou.', 53565, 70, 12, 0, 100, 0, 0, 0, 0),
+	(11015, 'A challenge in compassion and humility. By helping Merchant Lorvo, it would seem you\'ve passed, $c. Master Shang would be pleased.', 54567, 0, 12, 0, 100, 0, 0, 0, 0),
+	(11016, 'Take that monkeybutt!', 54568, 0, 12, 0, 100, 0, 0, 0, 0),
+	(11017, 'That was a good match. Thank you.', 54586, 0, 12, 0, 100, 511, 0, 0, 0),
+	(11018, 'My skills are no match for yours. I admit defeat.', 54586, 1, 12, 0, 100, 507, 0, 0, 0),
+	(11019, 'Your skills are too great. I yield.', 54586, 2, 12, 0, 100, 511, 0, 0, 0),
+	(11020, 'That was a good match. Thank you.', 54587, 0, 12, 0, 100, 1, 0, 0, 0),
+	(11021, 'You fought well. I must learn more from you in the future.', 54587, 1, 12, 0, 100, 1, 0, 0, 0),
+	(11022, 'Thank you for reminding me that I must train more diligently.', 54587, 2, 12, 0, 100, 1, 0, 0, 0),
+	(11023, 'A Challenger approaches', 54611, 0, 12, 0, 100, 0, 0, 0, 0),
+	(11024, 'Well fought. Master Shang will be pleased.', 54611, 10, 12, 0, 100, 0, 0, 0, 0),
+	(11025, 'Shhhh! Come quietly. She\'s practicing.', 54943, 0, 12, 0, 100, 0, 0, 0, 0),
+	(11026, 'I have to admit, that looked pretty fun!', 54975, 0, 12, 0, 100, 0, 0, 27394, 0),
+	(11027, 'Keep those creatures at bay while I meditate. We\'ll soon have the answers we seek.', 59642, 0, 12, 0, 100, 0, 0, 27398, 0),
+	(11028, 'And so our path lays before us. Speak to Master Shang Xi, he will tell you what comes next.', 59642, 10, 12, 0, 100, 0, 0, 27399, 0),
+	(11029, 'The fire spirit is upset. It\'s dangerous to enter the shrine now...', 60176, 0, 12, 0, 100, 0, 0, 0, 0),
+	(11030, 'I hope you\'re ready, $p. Jaomin Ro awaits you just over the bridge.', 60183, 0, 12, 0, 100, 113, 0, 0, 0),
+	(11031, 'You\'re departing so soon?  I am envious of your prowess, $c. Good luck to you.', 60244, 0, 12, 0, 100, 0, 0, 0, 0),
+	(11032, 'Is that... is that Huo?', 60248, 0, 12, 0, 100, 0, 0, 0, 0),
+	(11033, 'It is! Well done, $p!', 60253, 0, 12, 0, 100, 0, 0, 0, 0),
+	(11034, 'Hello $n! The Lorewalker is beginning her lesson just down these stairs if you want to listen in.', 64885, 0, 12, 0, 100, 0, 0, 0, 0),
+	(11035, 'Such skill for a new trainee.', 65469, 0, 12, 0, 100, 511, 0, 0, 0),
+	(11036, 'That target didn\'t stand a chance.', 65469, 1, 12, 0, 100, 509, 0, 0, 0),
+	(11037, 'One day you will have to teach me your secrets.', 65469, 2, 12, 0, 100, 509, 0, 0, 0),
+	(11038, 'You are bound for a great things, trainee.', 65469, 3, 12, 0, 100, 508, 0, 0, 0),
+	(11039, 'That was a good match. Thank you.', 65470, 0, 12, 0, 100, 1, 0, 0, 0),
+	(11040, 'My skills are no match for yours. I admit defeat.', 65470, 1, 12, 0, 100, 507, 0, 0, 0),
+	(11041, 'Your skills are too great. I yield.', 65470, 2, 12, 0, 100, 511, 0, 0, 0),
+	(11042, 'That was a good match. Thank you.', 65471, 0, 12, 0, 100, 1, 0, 0, 0),
+	(11043, 'You fought well. I must learn more from you in the future.', 65471, 1, 12, 0, 100, 1, 0, 0, 0),
+	(11044, 'Thank you for reminding me that I must train more diligently.', 65471, 2, 12, 0, 100, 1, 0, 0, 0);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

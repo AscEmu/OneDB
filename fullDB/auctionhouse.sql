@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `auctionhouse` (
   PRIMARY KEY (`creature_entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Auction House';
 
--- Exportiere Daten aus Tabelle ascemu_world.auctionhouse: 41 rows
+-- Exportiere Daten aus Tabelle ascemu_world.auctionhouse: 56 rows
 INSERT INTO `auctionhouse` (`creature_entry`, `ahgroup`) VALUES
 	(8661, 7),
 	(8669, 1),
@@ -63,7 +63,22 @@ INSERT INTO `auctionhouse` (`creature_entry`, `ahgroup`) VALUES
 	(18761, 6),
 	(31430, 6),
 	(35594, 1),
-	(35607, 6);
+	(35607, 6),
+	(43695, 1),
+	(43841, 1),
+	(43842, 1),
+	(44787, 6),
+	(44865, 6),
+	(44866, 6),
+	(44867, 6),
+	(44868, 6),
+	(45082, 6),
+	(45659, 6),
+	(46637, 6),
+	(46638, 6),
+	(46639, 6),
+	(46640, 6),
+	(65535, 7);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

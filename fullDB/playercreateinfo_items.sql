@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -16,7 +16,7 @@
 
 -- Exportiere Struktur von Tabelle ascemu_world.playercreateinfo_items
 CREATE TABLE IF NOT EXISTS `playercreateinfo_items` (
-  `build` smallint NOT NULL DEFAULT '12340',
+  `build` int NOT NULL DEFAULT '12340',
   `race` tinyint unsigned NOT NULL,
   `class` tinyint unsigned NOT NULL,
   `protoid` mediumint unsigned NOT NULL DEFAULT '0',
@@ -26,46 +26,7 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_items` (
   UNIQUE KEY `unique_index` (`build`,`race`,`class`,`protoid`) USING BTREE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Player System';
 
--- Exportiere Daten aus Tabelle ascemu_world.playercreateinfo_items: 38 rows
-INSERT INTO `playercreateinfo_items` (`build`, `race`, `class`, `protoid`, `slotid`, `amount`) VALUES
-	(18414, 24, 1, 48, 6, 1),
-	(18414, 24, 1, 49, 3, 1),
-	(18414, 24, 3, 48, 6, 1),
-	(18414, 24, 3, 49, 3, 1),
-	(18414, 24, 4, 48, 6, 1),
-	(18414, 24, 4, 49, 3, 1),
-	(18414, 24, 5, 48, 6, 1),
-	(18414, 24, 5, 49, 3, 1),
-	(18414, 24, 7, 48, 6, 1),
-	(18414, 24, 7, 49, 3, 1),
-	(18414, 24, 8, 48, 6, 1),
-	(18414, 24, 8, 49, 3, 1),
-	(18414, 24, 10, 48, 6, 1),
-	(18414, 24, 10, 49, 3, 1),
-	(18414, 25, 1, 48, 6, 1),
-	(18414, 25, 1, 49, 3, 1),
-	(18414, 25, 3, 48, 6, 1),
-	(18414, 25, 3, 49, 3, 1),
-	(18414, 25, 4, 48, 6, 1),
-	(18414, 25, 4, 49, 3, 1),
-	(18414, 25, 5, 48, 6, 1),
-	(18414, 25, 5, 49, 3, 1),
-	(18414, 25, 8, 48, 6, 1),
-	(18414, 25, 8, 49, 3, 1),
-	(18414, 25, 10, 48, 6, 1),
-	(18414, 25, 10, 49, 3, 1),
-	(18414, 26, 1, 48, 6, 1),
-	(18414, 26, 1, 49, 3, 1),
-	(18414, 26, 3, 48, 6, 1),
-	(18414, 26, 3, 49, 3, 1),
-	(18414, 26, 4, 48, 6, 1),
-	(18414, 26, 4, 49, 3, 1),
-	(18414, 26, 5, 48, 6, 1),
-	(18414, 26, 5, 49, 3, 1),
-	(18414, 26, 8, 48, 6, 1),
-	(18414, 26, 8, 49, 3, 1),
-	(18414, 26, 10, 48, 6, 1),
-	(18414, 26, 10, 49, 3, 1);
+-- Exportiere Daten aus Tabelle ascemu_world.playercreateinfo_items: 0 rows
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

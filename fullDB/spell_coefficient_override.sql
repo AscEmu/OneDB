@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `spell_coefficient_override` (
   KEY `spell_id` (`spell_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Spell System';
 
--- Exportiere Daten aus Tabelle ascemu_world.spell_coefficient_override: ~28 rows (ungefähr)
+-- Exportiere Daten aus Tabelle ascemu_world.spell_coefficient_override: ~31 rows (ungefähr)
 INSERT INTO `spell_coefficient_override` (`spell_id`, `effectIndex`, `min_build`, `max_build`, `sp_coefficient`, `ap_coefficient`, `flags`, `description`) VALUES
 	(974, 0, 8606, 8606, 0.2857, NULL, 0, 'Earth Shield'),
 	(974, 0, 12340, 12340, 0.4205, NULL, 0, 'Earth Shield'),
@@ -51,6 +51,9 @@ INSERT INTO `spell_coefficient_override` (`spell_id`, `effectIndex`, `min_build`
 	(31804, 0, 12340, 12340, NULL, 0.14, 0, 'Judgement of Vengeance'),
 	(31898, 0, 8606, 8606, 0.4286, NULL, 0, 'Judgement of Blood'),
 	(31898, 1, 12340, 12340, 0.18, 0.11, 0, 'Judgement of Blood'),
+	(33763, 0, 8606, 8606, 0.0742, NULL, 0, 'Lifebloom hot'),
+	(33763, 1, 8606, 8606, 0.3439, NULL, 0, 'Lifebloom final'),
+	(33763, 1, 12340, 12340, 0.3857, NULL, 0, 'Lifebloom final'),
 	(42463, 0, 8606, 8606, 0.022, NULL, 0, 'Seal of Vengeance direct proc'),
 	(52212, 0, 12340, 12340, NULL, 0.04805, 0, 'Death and Decay'),
 	(53726, 1, 12340, 12340, 0.18, 0.11, 0, 'Judgement of the Martyr'),

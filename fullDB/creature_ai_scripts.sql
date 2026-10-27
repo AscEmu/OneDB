@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -4191,8 +4191,7 @@ INSERT INTO `creature_ai_scripts` (`min_build`, `max_build`, `entry`, `difficult
 	(12340, 12340, 5975, 4, 0, 1, 2, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 9479, 943, 'Dreadmaul Ogre Mage-Say onEnterCombat'),
 	(12340, 12340, 5975, 4, 0, 1, 2, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 9480, 944, 'Dreadmaul Ogre Mage-Say onEnterCombat'),
 	(12340, 12340, 5975, 4, 0, 1, 2, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 9481, 945, 'Dreadmaul Ogre Mage-Say onEnterCombat'),
-	(12340, 12340, 5975, 4, 0, 1, 2, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 9482, 946, 'Dreadmaul Ogre Mage-Say onEnterCombat');
-INSERT INTO `creature_ai_scripts` (`min_build`, `max_build`, `entry`, `difficulty`, `phase`, `event`, `action`, `maxCount`, `chance`, `spell`, `spell_type`, `triggered`, `target`, `cooldownMin`, `cooldownMax`, `minHealth`, `maxHealth`, `textId`, `misc1`, `comments`) VALUES
+	(12340, 12340, 5975, 4, 0, 1, 2, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 9482, 946, 'Dreadmaul Ogre Mage-Say onEnterCombat'),
 	(12340, 12340, 5975, 4, 0, 5, 1, 0, 21, 6742, 10, 0, 0, 0, 0, 0, 0, 0, 0, 'Dreadmaul Ogre Mage-Bloodlust'),
 	(12340, 12340, 5975, 4, 0, 5, 1, 0, 38, 20823, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Dreadmaul Ogre Mage-Fireball'),
 	(12340, 12340, 5977, 4, 0, 5, 1, 0, 33, 3391, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Dreadmaul Mauler-Thrash'),
@@ -5033,7 +5032,8 @@ INSERT INTO `creature_ai_scripts` (`min_build`, `max_build`, `entry`, `difficult
 	(12340, 12340, 8763, 4, 0, 5, 1, 0, 34, 9532, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Mistwing Rogue-Lightning Bolt'),
 	(12340, 12340, 8764, 4, 0, 5, 1, 0, 27, 8806, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Mistwing Ravager-Poisoned Shot'),
 	(12340, 12340, 8766, 4, 0, 5, 1, 0, 28, 6907, 11, 0, 6, 0, 0, 0, 0, 0, 0, 'Forest Ooze-Diseased Slime'),
-	(12340, 12340, 8856, 4, 0, 1, 2, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 3039, 1089, 'Tyrion\'s Spybot-Say onEnterCombat'),
+	(12340, 12340, 8856, 4, 0, 1, 2, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 3039, 1089, 'Tyrion\'s Spybot-Say onEnterCombat');
+INSERT INTO `creature_ai_scripts` (`min_build`, `max_build`, `entry`, `difficulty`, `phase`, `event`, `action`, `maxCount`, `chance`, `spell`, `spell_type`, `triggered`, `target`, `cooldownMin`, `cooldownMax`, `minHealth`, `maxHealth`, `textId`, `misc1`, `comments`) VALUES
 	(12340, 12340, 8890, 4, 0, 5, 1, 0, 100, 19644, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Anvilrage Warden-Strike'),
 	(12340, 12340, 8890, 4, 0, 5, 1, 0, 100, 24317, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Anvilrage Warden-Sunder Armor'),
 	(12340, 12340, 8891, 4, 0, 5, 1, 0, 100, 27581, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Anvilrage Guardsman-Disarm'),
@@ -8312,8 +8312,7 @@ INSERT INTO `creature_ai_scripts` (`min_build`, `max_build`, `entry`, `difficult
 	(12340, 12340, 19756, 4, 0, 5, 1, 0, 34, 36225, 7, 0, 4, 0, 0, 0, 0, 0, 0, 'Deathforge Smith-Chaos Nova'),
 	(12340, 12340, 19756, 4, 0, 5, 1, 0, 27, 37580, 11, 0, 6, 0, 0, 0, 0, 0, 0, 'Deathforge Smith-Drill Armor'),
 	(12340, 12340, 19757, 4, 0, 5, 1, 0, 33, 11969, 7, 0, 4, 0, 0, 0, 0, 0, 0, 'Infernal Soul-Fire Nova'),
-	(12340, 12340, 19762, 4, 0, 5, 1, 0, 26, 38031, 10, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilskar Defender-Shield Block');
-INSERT INTO `creature_ai_scripts` (`min_build`, `max_build`, `entry`, `difficulty`, `phase`, `event`, `action`, `maxCount`, `chance`, `spell`, `spell_type`, `triggered`, `target`, `cooldownMin`, `cooldownMax`, `minHealth`, `maxHealth`, `textId`, `misc1`, `comments`) VALUES
+	(12340, 12340, 19762, 4, 0, 5, 1, 0, 26, 38031, 10, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilskar Defender-Shield Block'),
 	(12340, 12340, 19762, 4, 0, 5, 1, 0, 31, 38233, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Coilskar Defender-Shield Bash'),
 	(12340, 12340, 19763, 4, 0, 1, 2, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 10297, 2160, 'Manni-Say onEnterCombat'),
 	(12340, 12340, 19764, 4, 0, 1, 2, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 10298, 2161, 'Moh-Say onEnterCombat'),
@@ -9946,7 +9945,8 @@ INSERT INTO `creature_ai_scripts` (`min_build`, `max_build`, `entry`, `difficult
 	(12340, 12340, 24287, 4, 0, 5, 1, 0, 26, 49978, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Caldemere Snapper-Claw Grasp'),
 	(12340, 12340, 24316, 4, 0, 5, 1, 0, 25, 48416, 7, 0, 4, 0, 0, 0, 0, 0, 0, 'Iron Rune Sentinel-Rune Detonation'),
 	(12340, 12340, 24317, 4, 0, 5, 1, 0, 18, 9080, 11, 0, 6, 0, 0, 0, 0, 0, 0, 'Expedition Deathguard-Hamstring'),
-	(12340, 12340, 24317, 4, 0, 5, 1, 0, 22, 14516, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Expedition Deathguard-Strike'),
+	(12340, 12340, 24317, 4, 0, 5, 1, 0, 22, 14516, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Expedition Deathguard-Strike');
+INSERT INTO `creature_ai_scripts` (`min_build`, `max_build`, `entry`, `difficulty`, `phase`, `event`, `action`, `maxCount`, `chance`, `spell`, `spell_type`, `triggered`, `target`, `cooldownMin`, `cooldownMax`, `minHealth`, `maxHealth`, `textId`, `misc1`, `comments`) VALUES
 	(12340, 12340, 24317, 4, 0, 5, 1, 0, 27, 16100, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Expedition Deathguard-Shoot'),
 	(12340, 12340, 24334, 4, 0, 5, 1, 0, 29, 15039, 8, 0, 6, 0, 0, 0, 0, 0, 0, 'Binder Murdis-Flame Shock'),
 	(12340, 12340, 24334, 4, 0, 5, 1, 0, 21, 48599, 1, 0, 6, 0, 0, 0, 0, 0, 0, 'Binder Murdis-Rune of Binding'),

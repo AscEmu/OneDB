@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `spell_area` (
   PRIMARY KEY (`spell`,`area`,`quest_start`,`quest_start_active`,`aura_spell`,`racemask`,`gender`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Exportiere Daten aus Tabelle ascemu_world.spell_area: 347 rows
+-- Exportiere Daten aus Tabelle ascemu_world.spell_area: 358 rows
 INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, `quest_end`, `aura_spell`, `racemask`, `gender`, `autocast`) VALUES
 	(30181, 4477, 0, 0, 12897, 0, 690, 2, 1),
 	(30181, 4477, 0, 0, 12896, 0, 1101, 2, 1),
@@ -248,6 +248,7 @@ INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, 
 	(58600, 4740, 0, 0, 0, 0, 0, 2, 1),
 	(60194, 4395, 0, 0, 0, 0, 1101, 2, 1),
 	(60197, 4395, 0, 0, 0, 0, 690, 2, 1),
+	(60922, 5829, 0, 0, 0, 0, 0, 2, 1),
 	(64373, 4658, 0, 0, 0, 0, 0, 2, 1),
 	(64373, 4666, 0, 0, 0, 0, 0, 2, 1),
 	(64373, 4667, 0, 0, 0, 0, 0, 2, 1),
@@ -376,7 +377,17 @@ INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, 
 	(74982, 368, 25446, 1, 25446, 0, 0, 2, 1),
 	(75434, 14, 25444, 1, 25444, 0, 0, 2, 1),
 	(75434, 367, 25444, 1, 25444, 0, 0, 2, 1),
-	(75434, 393, 25444, 1, 25444, 0, 0, 2, 1);
+	(75434, 393, 25444, 1, 25444, 0, 0, 2, 1),
+	(102393, 5825, 0, 0, 29419, 0, 0, 2, 1),
+	(102393, 5846, 0, 0, 29419, 0, 0, 2, 1),
+	(102395, 5825, 0, 0, 0, 0, 0, 2, 1),
+	(102395, 5846, 0, 0, 0, 0, 0, 2, 1),
+	(102398, 5835, 0, 0, 0, 0, 0, 2, 1),
+	(102403, 5825, 29524, 1, 29524, 0, 0, 2, 1),
+	(102403, 5834, 29524, 1, 29524, 0, 0, 2, 1),
+	(102403, 5843, 29524, 1, 29524, 0, 0, 2, 1),
+	(116421, 5848, 29414, 1, 0, 0, 0, 2, 1),
+	(116571, 5862, 0, 0, 0, 0, 0, 2, 1);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

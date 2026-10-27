@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -17,14 +17,14 @@
 -- Exportiere Struktur von Tabelle ascemu_world.locales_creature
 CREATE TABLE IF NOT EXISTS `locales_creature` (
   `id` int unsigned NOT NULL,
-  `build` smallint NOT NULL DEFAULT '0',
+  `build` int NOT NULL DEFAULT '0',
   `language_code` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `subname` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`,`build`,`language_code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Exportiere Daten aus Tabelle ascemu_world.locales_creature: ~297.496 rows (ungefähr)
+-- Exportiere Daten aus Tabelle ascemu_world.locales_creature: ~297.620 rows (ungefähr)
 INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(1, 0, 'deDE', '[Waypoint (Only GM can see it)]', '[Visual]'),
 	(1, 0, 'esES', '[Waypoint (Only GM can see it)]', '[Visual]'),
@@ -8661,8 +8661,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(1485, 0, 'itIT', '[UNUSED] Bazaar Merchant TEST', 'Fiorista'),
 	(1485, 0, 'koKR', '[미사용] 시장 상인 TEST', '꽃 상인'),
 	(1485, 0, 'ruRU', '[UNUSED] Bazaar Merchant TEST', 'Флорист'),
-	(1485, 0, 'zhCN', '[UNUSED] Bazaar Merchant TEST', '种花人');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(1485, 0, 'zhCN', '[UNUSED] Bazaar Merchant TEST', '种花人'),
 	(1487, 0, 'deDE', 'Versklaver der Splitterfäuste', ''),
 	(1487, 0, 'frFR', 'Esclavagiste Brisepoing', ''),
 	(1487, 0, 'itIT', 'Schiavista Spezzapugno', ''),
@@ -10026,7 +10025,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(1694, 0, 'ruRU', 'Лослор Рудж', 'Инженерные материалы'),
 	(1695, 0, 'deDE', 'Rendow', 'Lederrüstungshändlerin'),
 	(1695, 0, 'frFR', 'Rendow', 'Marchande d\'armures de cuir'),
-	(1695, 0, 'itIT', 'Rendow', 'Mercante d\'Armature di Cuoio'),
+	(1695, 0, 'itIT', 'Rendow', 'Mercante d\'Armature di Cuoio');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(1695, 0, 'koKR', '렌도우', '가죽 방어구 상인'),
 	(1695, 0, 'ruRU', 'Рендо', 'Торговец кожаными доспехами'),
 	(1695, 0, 'zhCN', '瑞恩多尔', '皮甲商'),
@@ -17277,8 +17277,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(2860, 0, 'ptPT', 'Sigrun Derrubaferro', ''),
 	(2860, 0, 'ruRU', 'Сигрун Рудотес', ''),
 	(2860, 0, 'zhCN', '西格鲁·铁斧', ''),
-	(2861, 0, 'deDE', 'Gorrik', 'Windreitermeister');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(2861, 0, 'deDE', 'Gorrik', 'Windreitermeister'),
 	(2861, 0, 'esES', 'Gorrik', 'Maestro de jinetes del viento'),
 	(2861, 0, 'itIT', 'Gorrik', 'Maestro delle Viverne dei Venti'),
 	(2861, 0, 'koKR', '고릭', '와이번 조련사'),
@@ -20027,7 +20026,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(3268, 0, 'zhCN', '钢鬃织棘者', ''),
 	(3269, 0, 'deDE', 'Geomant der Klingenmähnen', ''),
 	(3269, 0, 'frFR', 'Géomancienne tranchecrin', ''),
-	(3269, 0, 'itIT', 'Geomante Chiomaguzza', ''),
+	(3269, 0, 'itIT', 'Geomante Chiomaguzza', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(3269, 0, 'koKR', '서슬갈기 흙점쟁이', ''),
 	(3269, 0, 'ruRU', 'Геомант племени Иглогривых', ''),
 	(3269, 0, 'zhCN', '钢鬃地卜师', ''),
@@ -25542,8 +25542,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(4132, 0, 'frFR', 'Krkk\'kx', ''),
 	(4132, 0, 'itIT', 'Krkk\'kx', ''),
 	(4132, 0, 'koKR', '크륵큭스', ''),
-	(4132, 0, 'ptPT', 'Krkk\'kx', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(4132, 0, 'ptPT', 'Krkk\'kx', ''),
 	(4132, 0, 'ruRU', 'Кркк\'кс', ''),
 	(4132, 0, 'zhCN', '克尔克斯克', ''),
 	(4133, 0, 'deDE', 'Silithidschwarmdrohne', ''),
@@ -29943,7 +29942,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(4855, 0, 'koKR', '바위동굴 투사', ''),
 	(4855, 0, 'ptPT', 'Brigão da Abóbada de Pedra', ''),
 	(4855, 0, 'ruRU', 'Буян из племени Каменного Свода', ''),
-	(4855, 0, 'zhCN', '石窟争斗者', ''),
+	(4855, 0, 'zhCN', '石窟争斗者', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(4856, 0, 'deDE', 'Höhlenjäger der Steingrufttroggs', ''),
 	(4856, 0, 'esES', 'Cazador de las cuevas Grutacanto', ''),
 	(4856, 0, 'frFR', 'Chasseur cavepierre', ''),
@@ -33531,8 +33531,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(5552, 0, 'koKR', '[임시] PVP 일꾼', ''),
 	(5552, 0, 'ptPT', '[PH] PVP Peon', ''),
 	(5552, 0, 'ruRU', '[PH] PVP Peon', ''),
-	(5552, 0, 'zhCN', '[PH] PVP Peon', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(5552, 0, 'zhCN', '[PH] PVP Peon', ''),
 	(5553, 0, 'frFR', '[PH] Eclaireur de la caravane', ''),
 	(5553, 0, 'itIT', '[PH] Caravan Scout', ''),
 	(5553, 0, 'koKR', '[임시] 짐마차 정찰병', ''),
@@ -39938,7 +39937,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(7092, 0, 'esES', 'Moco corrupto', ''),
 	(7092, 0, 'frFR', 'Limon corrompu', ''),
 	(7092, 0, 'itIT', 'Melma Corrotta', ''),
-	(7092, 0, 'koKR', '부패한 수액괴물', ''),
+	(7092, 0, 'koKR', '부패한 수액괴물', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(7092, 0, 'ptPT', 'Gosma Maculada', ''),
 	(7092, 0, 'ruRU', 'Нечистый слизнюк', ''),
 	(7092, 0, 'zhCN', '被污染的软泥怪', ''),
@@ -42161,8 +42161,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(7666, 0, 'koKR', '대마법사 알리스타즈', ''),
 	(7666, 0, 'ptPT', 'Arquimago Allistarj', ''),
 	(7666, 0, 'ruRU', 'Верховный маг Аллистарий', ''),
-	(7666, 0, 'zhCN', '大法师奥利斯塔', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(7666, 0, 'zhCN', '大法师奥利斯塔', ''),
 	(7667, 0, 'deDE', 'Lady Sevine', ''),
 	(7667, 0, 'esES', 'Lady Sevine', ''),
 	(7667, 0, 'frFR', 'Dame Sevine', ''),
@@ -49939,7 +49938,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(10368, 0, 'zhCN', '[UNUSED] Dat\'xus', '法杖训练师'),
 	(10369, 0, 'deDE', 'Trayexir', 'Waffenhändler'),
 	(10369, 0, 'esES', 'Trayexir', 'Mercader de armas'),
-	(10369, 0, 'frFR', 'Trayexir', 'Marchand d\'armes'),
+	(10369, 0, 'frFR', 'Trayexir', 'Marchand d\'armes');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(10369, 0, 'itIT', 'Morb', 'Mercante d\'Armi'),
 	(10369, 0, 'koKR', '트라예시르', '무기 상인'),
 	(10369, 0, 'ruRU', 'Трайексир', 'Торговец оружием'),
@@ -50572,8 +50572,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(10467, 0, 'zhCN', '法力之潮图腾', ''),
 	(10468, 0, 'deDE', 'Felnok Stahlfeder', ''),
 	(10468, 0, 'esES', 'Felnok Acerovera', ''),
-	(10468, 0, 'frFR', 'Felnok Ressordacier', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(10468, 0, 'frFR', 'Felnok Ressordacier', ''),
 	(10468, 0, 'itIT', 'Felnok Mollacciaio', ''),
 	(10468, 0, 'koKR', '펠노크 스틸스프링', ''),
 	(10468, 0, 'ruRU', 'Фелнок Сталлист', ''),
@@ -59057,8 +59056,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(12736, 0, 'ptPT', 'Je\'neu Sancrea', 'Harmonia Telúrica'),
 	(12736, 0, 'ruRU', 'Дже\'неу Санкри', 'Служители Земли'),
 	(12736, 0, 'zhCN', '耶努萨克雷', '大地之环'),
-	(12737, 0, 'deDE', 'Mastok Wutfauch', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(12737, 0, 'deDE', 'Mastok Wutfauch', ''),
 	(12737, 0, 'esES', 'Mastok Bufido', ''),
 	(12737, 0, 'frFR', 'Mastok Torvesiffle', ''),
 	(12737, 0, 'itIT', 'Mastok Soffionero', ''),
@@ -59941,7 +59939,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(13096, 0, 'deDE', 'Forscher der Eisbeißermine', ''),
 	(13096, 0, 'esES', 'Expedicionario Minafría', ''),
 	(13096, 0, 'frFR', 'Explorateur de Froidemine', ''),
-	(13096, 0, 'itIT', 'Esploratore Minagelo', ''),
+	(13096, 0, 'itIT', 'Esploratore Minagelo', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(13096, 0, 'koKR', '얼음이빨광산 측량관', ''),
 	(13096, 0, 'ptPT', 'Explorador da Minafria', ''),
 	(13096, 0, 'ruRU', 'Исследователь Ледяного рудника', ''),
@@ -67367,8 +67366,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(15331, 0, 'deDE', 'Dünentunnelgräber', ''),
 	(15331, 0, 'esES', '[UNUSED] Tunelador de las Dunas', ''),
 	(15331, 0, 'frFR', '[INUTILISÉ] Tunnelier des dunes', ''),
-	(15331, 0, 'itIT', '[UNUSED] Dune Tunneler', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(15331, 0, 'itIT', '[UNUSED] Dune Tunneler', ''),
 	(15331, 0, 'koKR', '[미사용] [UNUSED] Dune Tunneler', ''),
 	(15331, 0, 'ptPT', '[UNUSED] Dune Tunneler', ''),
 	(15331, 0, 'ruRU', '[UNUSED] Dune Tunneler', ''),
@@ -69892,7 +69890,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(15732, 0, 'ruRU', 'Оператор Чудоформера', '"Пастбища Дымного Леса"'),
 	(15732, 0, 'zhCN', '欢乐制造器操作员', '烟林牧场'),
 	(15733, 0, 'esES', 'Oficial de Honor de Gnomeregan', ''),
-	(15733, 0, 'frFR', 'Officier du mérite de Gnomeregan', ''),
+	(15733, 0, 'frFR', 'Officier du mérite de Gnomeregan', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(15733, 0, 'itIT', 'Ufficiale d\'Encomio di Gnomeregan', ''),
 	(15733, 0, 'koKR', '놈리건 인사장교', ''),
 	(15733, 0, 'ptPT', 'Oficial de Comendas de Gnomeregan', ''),
@@ -75517,8 +75516,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(16623, 0, 'deDE', 'Zyandrel', 'Stoffrüstungshändlerin'),
 	(16623, 0, 'esES', 'Zyandrel', 'Mercader de armaduras de tela'),
 	(16623, 0, 'frFR', 'Zyandrel', 'Marchande d\'armures en étoffe'),
-	(16623, 0, 'itIT', 'Zyandrel', 'Mercante d\'Armature di Stoffa');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(16623, 0, 'itIT', 'Zyandrel', 'Mercante d\'Armature di Stoffa'),
 	(16623, 0, 'ptPT', 'Zyandrel', 'Armaduras de Tecido'),
 	(16623, 0, 'zhCN', '夏德雷尔', '布甲商'),
 	(16624, 0, 'deDE', 'Gelanthis', 'Juwelierskunstbedarf'),
@@ -79699,7 +79697,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(17278, 0, 'esES', 'Saboteador de Ventura y Cía.', ''),
 	(17278, 0, 'frFR', 'Saboteur de la Kapitalrisk', ''),
 	(17278, 0, 'koKR', '투자개발회사 산림파괴자', ''),
-	(17278, 0, 'ruRU', 'Саботажник из Торговой компании', ''),
+	(17278, 0, 'ruRU', 'Саботажник из Торговой компании', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(17278, 0, 'zhCN', '风险投资公司劳工', ''),
 	(17279, 0, 'deDE', 'Edelsteinkundiger der Venture Co.', ''),
 	(17279, 0, 'esES', 'Gemólogo de Ventura y Cía.', ''),
@@ -83736,8 +83735,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(17896, 0, 'itIT', 'Kameel Passo Lungo', 'Stalliere'),
 	(17896, 0, 'koKR', '카밀 롱스트라이드', '야수 관리인'),
 	(17896, 0, 'ruRU', 'Камиль Дальний Путь', 'Смотритель стойл'),
-	(17896, 0, 'zhCN', '卡米尔·长路', '兽栏管理员');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(17896, 0, 'zhCN', '卡米尔·长路', '兽栏管理员'),
 	(17897, 0, 'itIT', 'Ragno delle Cripte', ''),
 	(17897, 0, 'koKR', '지하마귀', ''),
 	(17897, 0, 'ruRU', 'Некроарахнид', ''),
@@ -89700,7 +89698,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(18893, 0, 'esES', 'Maestra de espías Mehlisah Solcorona', ''),
 	(18893, 0, 'frFR', 'Maître-espionne Mehlisah Hautecouronne', ''),
 	(18893, 0, 'itIT', 'Gran Spia Mehlisah Grancorona', ''),
-	(18893, 0, 'koKR', '첩보단장 멜리사 하이크라운', ''),
+	(18893, 0, 'koKR', '첩보단장 멜리사 하이크라운', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(18893, 0, 'ptPT', 'Espiã-chefe Melisa Coroalta', ''),
 	(18893, 0, 'ruRU', 'Предводительница шпионов Мелиса Высокий Венец', ''),
 	(18893, 0, 'zhCN', '间谍女王梅丽萨·海克隆', ''),
@@ -92042,8 +92041,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(19260, 0, 'zhCN', '被摧毁的魔能机甲', ''),
 	(19261, 0, 'deDE', 'Höllischer Kriegshetzer', ''),
 	(19261, 0, 'esES', 'Belisario infernal', ''),
-	(19261, 0, 'frFR', 'Porteguerre infernal', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(19261, 0, 'frFR', 'Porteguerre infernal', ''),
 	(19261, 0, 'itIT', 'Araldo della Guerra Infernale', ''),
 	(19261, 0, 'koKR', '지옥불정령 전쟁인도자', ''),
 	(19261, 0, 'ruRU', 'Инфернал-завоеватель', ''),
@@ -99294,7 +99292,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(20602, 0, 'esES', 'Flame Patch (Al\'ar)', ''),
 	(20602, 0, 'frFR', 'Gerbe de flammes (Al\'ar)', ''),
 	(20602, 0, 'ruRU', 'Язык огня (Алар)', ''),
-	(20602, 0, 'zhCN', 'Flame Patch (Al\'ar)', ''),
+	(20602, 0, 'zhCN', 'Flame Patch (Al\'ar)', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(20603, 0, 'deDE', 'Reflexion von Sechs-Uhr', ''),
 	(20603, 0, 'esES', 'Reflejo de Ya-six', ''),
 	(20603, 0, 'frFR', 'Reflet de Ya-six', ''),
@@ -100128,8 +100127,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(20818, 0, 'esES', 'Outland Ravager GreenBlue', ''),
 	(20818, 0, 'frFR', 'Ravageur vert-bleu d\'Outreterre', ''),
 	(20818, 0, 'itIT', 'Outland Ravager GreenBlue', ''),
-	(20818, 0, 'koKR', '아웃랜드 바위갈퀴 GreenBlue', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(20818, 0, 'koKR', '아웃랜드 바위갈퀴 GreenBlue', ''),
 	(20818, 0, 'ruRU', 'Опустошитель из Запределья - зелено-синий', ''),
 	(20819, 0, 'deDE', 'Outland Ravager GreenPurple', ''),
 	(20819, 0, 'esES', 'Outland Ravager GreenPurple', ''),
@@ -108146,8 +108144,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(22250, 0, 'koKR', '썩은 버섯', ''),
 	(22250, 0, 'ruRU', 'Тухлый гриб', ''),
 	(22250, 0, 'zhCN', '腐臭的蘑菇', ''),
-	(22251, 0, 'deDE', 'Bogenschütze des Drachenmals', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(22251, 0, 'deDE', 'Bogenschütze des Drachenmals', ''),
 	(22251, 0, 'esES', 'Arquero Faucedraco', ''),
 	(22251, 0, 'itIT', 'Arciere delle Fauci di Drago', ''),
 	(22251, 0, 'koKR', '용아귀 궁수', ''),
@@ -108977,7 +108974,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(22387, 0, 'deDE', 'Orakel der Lithic', ''),
 	(22387, 0, 'esES', 'Oráculo lítico', ''),
 	(22387, 0, 'frFR', 'Oracle lithic', ''),
-	(22387, 0, 'itIT', 'Oracolo di Lithic', ''),
+	(22387, 0, 'itIT', 'Oracolo di Lithic', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(22387, 0, 'koKR', '리디크 예언자', ''),
 	(22387, 0, 'ptPT', 'Oráculo Lítico', ''),
 	(22387, 0, 'ruRU', 'Оракул из гнездовья Литик', ''),
@@ -116277,8 +116275,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(23825, 0, 'koKR', '가을 축제 고블린 남성 축하객', ''),
 	(23825, 0, 'ptPT', '[PH] Brewfest Goblin Male Celebrant', ''),
 	(23825, 0, 'ruRU', '[PH] Brewfest Goblin Male Celebrant', ''),
-	(23825, 0, 'zhCN', '[PH] Brewfest Goblin Male Celebrant', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(23825, 0, 'zhCN', '[PH] Brewfest Goblin Male Celebrant', ''),
 	(23826, 0, 'esES', 'Llamas crecientes', ''),
 	(23826, 0, 'frFR', 'Flammes rampantes', ''),
 	(23826, 0, 'itIT', 'Fiamme Striscianti', ''),
@@ -118722,7 +118719,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(24228, 0, 'frFR', 'Elémentaire Glacéclat', ''),
 	(24228, 0, 'itIT', 'Elementale Scheggiafredda', ''),
 	(24228, 0, 'ptPT', 'Elemental de Lasca de Gelo', ''),
-	(24228, 0, 'ruRU', 'Осколочный ледяной элементаль', ''),
+	(24228, 0, 'ruRU', 'Осколочный ледяной элементаль', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(24228, 0, 'zhCN', '碎冰元素', ''),
 	(24229, 0, 'deDE', 'Heulender Zyklon', ''),
 	(24229, 0, 'itIT', 'Ciclone Ululante', ''),
@@ -124363,8 +124361,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(25133, 0, 'frFR', 'Astromancien Darnarian', ''),
 	(25133, 0, 'itIT', 'Astromante Darnarian', ''),
 	(25133, 0, 'koKR', '점성술사 다르나리안', ''),
-	(25133, 0, 'ruRU', 'Звездочет Дарнариан', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(25133, 0, 'ruRU', 'Звездочет Дарнариан', ''),
 	(25133, 0, 'zhCN', '星术师达纳里安', ''),
 	(25134, 0, 'esES', 'Practicante Sol Devastado', ''),
 	(25134, 0, 'frFR', 'Jeune recrue du Soleil brisé', ''),
@@ -128514,7 +128511,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(25809, 0, 'esES', 'Archidruida Lathorius', 'D.E.H.T.A.'),
 	(25809, 0, 'frFR', 'Archidruide Lathorius', 'SdPA'),
 	(25809, 0, 'koKR', '대드루이드 라소리우스', '동물보호협회'),
-	(25809, 0, 'ruRU', 'Верховный друид Латориус', 'ДЭГОЖ'),
+	(25809, 0, 'ruRU', 'Верховный друид Латориус', 'ДЭГОЖ');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(25810, 0, 'deDE', 'Hierophantin Cenius', 'D.E.H.T.A.'),
 	(25810, 0, 'frFR', 'Hiérophante Cénius', 'SdPA'),
 	(25810, 0, 'itIT', 'Ierofante Cenius', 'V.V.F.'),
@@ -132583,8 +132581,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(26498, 0, 'frFR', 'Drakuru\'s Bunny 01', ''),
 	(26498, 0, 'itIT', 'Drakuru\'s Bunny 01', ''),
 	(26498, 0, 'ptPT', 'Drakuru\'s Bunny 01', ''),
-	(26498, 0, 'ruRU', 'Drakuru\'s Bunny 01', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(26498, 0, 'ruRU', 'Drakuru\'s Bunny 01', ''),
 	(26498, 0, 'zhCN', 'Drakuru\'s Bunny 01', ''),
 	(26499, 0, 'deDE', 'Arthas', 'Prinz von Lordaeron'),
 	(26499, 0, 'esES', 'Arthas', 'Príncipe de Lordaeron'),
@@ -138052,7 +138049,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(27392, 0, 'frFR', 'Invocateur d\'esprit revanchard', ''),
 	(27392, 0, 'itIT', 'Evocatore di Spiriti Vendicativi', ''),
 	(27392, 0, 'koKR', '복수의 영혼 소환사', ''),
-	(27392, 0, 'ptPT', 'Evocador de Espírito Vingativo', ''),
+	(27392, 0, 'ptPT', 'Evocador de Espírito Vingativo', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(27392, 0, 'zhCN', '复仇之魂召唤师', ''),
 	(27393, 0, 'deDE', 'Fischer der Valianzfeste', ''),
 	(27393, 0, 'frFR', 'Pêcheur du donjon de la Bravoure', ''),
@@ -140495,8 +140493,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(27794, 0, 'itIT', 'Injured Soldier Waypoint 03', ''),
 	(27794, 0, 'koKR', '부상병 이동 지점', ''),
 	(27794, 0, 'ptPT', 'Ponto de Rota de Soldado Ferido 03', ''),
-	(27794, 0, 'zhCN', 'Injured Soldier Waypoint 03', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(27794, 0, 'zhCN', 'Injured Soldier Waypoint 03', ''),
 	(27795, 0, 'deDE', 'Beschwörungspunkt des verletzten Soldaten', ''),
 	(27795, 0, 'koKR', '부상병 소환 지점', ''),
 	(27795, 0, 'ptPT', 'Ponto de Evocação de Soldado Ferido', ''),
@@ -148053,7 +148050,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(29059, 0, 'esES', 'Craig - TEST - Iron Dwarf', ''),
 	(29059, 0, 'frFR', 'Craig - TEST - Iron Dwarf', ''),
 	(29059, 0, 'itIT', 'Craig - TEST - Iron Dwarf', ''),
-	(29059, 0, 'koKR', '크레이그 시험용 무쇠 드워프', ''),
+	(29059, 0, 'koKR', '크레이그 시험용 무쇠 드워프', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(29059, 0, 'ptPT', 'Craig - TEST - Iron Dwarf', ''),
 	(29060, 0, 'deDE', 'Crusader Parachute Kill Credit Bunny', ''),
 	(29060, 0, 'esES', 'Crusader Parachute Kill Credit Bunny', ''),
@@ -148921,8 +148919,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(29201, 0, 'koKR', '죽음의 기사 탈것', ''),
 	(29201, 0, 'ptPT', 'Montaria de Cavaleiro da Morte', ''),
 	(29201, 0, 'ruRU', 'Скакун рыцаря смерти', ''),
-	(29201, 0, 'zhCN', '死亡骑士坐骑', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(29201, 0, 'zhCN', '死亡骑士坐骑', ''),
 	(29202, 0, 'deDE', 'Ritter der Schwarzen Klinge', ''),
 	(29202, 0, 'esES', 'Caballero de la Espada de Ébano', ''),
 	(29202, 0, 'frFR', 'Chevalier de la Lame d\'ébène', ''),
@@ -157141,8 +157138,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(30604, 0, 'koKR', '출납원 아메이다', '은행원'),
 	(30604, 0, 'ruRU', 'Служащий банка Алмейда', 'Банкир'),
 	(30604, 0, 'zhCN', '出纳员奥尔米达', '银行职员'),
-	(30605, 0, 'deDE', 'Kassierer Gee', 'Bankier');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(30605, 0, 'deDE', 'Kassierer Gee', 'Bankier'),
 	(30605, 0, 'esES', 'Cajero Gee', 'Banquero'),
 	(30605, 0, 'frFR', 'Caissier Gee', 'Banquier'),
 	(30605, 0, 'itIT', 'Cassiere Gee', 'Banchiere'),
@@ -157947,7 +157943,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(30732, 0, 'koKR', '세소', '주문각인용품 상인'),
 	(30732, 0, 'ruRU', 'Сессо', 'Товары для начертания'),
 	(30732, 0, 'zhCN', '萨索', '铭文供应商'),
-	(30733, 0, 'esES', 'Thargen Plumapesada', 'Suministros de inscripción'),
+	(30733, 0, 'esES', 'Thargen Plumapesada', 'Suministros de inscripción');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(30733, 0, 'frFR', 'Thargen Plume-lourde', 'Fournitures de calligraphie'),
 	(30733, 0, 'itIT', 'Thargen Pennagrave', 'Mercante di Forniture di Runografia'),
 	(30733, 0, 'koKR', '탈겐 헤비퀼', '주문각인용품 상인'),
@@ -165253,8 +165250,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(32481, 0, 'zhCN', '奥图纳', ''),
 	(32482, 0, 'deDE', 'Pusteliger Koloss', ''),
 	(32482, 0, 'esES', 'Coloso pustuloso', ''),
-	(32482, 0, 'frFR', 'Colosse pustuleux', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(32482, 0, 'frFR', 'Colosse pustuleux', ''),
 	(32482, 0, 'itIT', 'Colosso Pustoloso', ''),
 	(32482, 0, 'koKR', '고름 거수', ''),
 	(32482, 0, 'ruRU', 'Пустулезный колосс', ''),
@@ -167664,7 +167660,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(32901, 0, 'koKR', '엘리 나이트페더', ''),
 	(32901, 0, 'ruRU', 'Элли Ночное Перо', ''),
 	(32901, 0, 'zhCN', '艾蕾·夜羽', ''),
-	(32904, 0, 'deDE', 'Dunkler Runenbürger', ''),
+	(32904, 0, 'deDE', 'Dunkler Runenbürger', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(32904, 0, 'esES', 'Plebeyo Runa Oscura', ''),
 	(32904, 0, 'frFR', 'Roturier sombre-rune', ''),
 	(32904, 0, 'itIT', 'Abitante della Runa Oscura', ''),
@@ -173386,8 +173383,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(33934, 0, 'itIT', 'Ecton Girarame', 'Mercante Apprendista dell\'Arena'),
 	(33934, 0, 'koKR', '엑튼 브라스텀블러', '수습 투기장 상인'),
 	(33934, 0, 'ptPT', 'Ecton Rancatoco', 'Comerciante Aprendiz da Arena'),
-	(33934, 0, 'ruRU', 'Эктон Меднотумблер', 'Младший продавец экипировки арены');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(33934, 0, 'ruRU', 'Эктон Меднотумблер', 'Младший продавец экипировки арены'),
 	(33934, 0, 'zhCN', '埃克顿·布拉斯塔', '见习竞技场商人'),
 	(33935, 0, 'deDE', 'Evee Kupferspule', 'Arenaverkäuferin'),
 	(33935, 0, 'frFR', 'Evee Cuivressort', 'Vendeuse de l\'arène'),
@@ -177494,7 +177490,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(34679, 0, 'koKR', '프란시스 이튼', ''),
 	(34679, 0, 'ruRU', 'Фрэнсис Итон', ''),
 	(34679, 0, 'zhCN', '弗朗西斯·伊顿', ''),
-	(34681, 0, 'deDE', 'Ikaneba Spätsommer', 'Händlerin des Pilgerfreudenfests'),
+	(34681, 0, 'deDE', 'Ikaneba Spätsommer', 'Händlerin des Pilgerfreudenfests');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(34681, 0, 'frFR', 'Ikaneba Pirouette', 'Vendeuse des Bienfaits du pèlerin'),
 	(34681, 0, 'itIT', 'Ikaneba Caldasera', 'Mercante del Ringraziamento del Pellegrino'),
 	(34681, 0, 'ruRU', 'Иканеба Саммерсет', 'Торговка Пиршества странников'),
@@ -181469,8 +181466,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(35370, 0, 'ruRU', 'Джосайя Авери', ''),
 	(35370, 0, 'zhCN', '约书亚·阿维利', ''),
 	(35371, 0, 'deDE', 'Marius Tanolaar', ''),
-	(35371, 0, 'esES', 'Marius Tanolaar', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(35371, 0, 'esES', 'Marius Tanolaar', ''),
 	(35371, 0, 'frFR', 'Marius Tanolaar', ''),
 	(35371, 0, 'itIT', 'Marius Tanolaar', ''),
 	(35371, 0, 'koKR', '마리우스 타놀라르', ''),
@@ -187191,7 +187187,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(36756, 0, 'itIT', 'Soldato Morto', 'Battaglione degli Acqualorda'),
 	(36756, 0, 'koKR', '죽은 병사', '빌지워터 부대'),
 	(36756, 0, 'ptPT', 'Soldado Morto', 'Batalhão de Borraquilha'),
-	(36756, 0, 'ruRU', 'Мертвый солдат', 'Батальон картеля Трюмных Вод'),
+	(36756, 0, 'ruRU', 'Мертвый солдат', 'Батальон картеля Трюмных Вод');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(36756, 0, 'zhCN', '死亡的士兵', '锈水作战大队'),
 	(36757, 0, 'deDE', 'Berserker der Frostanbeter', ''),
 	(36757, 0, 'frFR', 'Berserker lige-du-givre', ''),
@@ -189696,8 +189693,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(37179, 0, 'frFR', 'Boucanier de Baille-Fonds', ''),
 	(37179, 0, 'itIT', 'Bucaniere degli Acqualorda', ''),
 	(37179, 0, 'koKR', '빌지워터 해적 선수', ''),
-	(37179, 0, 'ptPT', 'Bucaneiro de Borraquilha', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(37179, 0, 'ptPT', 'Bucaneiro de Borraquilha', ''),
 	(37179, 0, 'ruRU', '"Буканьер Трюмных Вод"', ''),
 	(37179, 0, 'zhCN', '锈水海盗队', ''),
 	(37180, 0, 'deDE', 'Wache der Ehrenwacht', ''),
@@ -197156,7 +197152,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(38953, 0, 'frFR', 'Vision de Vol’jin', ''),
 	(38953, 0, 'itIT', 'Visione di Vol\'jin', ''),
 	(38953, 0, 'koKR', '볼진의 환영', ''),
-	(38953, 0, 'zhCN', '沃金的影像', ''),
+	(38953, 0, 'zhCN', '沃金的影像', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(38966, 0, 'deDE', 'Vol\'jin', ''),
 	(38966, 0, 'esES', 'Vol\'jin', ''),
 	(38966, 0, 'frFR', 'Vol’jin', ''),
@@ -198001,8 +197998,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(39119, 0, 'ptPT', 'Cáliper Porcatraca', ''),
 	(39119, 0, 'ruRU', 'Мебок Миззрикс', ''),
 	(39119, 0, 'zhCN', '麦伯克·米希瑞克斯', ''),
-	(39123, 0, 'deDE', 'Blood Quickening Credit 25', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(39123, 0, 'deDE', 'Blood Quickening Credit 25', ''),
 	(39123, 0, 'esES', 'Blood Quickening Credit 25', ''),
 	(39123, 0, 'frFR', 'Blood Quickening Credit 25', ''),
 	(39123, 0, 'itIT', 'Blood Quickening Credit 25', ''),
@@ -206386,8 +206382,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(40795, 0, 'frFR', 'Holbiche océanique vorace', ''),
 	(40795, 0, 'itIT', 'Squalo Martello Vorace', ''),
 	(40795, 0, 'ptPT', 'Cabeça-de-martelo Oceânico Voraz', ''),
-	(40795, 0, 'ruRU', 'Прожорливый океанический широкоглав', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(40795, 0, 'ruRU', 'Прожорливый океанический широкоглав', ''),
 	(40795, 0, 'zhCN', '饥饿的海洋锤头鲨', ''),
 	(40796, 0, 'deDE', 'Hyjalbärenjunges', ''),
 	(40796, 0, 'frFR', '[TEST] Ourson d’Hyjal', ''),
@@ -207158,7 +207153,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(40924, 0, 'esES', 'Trofeo', ''),
 	(40924, 0, 'frFR', 'Trophée', ''),
 	(40924, 0, 'itIT', 'Trofeo', ''),
-	(40924, 0, 'koKR', '트로피', ''),
+	(40924, 0, 'koKR', '트로피', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(40924, 0, 'ptPT', 'Troféu', ''),
 	(40924, 0, 'ruRU', 'Приз', ''),
 	(40924, 0, 'zhCN', '战利品', ''),
@@ -214834,8 +214830,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(42265, 0, 'deDE', 'Aufrührer der Dunkeleisenzwerge', ''),
 	(42265, 0, 'esES', 'Insurgente Hierro Negro', ''),
 	(42265, 0, 'frFR', 'Insurgé sombrefer', ''),
-	(42265, 0, 'itIT', 'Insorto Ferroscuro', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(42265, 0, 'itIT', 'Insorto Ferroscuro', ''),
 	(42265, 0, 'ptPT', 'Insurgente Ferro Negro', ''),
 	(42265, 0, 'ruRU', 'Мятежник из клана Черного Железа', ''),
 	(42265, 0, 'zhCN', '黑铁叛军', ''),
@@ -217159,7 +217154,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(42708, 0, 'deDE', 'Jessup McCree', 'McCree bewegt Berge, GmbH'),
 	(42708, 0, 'esES', 'Jessup McCree', 'Muevemontañas de McCree S.A.'),
 	(42708, 0, 'frFR', 'Jessup McCree', 'Déplaceurs de montagne McCree, SARL'),
-	(42708, 0, 'itIT', 'Jessup McCree', 'Demolizioni McCree S.p.A.'),
+	(42708, 0, 'itIT', 'Jessup McCree', 'Demolizioni McCree S.p.A.');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(42708, 0, 'koKR', '제섭 맥크리', '맥크리의 역발산 주식회사'),
 	(42708, 0, 'ruRU', 'Джессуп Маккри', 'Переносчики гор Маккри'),
 	(42708, 0, 'zhCN', '杰萨普·麦格雷', '麦氏移山人有限公司'),
@@ -223087,8 +223083,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(43729, 0, 'deDE', 'Letzter Kredit', ''),
 	(43729, 0, 'esES', 'Finale Credit', ''),
 	(43729, 0, 'itIT', 'Finale Credit', ''),
-	(43729, 0, 'koKR', '마무리 점수', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(43729, 0, 'koKR', '마무리 점수', ''),
 	(43729, 0, 'ruRU', 'Finale Credit', ''),
 	(43729, 0, 'zhCN', 'Finale Credit', ''),
 	(43730, 0, 'deDE', 'Oliver Harris', ''),
@@ -226931,7 +226926,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(44374, 0, 'itIT', 'Sherm', 'Reclutatore delle Spedizioni Grant'),
 	(44374, 0, 'koKR', '셤', '마샬 원정대 모집관'),
 	(44374, 0, 'ruRU', 'Шерм', 'Вербовщик экспедиции Маршалла'),
-	(44374, 0, 'zhCN', '谢尔姆', '马绍尔探险队招募员'),
+	(44374, 0, 'zhCN', '谢尔姆', '马绍尔探险队招募员');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(44375, 0, 'deDE', 'Zeya', ''),
 	(44375, 0, 'frFR', 'Zeya', ''),
 	(44375, 0, 'itIT', 'Zeya', ''),
@@ -231259,8 +231255,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(45109, 0, 'koKR', '웰던 바로브', '바로브 가문'),
 	(45109, 0, 'ruRU', 'Вэлдон Баров', 'Род Баровых'),
 	(45109, 0, 'zhCN', '维尔顿·巴罗夫', '巴罗夫家族'),
-	(45110, 0, 'deDE', 'Alexi Barov', 'Haus Barov');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(45110, 0, 'deDE', 'Alexi Barov', 'Haus Barov'),
 	(45110, 0, 'frFR', 'Alexi Barov', 'Maison Barov'),
 	(45110, 0, 'itIT', 'Alexi Barov', 'Casata di Barov'),
 	(45110, 0, 'koKR', '알렉시 바로브', '바로브 가문'),
@@ -236848,7 +236843,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(46065, 0, 'koKR', '7군단 잠수요원', ''),
 	(46065, 0, 'ruRU', 'Подводник 7-го легиона', ''),
 	(46065, 0, 'zhCN', '第七军团潜水员', ''),
-	(46066, 0, 'deDE', 'Hochkommandant Halford Wyrmbann', '7. Legion'),
+	(46066, 0, 'deDE', 'Hochkommandant Halford Wyrmbann', '7. Legion');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(46066, 0, 'esES', 'Alto comandante Halford Aterravermis', 'La Séptima Legión'),
 	(46066, 0, 'itIT', 'Gran Comandante Halford Sventradraghi', 'VII Legione'),
 	(46066, 0, 'koKR', '총사령관 할포드 웜베인', '7군단'),
@@ -239626,8 +239622,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(46571, 0, 'ruRU', 'Старший лейтенант Коннор', ''),
 	(46571, 0, 'zhCN', '康纳中尉', ''),
 	(46572, 0, 'deDE', 'Goram', 'Gildenhändler'),
-	(46572, 0, 'esES', 'Goram', 'Vendedor de hermandad');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(46572, 0, 'esES', 'Goram', 'Vendedor de hermandad'),
 	(46572, 0, 'frFR', 'Goram', 'Vendeur de guilde'),
 	(46572, 0, 'itIT', 'Goram', 'Mercante di Gilda'),
 	(46572, 0, 'koKR', '고람', '길드 상인'),
@@ -246849,7 +246844,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(47752, 0, 'esES', 'Apoderada comida por múrlocs', ''),
 	(47752, 0, 'frFR', 'Mandataire mangé par le Murloc', ''),
 	(47752, 0, 'itIT', 'Murloc Eaten Proxy', ''),
-	(47752, 0, 'koKR', '먹힌 멀록 대리', ''),
+	(47752, 0, 'koKR', '먹힌 멀록 대리', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(47752, 0, 'ruRU', 'Жертва мурлоков', ''),
 	(47752, 0, 'zhCN', 'Murloc Eaten Proxy', ''),
 	(47753, 0, 'deDE', 'Dunkler Pharao Tekahn', ''),
@@ -248203,8 +248199,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(47976, 0, 'deDE', 'Gesichtsloser Alptraum', ''),
 	(47976, 0, 'esES', 'Pesadilla ignota', ''),
 	(47976, 0, 'frFR', 'Cauchemar sans-visage', ''),
-	(47976, 0, 'itIT', 'Incubo Senzavolto', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(47976, 0, 'itIT', 'Incubo Senzavolto', ''),
 	(47976, 0, 'koKR', '얼굴 없는 악몽', ''),
 	(47976, 0, 'ruRU', 'Безликий кошмар', ''),
 	(47976, 0, 'zhCN', '无面梦魇怪', ''),
@@ -256731,8 +256726,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(49716, 0, 'koKR', '톰 뎅거', '상급 마법사'),
 	(49716, 0, 'ruRU', 'Том Денжер', 'Наставник магов'),
 	(49716, 0, 'zhCN', '索姆·登格', '法师训练师'),
-	(49718, 0, 'deDE', 'Bea Bruckswert', 'Hexenmeisterlehrerin');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(49718, 0, 'deDE', 'Bea Bruckswert', 'Hexenmeisterlehrerin'),
 	(49718, 0, 'esES', 'Bee Bruxworthy', 'Instructora de brujos'),
 	(49718, 0, 'frFR', 'Bee Bruxworthy', 'Maître des démonistes'),
 	(49718, 0, 'itIT', 'Blatta Bruxworthy', 'Istruttrice degli Stregoni'),
@@ -256851,7 +256845,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(49735, 0, 'itIT', 'Rana Variopinta', ''),
 	(49735, 0, 'koKR', '알록개구리', ''),
 	(49735, 0, 'ruRU', 'Ателоп', ''),
-	(49735, 0, 'zhCN', '金蟾', ''),
+	(49735, 0, 'zhCN', '金蟾', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(49736, 0, 'deDE', 'Kalle Stanner', 'Kriegerlehrer'),
 	(49736, 0, 'frFR', 'Kallen Stanner', 'Maître des guerriers'),
 	(49736, 0, 'itIT', 'Kallen Stanner', 'Istruttore dei Guerrieri'),
@@ -265363,8 +265358,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(51378, 0, 'esES', 'Lobo espantoso', ''),
 	(51378, 0, 'frFR', 'Loup ignoble', ''),
 	(51378, 0, 'itIT', 'Lupo dell\'Oltretomba', ''),
-	(51378, 0, 'koKR', '섬뜩한 늑대', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(51378, 0, 'koKR', '섬뜩한 늑대', ''),
 	(51378, 0, 'ruRU', 'Привидение волка', ''),
 	(51378, 0, 'zhCN', '阴森魂狼', ''),
 	(51379, 0, 'deDE', 'Cho\'gall Reveal Credit', ''),
@@ -266852,7 +266846,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(51684, 0, 'itIT', 'Punto di Accensione dell\'Uomo di Paglia', ''),
 	(51684, 0, 'koKR', '밀짚인형 횃불 지점', ''),
 	(51684, 0, 'ruRU', 'Факел праздника Плетеного человека', ''),
-	(51685, 0, 'deDE', 'Händler für Zubehör', ''),
+	(51685, 0, 'deDE', 'Händler für Zubehör', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(51685, 0, 'frFR', 'Vendeur d\'accessoires', ''),
 	(51685, 0, 'koKR', '장신구 상인', ''),
 	(51685, 0, 'ruRU', 'Продавец аксессуаров', ''),
@@ -273809,8 +273804,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(53018, 0, 'frFR', 'Bave-feu', ''),
 	(53018, 0, 'itIT', 'Sbavafuoco', ''),
 	(53018, 0, 'ruRU', 'Огнерьер', ''),
-	(53018, 0, 'zhCN', '火涎', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(53018, 0, 'zhCN', '火涎', ''),
 	(53019, 0, 'deDE', 'Flammenspucke', ''),
 	(53019, 0, 'esES', 'Saliva ígnea', ''),
 	(53019, 0, 'frFR', 'Cracheflamme', ''),
@@ -276853,7 +276847,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(53572, 0, 'esES', 'Crossroads Caravan Delivery Credit 1', ''),
 	(53572, 0, 'frFR', 'Crossroads Caravan Delivery Credit 1', ''),
 	(53572, 0, 'itIT', 'Crossroads Caravan Delivery Credit 1', ''),
-	(53572, 0, 'koKR', '십자로 짐마차 배달 점수 1', ''),
+	(53572, 0, 'koKR', '십자로 짐마차 배달 점수 1', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(53572, 0, 'ruRU', 'Crossroads Caravan Delivery Credit 1', ''),
 	(53573, 0, 'deDE', 'Crossroads Caravan Delivery Credit 2', ''),
 	(53573, 0, 'esES', 'Crossroads Caravan Delivery Credit 2', ''),
@@ -282561,8 +282556,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(54919, 0, 'ruRU', 'Познаватель духов Гаоцюань', ''),
 	(54919, 0, 'zhCN', '灵魂贤者高全', ''),
 	(54920, 0, 'deDE', 'Ewiger Unterdrücker', ''),
-	(54920, 0, 'esES', 'Supresor infinito', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(54920, 0, 'esES', 'Supresor infinito', ''),
 	(54920, 0, 'frFR', 'Suppresseur infini', ''),
 	(54920, 0, 'itIT', 'Soppressore dell\'Infinito', ''),
 	(54920, 0, 'koKR', '무한의 억압자', ''),
@@ -286854,7 +286848,8 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(55745, 0, 'zhCN', '菲拉尔·迷雾行者', '勇者号乘客'),
 	(55746, 0, 'deDE', 'Braumeisterin Ji Zapfgold', ''),
 	(55746, 0, 'frFR', 'Maître brasseur Ji Pression d’Or', ''),
-	(55746, 0, 'itIT', 'Mastro Birraio Sorso Dorato', ''),
+	(55746, 0, 'itIT', 'Mastro Birraio Sorso Dorato', '');
+INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
 	(55746, 0, 'ptPT', 'Mestre Cervejeiro Ji Áurea Cevada', ''),
 	(55746, 0, 'ruRU', 'Хмелевар Цзи Золотистый Нектар', ''),
 	(55746, 0, 'zhCN', '酒仙季·金酿', ''),
@@ -291401,8 +291396,7 @@ INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname
 	(56692, 0, 'esES', 'Mur enloquecido por la bebida', ''),
 	(56692, 0, 'frFR', 'Virmen échauffé par la bière', ''),
 	(56692, 0, 'itIT', 'Leproratto Pazzo di Birra', ''),
-	(56692, 0, 'koKR', '맥주에 미친 토깽', '');
-INSERT INTO `locales_creature` (`id`, `build`, `language_code`, `name`, `subname`) VALUES
+	(56692, 0, 'koKR', '맥주에 미친 토깽', ''),
 	(56692, 0, 'ruRU', 'Пьяный гну-синь', ''),
 	(56692, 0, 'zhCN', '发酒疯的兔妖', ''),
 	(56693, 0, 'deDE', 'Ot-Temmdo', 'Wasserschmied'),

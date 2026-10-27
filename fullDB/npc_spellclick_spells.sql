@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `npc_spellclick_spells` (
   PRIMARY KEY (`npc_entry`,`spell_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
 
--- Exportiere Daten aus Tabelle ascemu_world.npc_spellclick_spells: 325 rows
+-- Exportiere Daten aus Tabelle ascemu_world.npc_spellclick_spells: 338 rows
 INSERT INTO `npc_spellclick_spells` (`npc_entry`, `spell_id`, `cast_flags`, `user_type`) VALUES
 	(24083, 55074, 1, 0),
 	(24418, 43768, 1, 0),
@@ -349,7 +349,20 @@ INSERT INTO `npc_spellclick_spells` (`npc_entry`, `spell_id`, `cast_flags`, `use
 	(40470, 46598, 0, 1),
 	(40471, 46598, 0, 1),
 	(40472, 46598, 0, 1),
-	(40725, 75953, 1, 0);
+	(40725, 75953, 1, 0),
+	(54635, 46598, 1, 0),
+	(54993, 102717, 0, 0),
+	(55083, 102717, 0, 0),
+	(55918, 46598, 1, 0),
+	(56739, 46598, 0, 0),
+	(57431, 130074, 1, 0),
+	(57626, 46598, 1, 0),
+	(57710, 46598, 1, 0),
+	(57741, 46598, 1, 0),
+	(59497, 46598, 1, 0),
+	(60770, 46598, 1, 0),
+	(60877, 46598, 1, 0),
+	(64507, 46598, 1, 0);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

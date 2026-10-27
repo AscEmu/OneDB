@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `worldstring_tables` (
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Exportiere Daten aus Tabelle ascemu_world.worldstring_tables: 66 rows
+-- Exportiere Daten aus Tabelle ascemu_world.worldstring_tables: 70 rows
 INSERT INTO `worldstring_tables` (`entry`, `text`) VALUES
 	(0, 'Are you sure you wish to purchase a Dual Talent Specialization.'),
 	(1, 'I wish to learn Dual Specialization.'),
@@ -30,11 +30,11 @@ INSERT INTO `worldstring_tables` (`entry`, `text`) VALUES
 	(28, 'Heroic mode unavailable for this instance.'),
 	(29, 'You must be in a raid group to pass through here.'),
 	(30, 'You do not have the required attunement to pass through here.'),
-	(31, 'You must be at least level %u to pass through here.'),
+	(31, 'You must be at least level {} to pass through here.'),
 	(32, 'You must be in a party to pass through here.'),
 	(33, 'You must be level 70 to enter heroic mode.'),
 	(34, 'Strand of the Ancients'),
-	(35, 'You must have the item, `%s` to pass through here.'),
+	(35, 'You must have the item, `{}` to pass through here.'),
 	(36, 'You must have the item, UNKNOWN to pass through here.'),
 	(37, 'What can I teach you, $N?'),
 	(38, 'Alterac Valley'),
@@ -45,15 +45,15 @@ INSERT INTO `worldstring_tables` (`entry`, `text`) VALUES
 	(43, 'Arena 5v5'),
 	(44, 'Eye of the Storm'),
 	(45, 'Unknown Battleground'),
-	(46, 'One minute until the battle for %s begins!'),
-	(47, 'Thirty seconds until the battle for %s begins!'),
-	(48, 'Fifteen seconds until the battle for %s begins!'),
-	(49, 'The battle for %s has begun!'),
+	(46, 'One minute until the battle for {} begins!'),
+	(47, 'Thirty seconds until the battle for {} begins!'),
+	(48, 'Fifteen seconds until the battle for {} begins!'),
+	(49, 'The battle for {} has begun!'),
 	(50, 'Arena'),
 	(51, 'You have tried to join an invalid instance id.'),
-	(52, 'Your queue on battleground instance id %u is no longer valid. Reason: Instance Deleted.'),
+	(52, 'Your queue on battleground instance id {} is no longer valid. Reason: Instance Deleted.'),
 	(53, 'You cannot join this battleground as it has already ended.'),
-	(54, 'Your queue on battleground instance %u is no longer valid, the instance no longer exists.'),
+	(54, 'Your queue on battleground instance {} is no longer valid, the instance no longer exists.'),
 	(55, 'Sorry, raid groups joining battlegrounds are currently unsupported.'),
 	(56, 'You must be the party leader to add a group to an arena.'),
 	(57, 'You must be in a team to join rated arena.'),
@@ -80,15 +80,19 @@ INSERT INTO `worldstring_tables` (`entry`, `text`) VALUES
 	(78, 'Target player cannot sign your charter for one or more reasons.'),
 	(79, 'You have already signed that charter.'),
 	(80, 'You don\'t have the required amount of signatures to turn in this petition.'),
-	(81, 'You must have the quest, \'%s\' completed to pass through here.'),
+	(81, 'You must have the quest, \'{}\' completed to pass through here.'),
 	(87, 'Are you sure you would like to purchase your second talent specialization?'),
 	(88, 'Purchase a Dual Talent Specialization.'),
 	(89, 'You do not have enough gold to purchase a dual spec.'),
+	(108, 'Twin Peaks'),
+	(120, 'Battle for Gilneas'),
 	(397, 'You need to be Revered with the faction Keepers of Time!'),
 	(500, 'You must have Wrath of the Lich King Expansion to access this content.'),
 	(501, 'This character is not allowed to play.'),
-	(502, 'You have been banned for: %s'),
-	(503, 'You were removed from the queue for the battleground for not joining after 1 minute 20 seconds.');
+	(502, 'You have been banned for: {}'),
+	(503, 'You were removed from the queue for the battleground for not joining after 1 minute 20 seconds.'),
+	(699, 'Temple of Kotmogu'),
+	(708, 'Silvershard Mines');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

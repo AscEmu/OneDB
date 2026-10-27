@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -17,20 +17,21 @@
 -- Exportiere Struktur von Tabelle ascemu_world.transport_data
 CREATE TABLE IF NOT EXISTS `transport_data` (
   `entry` mediumint unsigned NOT NULL DEFAULT '0',
-  `min_build` smallint NOT NULL DEFAULT '12340',
-  `max_build` smallint NOT NULL DEFAULT '12340',
+  `min_build` int NOT NULL DEFAULT '12340',
+  `max_build` int NOT NULL DEFAULT '12340',
   `name` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`entry`,`min_build`),
   UNIQUE KEY `unique_index` (`entry`,`min_build`) USING BTREE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=FIXED COMMENT='Transports';
 
--- Exportiere Daten aus Tabelle ascemu_world.transport_data: 20 rows
+-- Exportiere Daten aus Tabelle ascemu_world.transport_data: 21 rows
 INSERT INTO `transport_data` (`entry`, `min_build`, `max_build`, `name`) VALUES
 	(20808, 5875, 18414, 'Steamwheedle Cartel ports, Ratchet and Booty Bay ("The Maiden\'s Fancy")'),
 	(164871, 5875, 18414, 'Orgrimmar, Durotar and Undercity, Tirisfal Glades ("The Thundercaller")'),
 	(175080, 5875, 18414, 'Orgrimmar, Durotar and Grom\'gol Base Camp, Stranglethorn Vale ("The Iron Eagle")'),
 	(176231, 5875, 18414, 'Menethil Harbor, Wetlands and Theramore Isle, Dustwallow Marsh ("The Lady Mehley")'),
 	(176244, 5875, 12340, 'Rut\'theran Village, Teldrassil and Auberdine, Darkshore ("The Moonspray")'),
+	(176310, 5875, 5875, 'Menethil Harbor, Wetlands and Auberdine, Darkshore ("The Bravery")'),
 	(176310, 12340, 18414, 'Stormwind Harbor and Auberdine, Darkshore ("Ship (The Bravery)")'),
 	(176495, 5875, 18414, 'Undercity, Tirisfal Glades and Grom\'gol Base Camp, Stranglethorn Vale ("The Purple Princess")'),
 	(177233, 5875, 12340, 'The Forgotten Coast, Feralas and Feathermoon Stronghold, Sardor Isle, Feralas ("Feathermoon Ferry")'),

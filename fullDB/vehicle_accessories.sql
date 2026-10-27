@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.30 - MySQL Community Server - GPL
+-- Server-Version:               8.0.46 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Win64
--- HeidiSQL Version:             12.20.0.7320
+-- HeidiSQL Version:             12.21.0.7344
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `vehicle_accessories` (
   PRIMARY KEY (`entry`,`seat_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 ROW_FORMAT=FIXED;
 
--- Exportiere Daten aus Tabelle ascemu_world.vehicle_accessories: 198 rows
+-- Exportiere Daten aus Tabelle ascemu_world.vehicle_accessories: 199 rows
 INSERT INTO `vehicle_accessories` (`entry`, `accessory_entry`, `seat_id`, `minion`, `description`, `summontype`, `summontimer`) VALUES
 	(24083, 24849, 0, 0, 'Proto Drake Rider mounted to Enslaved Proto Drake', 6, 30000),
 	(24750, 24751, 0, 1, 'Excelsior rides Hidalgo the Master Falconer', 6, 30000),
@@ -225,7 +225,8 @@ INSERT INTO `vehicle_accessories` (`entry`, `accessory_entry`, `seat_id`, `minio
 	(40472, 40083, 0, 1, 'Orb Carrier', 6, 30000),
 	(40472, 40100, 1, 1, 'Orb Carrier', 6, 30000),
 	(40472, 40468, 2, 1, 'Orb Carrier', 6, 30000),
-	(40472, 40469, 3, 1, 'Orb Carrier', 6, 30000);
+	(40472, 40469, 3, 1, 'Orb Carrier', 6, 30000),
+	(56739, 54131, 0, 0, 'Hozen Hanging bunny - Fe Feng Hozen', 6, 30000);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
